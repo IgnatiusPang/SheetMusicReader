@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psalm Sheet Music Reader & Piano Player</title>
+    <meta name="description" content="Read, listen to, and practice Church Choir Psalm sheet music with realistic piano melody and accompaniment, overlaid lyrics, and interactive piano keyboard visualizer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation Header -->
+        <header class="app-header">
+            <div class="logo-group">
+                <div class="logo-icon">🎵</div>
+                <div class="logo-text">
+                    <h1>Psalm Music Companion</h1>
+                    <p class="subtitle">Church Choir Sheet Music Reader & Realistic Piano Player</p>
+                </div>
+            </div>
+            
+            <div class="header-actions">
+                <div class="search-box-wrapper">
+                    <input type="text" id="psalmSearchInput" data-testid="search-input" placeholder="🔍 Search by Psalm # or title..." class="search-input">
+                </div>
+
+                <div class="psalm-selector-wrapper">
+                    <label for="psalmSelect" class="sr-only">Select Psalm</label>
+                    <select id="psalmSelect" data-testid="psalm-select" class="custom-select">
+                        <option value="" disabled selected>Loading Example Psalms...</option>
+                    </select>
+                </div>
+
+                <button id="digitizeAllBtn" data-testid="digitize-all-btn" class="btn btn-accent" title="Batch digitize all Psalm PDFs in data/">
+                    ⚡ Digitize All PDFs
+                </button>
+
+                <label for="pdfInput" class="upload-btn" data-testid="upload-label">
+                    <span>📄 Upload PDF Sheet</span>
+                    <input type="file" id="pdfInput" data-testid="pdf-input" accept=".pdf" class="hidden-file-input">
+                </label>
+            </div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="workspace">
+            <!-- Score & Lyrics Notation Section -->
+            <section class="score-card" data-testid="score-card">
+                <div class="score-header">
+                    <div class="title-meta">
+                        <h2 id="psalmTitle" data-testid="psalm-title">Select a Psalm to Begin</h2>
+                        <div class="badge-group">
+                            <span id="psalmKey" data-testid="psalm-key" class="badge key-badge">Key: --</span>
+                            <span id="psalmTime" data-testid="psalm-time" class="badge time-badge">Time: --</span>
+                            <span id="psalmTempoDisplay" data-testid="psalm-tempo-display" class="badge tempo-badge">BPM: --</span>
+                        </div>
+                    </div>
+
+                    <!-- Export Digitized Score Buttons -->
+                    <div class="export-group">
+                        <span class="export-label">Export Score:</span>
+                        <button id="exportXmlBtn" data-testid="export-musicxml" class="btn btn-outline" title="Export MusicXML for MuseScore / Finale">
+                            🎼 MusicXML
+                        </button>
+                        <button id="exportMidiBtn" data-testid="export-midi" class="btn btn-outline" title="Export MIDI for DAWs">
+                            🎹 MIDI
+                        </button>
+                        <button id="exportJsonBtn" data-testid="export-json" class="btn btn-outline" title="Export Digitized JSON">
+                            💾 JSON
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sheet Music Staff & Synchronized Lyric Overlay -->
+                <div class="staff-container" id="staffContainer" data-testid="score-view">
+                    <div class="notation-viewport" id="notationViewport">
+                        <!-- Music Staff Lines & Notes with Words Overlaid Underneath -->
+                        <div class="staff-lines">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+
+                        <!-- Clef, Key Signature Accidentals & Time Signature ON Staff Lines -->
+                        <div class="staff-header-on-lines" id="staffHeaderOnLines">
+                            <div class="treble-clef-on-staff" title="Treble Clef">
+                                <svg width="38" height="96" viewBox="0 0 50 120" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 25 110 C 20 110 16 106 16 100 C 16 94 21 90 26 92 C 30 94 31 99 29 103 C 28 105 26 106 25 106 C 24 106 23 105 23 104 C 23 103 24 102 25 102 C 26 102 27 103 27 104 C 27 105 26 106 25 106 C 21 106 18 102 18 97 C 18 91 23 87 29 88 C 36 90 40 96 38 103 C 36 109 31 110 25 110 Z M 25 5 C 24 5 23 6 23 7 C 23 18 27 34 29 45 C 24 49 18 55 14 62 C 9 71 7 81 10 90 C 13 99 21 105 31 104 C 40 103 46 95 46 86 C 46 76 39 68 29 68 C 24 68 20 70 17 74 C 14 78 13 83 15 88 C 17 92 21 95 26 94 C 30 93 33 89 33 85 C 33 81 30 78 26 78 C 24 78 22 79 21 81 C 20 82 20 83 21 84 C 21 84 22 84 23 83 C 24 82 25 82 26 82 C 28 82 30 84 30 86 C 30 88 28 90 25 90 C 22 90 19 88 18 85 C 17 81 18 77 21 74 C 24 71 28 70 32 70 C 40 70 46 77 46 85 C 46 94 39 101 30 101 C 21 101 14 95 12 87 C 10 79 12 70 16 62 C 20 56 25 50 30 46 C 28 35 25 20 24 7 C 24 6 24 5 25 5 Z" fill="#00F2FE"/>
+                                </svg>
+                            </div>
+                            <div id="clefKeySig" class="key-sig-on-staff"></div>
+                            <div id="clefTimeSig" class="time-sig-on-staff"></div>
+                            <div class="staff-header-bar-line"></div>
+                        </div>
+
+                        <div class="notes-and-lyrics-layer" id="notesAndLyricsLayer" data-testid="notes-layer">
+                            <!-- Dynamic note heads and lyrics overlaid directly underneath -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verse Selector & Full Verse Lyrics -->
+                <div class="verse-section">
+                    <div class="verse-tabs" id="verseTabs" data-testid="verse-tabs">
+                        <button class="verse-tab active" data-verse="0">Response</button>
+                        <button class="verse-tab" data-verse="1">Verse 1</button>
+                    </div>
+                    <div class="full-lyrics-box" id="fullLyricsBox" data-testid="full-lyrics">
+                        <p class="lyrics-text">Select a Psalm to load the choir score and lyrics.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Audio Control Panel -->
+            <section class="control-panel" data-testid="control-panel">
+                <div class="player-controls">
+                    <button id="playBtn" data-testid="play-btn" class="btn btn-primary btn-lg" aria-label="Play Music">
+                        <span class="btn-icon">▶</span>
+                        <span class="btn-text">Play Melody</span>
+                    </button>
+                    <button id="pauseBtn" data-testid="pause-btn" class="btn btn-secondary btn-lg" aria-label="Pause Music" disabled>
+                        <span class="btn-icon">⏸</span>
+                        <span class="btn-text">Pause</span>
+                    </button>
+                    <button id="stopBtn" data-testid="stop-btn" class="btn btn-secondary btn-lg" aria-label="Stop Music" disabled>
+                        <span class="btn-icon">⏹</span>
+                        <span class="btn-text">Stop</span>
+                    </button>
+                </div>
+
+                <div class="playback-options">
+                    <!-- Accompaniment Toggle -->
+                    <div class="toggle-group">
+                        <label class="switch">
+                            <input type="checkbox" id="accompanimentToggle" data-testid="accompaniment-toggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label">Include Accompaniment (Chords)</span>
+                    </div>
+
+                    <!-- Tempo Adjustment Slider -->
+                    <div class="slider-group">
+                        <label for="tempoSlider" class="slider-label">
+                            Tempo: <span id="tempoValue" data-testid="tempo-value">90</span> BPM
+                        </label>
+                        <input type="range" id="tempoSlider" data-testid="tempo-slider" min="40" max="200" value="90" class="range-input">
+                    </div>
+
+                    <!-- Pitch Transposition -->
+                    <div class="select-group">
+                        <label for="transposeSelect" class="select-label">Key Transposition:</label>
+                        <select id="transposeSelect" data-testid="transpose-select" class="custom-select-sm">
+                            <option value="-4">-4 Semitones</option>
+                            <option value="-3">-3 Semitones</option>
+                            <option value="-2">-2 Semitones</option>
+                            <option value="-1">-1 Semitone</option>
+                            <option value="0" selected>Original Key</option>
+                            <option value="1">+1 Semitone</option>
+                            <option value="2">+2 Semitones</option>
+                            <option value="3">+3 Semitones</option>
+                            <option value="4">+4 Semitones</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Piano Keyboard Visualizer -->
+            <section class="keyboard-section">
+                <div class="keyboard-header">
+                    <h3>Interactive Piano Keyboard (Notes & Harmony Visualizer)</h3>
+                    <div class="status-indicator" id="statusIndicator" data-testid="status-indicator">
+                        Status: Ready
+                    </div>
+                </div>
+
+                <div class="piano-keyboard-container" id="pianoKeyboard" data-testid="piano-keyboard">
+                    <!-- Dynamic 61-Key Keyboard generated via JavaScript with data-testid="key-X" -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>Church Choir Psalm Practice Companion &bull; Standardized Digitized Music XML &bull; Playwright & Puppeteer Ready</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/js/piano_synth.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

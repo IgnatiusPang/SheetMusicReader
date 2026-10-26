@@ -1,0 +1,303 @@
+{
+  "id": "psalm_106_thanks",
+  "title": "Psalm 106 Give Thanks to the Lord His Love is Everlasting",
+  "composer": "Kate Keefe",
+  "key": "C Major",
+  "key_signature": "0",
+  "time_signature": "3/4",
+  "tempo": 95,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "C",
+      "F",
+      "G",
+      "C",
+      "F",
+      "G",
+      "C"
+    ],
+    "notes": [
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Give"
+      },
+      {
+        "pitch": "C5",
+        "midi": 72,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "thanks"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "to"
+      },
+      {
+        "pitch": "C5",
+        "midi": 72,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "the"
+      },
+      {
+        "pitch": "D5",
+        "midi": 74,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "his"
+      },
+      {
+        "pitch": "C5",
+        "midi": 72,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "love"
+      },
+      {
+        "pitch": "D5",
+        "midi": 74,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "is"
+      },
+      {
+        "pitch": "E5",
+        "midi": 76,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "ev-"
+      },
+      {
+        "pitch": "D5",
+        "midi": 74,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "er-"
+      },
+      {
+        "pitch": "C5",
+        "midi": 72,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "las-"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "-"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "-"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "ting.",
+        "tie": "start"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "____",
+        "tie": "stop"
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "C",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "F",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "G",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "Some sailed to the sea in ships to trade on the mighty waters. These men have seen the Lord's deeds, the wonders he does in the deep.",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G",
+        "F",
+        "C",
+        "Dm",
+        "C",
+        "Dm",
+        "G"
+      ],
+      "notes": [
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Some"
+        },
+        {
+          "pitch": "C5",
+          "midi": 72,
+          "duration": "dotted_half",
+          "beats": 3.0,
+          "lyric": "sailed"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "For he spoke; he summoned the gale, tossing the waves of the sea up to heaven and back into the deep; their soul melted away in their distress.",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G",
+        "F",
+        "C",
+        "Dm",
+        "C",
+        "Dm",
+        "G"
+      ],
+      "notes": [
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "For"
+        },
+        {
+          "pitch": "C5",
+          "midi": 72,
+          "duration": "dotted_half",
+          "beats": 3.0,
+          "lyric": "he"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "Then they cried to the Lord in their need and he rescued them from their distress. He stilled the storm to a whisper: all the waves of the sea were hushed.",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G",
+        "F",
+        "C",
+        "Dm",
+        "C",
+        "Dm",
+        "G"
+      ],
+      "notes": [
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Then"
+        },
+        {
+          "pitch": "C5",
+          "midi": 72,
+          "duration": "dotted_half",
+          "beats": 3.0,
+          "lyric": "they"
+        }
+      ]
+    },
+    {
+      "verse_number": 4,
+      "lyrics_text": "They rejoiced because of the calm and he led them to the haven they desired. Let them thank the Lord for his love, the wonders he does for men.",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G",
+        "F",
+        "C",
+        "Dm",
+        "C",
+        "Dm",
+        "G"
+      ],
+      "notes": [
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "They"
+        },
+        {
+          "pitch": "C5",
+          "midi": 72,
+          "duration": "dotted_half",
+          "beats": 3.0,
+          "lyric": "re-joi-ced"
+        }
+      ]
+    }
+  ]
+}

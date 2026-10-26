@@ -1,0 +1,219 @@
+{
+  "id": "psalm_95_deeds",
+  "title": "Ps 95(96) Proclaim His Marvellous Deeds",
+  "composer": "A. Reefman",
+  "key": "E Major",
+  "key_signature": "4#",
+  "time_signature": "6/8",
+  "tempo": 48,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "E",
+      "Bsus4",
+      "C#m9",
+      "C#m7/B",
+      "Asus2"
+    ],
+    "notes": [
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "Pro-"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "claim"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "his"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "dotted_quarter",
+        "beats": 1.5,
+        "lyric": "mar-"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "vel-"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "lous"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "deeds."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "E",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bsus4",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C#m9",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C#m7/B",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "O sing a new song to the Lord, sing to the Lord all the earth. O sing to the Lord, bless his name.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "O"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "sing"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "Proclaim his help day by day, tell among the nations his glory and his wonders among all the peoples.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "Pro-"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "claim"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "Give the Lord, you families of peoples, give the Lord glory and power; give the Lord the glory of his name.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "Give"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "the"
+        }
+      ]
+    },
+    {
+      "verse_number": 4,
+      "lyrics_text": "Proclaim to the nations: 'The Lord is king.' He will judge the peoples in fairness.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "Pro-"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "claim"
+        }
+      ]
+    }
+  ]
+}

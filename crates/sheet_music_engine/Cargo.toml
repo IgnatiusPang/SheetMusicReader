@@ -1,0 +1,26 @@
+[package]
+name = "sheet_music_engine"
+version = "0.1.0"
+edition = "2021"
+authors = ["APAF Bioinformatics"]
+description = "High-performance verified sheet music OMR, engraving, and MIDI synthesis engine in Rust"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+wasm-bindgen = { version = "0.2", optional = true }
+
+[dev-dependencies]
+criterion = "0.5"
+
+[features]
+default = []
+wasm = ["dep:wasm-bindgen"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

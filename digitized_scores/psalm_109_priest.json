@@ -1,0 +1,212 @@
+{
+  "id": "psalm_109_priest",
+  "title": "Ps 109(110) You Are a Priest For Ever",
+  "composer": "Aaron Reefman",
+  "key": "E Major",
+  "key_signature": "4#",
+  "time_signature": "4/4",
+  "tempo": 85,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "F#m",
+      "E",
+      "F#sus",
+      "B",
+      "C#m"
+    ],
+    "notes": [
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "You"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "are"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "a"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "priest"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "for"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "e-ver."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "F#m",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "E",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "F#sus",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "B",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "The Lord's revelation to my Master: Sit on my right: I will make your foes your footstool.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord's"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "The Lord will yield from Zion your scepter of power: rule in the midst of all your foes.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "A prince from the day of your birth on the holy mountains; from the womb of the dawn I have begotten you.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "A"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "prince"
+        }
+      ]
+    },
+    {
+      "verse_number": 4,
+      "lyrics_text": "The Lord has sworn an oath he will not change: You are a priest for ever, in the line of Melchizedek.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "psalm_130",
+  "title": "Ps 130(129) With the Lord there is Mercy",
+  "composer": "A Reefman",
+  "key": "D Major",
+  "key_signature": "2#",
+  "time_signature": "2/2",
+  "tempo": 56,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "A",
+      "D",
+      "/F#",
+      "G",
+      "A(sus4)",
+      "A"
+    ],
+    "notes": [
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "With"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "the"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "Lord"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "there"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "is"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "mer-"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "cy,"
+      },
+      {
+        "pitch": "C#5",
+        "midi": 73,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "and"
+      },
+      {
+        "pitch": "D5",
+        "midi": 74,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "full-"
+      },
+      {
+        "pitch": "C#5",
+        "midi": 73,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "ness"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "of"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "re-"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "dem-"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "ption."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "A",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          61,
+          64,
+          69
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "D",
+        "bass_midi": 50,
+        "chord_midis": [
+          62,
+          66,
+          69
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "/F#",
+        "bass_midi": 42,
+        "chord_midis": [
+          54,
+          62,
+          66
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "G",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "A(sus4)",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          62,
+          64,
+          69
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "A",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          61,
+          64,
+          69
+        ],
+        "beats": 4.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "Out of the depths I cry to you, O Lord, Lord hear my voice! O let your ears be attentive to the voice of my pleading.",
+      "notes": [
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Out"
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "of"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "the"
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "depths"
+        }
+      ],
+      "chords": [
+        "Bm",
+        "F#m7",
+        "G",
+        "A",
+        "F#",
+        "Bm7/A",
+        "D/F#",
+        "C#\u00f87/E",
+        "Em7",
+        "A(sus4)"
+      ]
+    }
+  ]
+}

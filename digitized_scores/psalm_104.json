@@ -1,0 +1,222 @@
+{
+  "id": "psalm_104",
+  "title": "Ps 104(103) Lord, send out Your Spirit",
+  "composer": "A Reefman",
+  "key": "E Major",
+  "key_signature": "4#",
+  "time_signature": "6/8",
+  "tempo": 140,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "E",
+      "G#m7",
+      "C#m7",
+      "B",
+      "A"
+    ],
+    "notes": [
+      {
+        "pitch": "B3",
+        "midi": 59,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "send"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "out"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "Your"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "Spi-"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "rit"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "and"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "re-"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "new"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "dotted_quarter",
+        "beats": 1.5,
+        "lyric": "the"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "face"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "of"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "the earth."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "E",
+        "bass_midi": 40,
+        "chord_midis": [
+          52,
+          64,
+          68,
+          71
+        ],
+        "beats": 1.5
+      },
+      {
+        "chord": "G#m7",
+        "bass_midi": 44,
+        "chord_midis": [
+          56,
+          63,
+          68,
+          71
+        ],
+        "beats": 1.5
+      },
+      {
+        "chord": "C#m7",
+        "bass_midi": 49,
+        "chord_midis": [
+          61,
+          64,
+          68,
+          71
+        ],
+        "beats": 1.5
+      },
+      {
+        "chord": "B",
+        "bass_midi": 47,
+        "chord_midis": [
+          59,
+          63,
+          66,
+          71
+        ],
+        "beats": 1.5
+      },
+      {
+        "chord": "A",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          64,
+          69,
+          73
+        ],
+        "beats": 3.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "Bless the Lord, my soul! Lord, God, how great You are, How many are Your works, O Lord! The earth is full of Your riches.",
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Bless"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "the"
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord,"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "my"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "dotted_quarter",
+          "beats": 1.5,
+          "lyric": "soul!"
+        }
+      ],
+      "chords": [
+        "B(sus4)",
+        "B",
+        "E",
+        "C#m7",
+        "/B",
+        "A",
+        "E/G#"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "id": "psalm_122_rejoiced",
+  "title": "Ps 122(121) Let Us Go Rejoicing",
+  "composer": "A Reefman",
+  "key": "G Major",
+  "key_signature": "1#",
+  "time_signature": "6/8",
+  "tempo": 48,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "G",
+      "F/G",
+      "C",
+      "Dsus4",
+      "D"
+    ],
+    "notes": [
+      {
+        "pitch": "D4",
+        "midi": 62,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "Let"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "us"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "go"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "dotted_quarter",
+        "beats": 1.5,
+        "lyric": "re-"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "joi-"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "cing"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "to the house of the Lord."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "G",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "F/G",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Dsus4",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "I rejoiced when I heard them say: Let us go to God's house. And now our feet are standing within your gates, O Jerusalem.",
+      "chords": [
+        "Em",
+        "Bm",
+        "C",
+        "D"
+      ],
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "I"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "re-joi-ced"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "Jerusalem is built as a city strongly compact. It is there that the tribes go up, the tribes of the Lord.",
+      "chords": [
+        "Em",
+        "Bm",
+        "C",
+        "D"
+      ],
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "Je-ru-"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "sa-lem"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "For Israel's law it is, there to praise the Lord's name. There were set the thrones of judgment of the house of David.",
+      "chords": [
+        "Em",
+        "Bm",
+        "C",
+        "D"
+      ],
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "For"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Is-ra-el"
+        }
+      ]
+    }
+  ]
+}

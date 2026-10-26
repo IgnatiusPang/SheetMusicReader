@@ -1,0 +1,220 @@
+{
+  "id": "psalm_117_world",
+  "title": "Ps 117(116) Go Out to All the World",
+  "composer": "A. Reefman",
+  "key": "E Major",
+  "key_signature": "4#",
+  "time_signature": "6/8",
+  "tempo": 88,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "E",
+      "E/D#",
+      "E/G#",
+      "Bsus4",
+      "B"
+    ],
+    "notes": [
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "Go"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "out"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "to"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "all"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "the"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "dotted_quarter",
+        "beats": 1.5,
+        "lyric": "world___",
+        "tie": "start"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "___",
+        "tie": "stop"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "and"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "tell"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "the"
+      },
+      {
+        "pitch": "C#5",
+        "midi": 73,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "good"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "news!"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "rest": true,
+        "lyric": ""
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "rest": true,
+        "lyric": ""
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "E",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "E/D#",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "E/G#",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bsus4",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "O praise the Lord all you nations, acclaim him all you peoples!",
+      "chords": [
+        "G#m",
+        "C#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "O"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "praise"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "Strong is his love for us; he is faithful forever.",
+      "chords": [
+        "G#m",
+        "C#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "Strong"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "is"
+        }
+      ]
+    }
+  ]
+}

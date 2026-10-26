@@ -1,0 +1,207 @@
+{
+  "id": "psalm_67_nations",
+  "title": "Ps 67(66) O God, Let All The Nations Praise You",
+  "composer": "Aaron Reefman",
+  "key": "F Major",
+  "key_signature": "1b",
+  "time_signature": "6/8",
+  "tempo": 52,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "F2",
+      "C",
+      "Dm",
+      "Bb",
+      "Csus4"
+    ],
+    "notes": [
+      {
+        "pitch": "C4",
+        "midi": 60,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "O"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "dotted_quarter",
+        "beats": 1.5,
+        "lyric": "God,"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "let"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "all"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "the"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "na-"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "tions"
+      },
+      {
+        "pitch": "Bb4",
+        "midi": 70,
+        "duration": "dotted_quarter",
+        "beats": 1.5,
+        "lyric": "praise"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "you!"
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "F2",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Dm",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bb",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "O God be gracious and bless us, and let your face shed its light upon us. So will your ways be known upon earth and all nations learn your saving help.",
+      "chords": [
+        "F",
+        "Am",
+        "Bb",
+        "C"
+      ],
+      "notes": [
+        {
+          "pitch": "C4",
+          "midi": 60,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "O"
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "dotted_quarter",
+          "beats": 1.5,
+          "lyric": "God"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "Let the nations be glad and exult for you rule the world with justice. With fairness you rule the peoples, you guide the nations on earth.",
+      "chords": [
+        "F",
+        "Am",
+        "Bb",
+        "C"
+      ],
+      "notes": [
+        {
+          "pitch": "C4",
+          "midi": 60,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "Let"
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "dotted_quarter",
+          "beats": 1.5,
+          "lyric": "the"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "The earth has yielded its fruit for God our God has blessed us. May God still give us his blessing till the ends of the earth revere him.",
+      "chords": [
+        "F",
+        "Am",
+        "Bb",
+        "C"
+      ],
+      "notes": [
+        {
+          "pitch": "C4",
+          "midi": 60,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "The"
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "dotted_quarter",
+          "beats": 1.5,
+          "lyric": "earth"
+        }
+      ]
+    }
+  ]
+}

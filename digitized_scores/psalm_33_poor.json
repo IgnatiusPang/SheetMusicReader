@@ -1,0 +1,192 @@
+{
+  "id": "psalm_33_poor",
+  "title": "Ps 33(32) The Lord Hears the Cry of the Poor",
+  "composer": "A Reefman",
+  "key": "D Major",
+  "key_signature": "2#",
+  "time_signature": "2/2",
+  "tempo": 54,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "Bm7",
+      "F#m11",
+      "G(add2)",
+      "A(add2)"
+    ],
+    "notes": [
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "The"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "Lord"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "hears"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "the"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "cry"
+      },
+      {
+        "pitch": "D4",
+        "midi": 62,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "of the"
+      },
+      {
+        "pitch": "D4",
+        "midi": 62,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "poor."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "Bm7",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "F#m11",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "G(add2)",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "A(add2)",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          61,
+          64
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "I will bless the Lord at all times, his praise always on my lips; in the Lord my soul shall make its boast. The humble shall hear and be glad.",
+      "chords": [
+        "Bm",
+        "F#m",
+        "G",
+        "A"
+      ],
+      "notes": [
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "I"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "will"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "The Lord turns his face against the wicked to destroy their remembrance from the earth. The just call and the Lord hears and rescues them in all their distress.",
+      "chords": [
+        "Bm",
+        "F#m",
+        "G",
+        "A"
+      ],
+      "notes": [
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "Lord"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "The Lord is close to the brokenhearted; those whose spirit is crushed he will save. The Lord ransoms the souls of his servants, those who hide in him shall not be condemned.",
+      "chords": [
+        "Bm",
+        "F#m",
+        "G",
+        "A"
+      ],
+      "notes": [
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "Lord"
+        }
+      ]
+    }
+  ]
+}

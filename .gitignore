@@ -1,0 +1,31 @@
+# Rust build artifacts
+target/
+**/target/
+Cargo.lock
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Scratch & temporary testing files
+scratch/
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary media & audits
+.tempmediaStorage/

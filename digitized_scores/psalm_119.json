@@ -1,0 +1,324 @@
+{
+  "id": "psalm_119",
+  "title": "Ps 119(118) Lord I love your commands",
+  "composer": "A Reefman",
+  "key": "G Major",
+  "key_signature": "1#",
+  "time_signature": "2/2",
+  "tempo": 90,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "G/B",
+      "C(add2)",
+      "Bm7",
+      "Cmaj7"
+    ],
+    "notes": [
+      {
+        "pitch": "D4",
+        "midi": 62,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "I"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "love"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "your"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "com-"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "mands."
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": ""
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": ""
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "G/B",
+        "bass_midi": 47,
+        "chord_midis": [
+          59,
+          62,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C(add2)",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          62,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bm7",
+        "bass_midi": 47,
+        "chord_midis": [
+          59,
+          62,
+          66,
+          69
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Cmaj7",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67,
+          71
+        ],
+        "beats": 4.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "My part, I have resolved, O Lord, is to obey your word. The law from your mouth means more to me than silver and gold.",
+      "notes": [
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "My"
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "part,"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "I"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "have"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "re-"
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "solved,"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "O"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "Lord,"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "is"
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "to"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "o-"
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "bey"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "your"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "word."
+        }
+      ],
+      "chords": [
+        "G(add2)",
+        "/B",
+        "C(add2)",
+        "Cmaj7",
+        "Em",
+        "D(add2)",
+        "C(#11)",
+        "Am9"
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "Let your love be ready to console me by your promise to your servant. Let your love come and I shall live, for your law's my delight.",
+      "notes": [
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Let"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "your"
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "love"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "be"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "rea-"
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "dy"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "to"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "con-"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "sole"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "me."
+        }
+      ],
+      "chords": [
+        "G(add2)",
+        "/B",
+        "C(add2)",
+        "Cmaj7",
+        "Em",
+        "D(add2)",
+        "C(#11)",
+        "Am9"
+      ]
+    }
+  ]
+}

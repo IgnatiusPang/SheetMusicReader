@@ -1,0 +1,56 @@
+{
+ "input": "data/Cantabile/cantabile.jpeg",
+ "pages": 1,
+ "homr": {
+  "systems": 9,
+  "parts": 1,
+  "bars": 41,
+  "staff_images": true
+ },
+ "audiveris": {
+  "parts": [
+   {
+    "part": 1,
+    "status": "ok",
+    "marks_added": 19,
+    "movements": 1
+   }
+  ],
+  "groups": [
+   "bowing",
+   "dynamics",
+   "hairpins"
+  ]
+ },
+ "bars": {
+  "total": 41,
+  "full": 39,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 3,
+    "system": 1,
+    "got": "14/3",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 24,
+    "system": 6,
+    "got": "24/5",
+    "expected": "4",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/from_image/cantabile/cantabile.pdf",
+  "midi": "digitized_scores/from_image/cantabile/cantabile.midi",
+  "ly": "digitized_scores/from_image/cantabile/cantabile.ly",
+  "review": "digitized_scores/from_image/cantabile/cantabile_review.pdf",
+  "homr_musicxml": "digitized_scores/from_image/cantabile/cantabile.homr.musicxml"
+ }
+}

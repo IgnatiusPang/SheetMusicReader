@@ -1,0 +1,473 @@
+[
+ {
+  "pdf": "03_Ps-103102-The-Lord-Is-Kind-Chart.pdf",
+  "midi": "digitized_scores/vector_midi/03_Ps-103102-The-Lord-Is-Kind-Chart.mid",
+  "proof": "digitized_scores/vector_proofs/03_Ps-103102-The-Lord-Is-Kind-Chart.pdf",
+  "tempo_qpm": 104.0,
+  "systems": 9,
+  "staves": 9,
+  "measures": 41,
+  "notes": 150,
+  "key": -3,
+  "time": [
+   2,
+   2
+  ],
+  "full": 36,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar5: 3/4",
+   "sys2 staff1 bar1: 1/4",
+   "sys4 staff1 bar1: 1/4",
+   "sys6 staff1 bar1: 1/4",
+   "sys8 staff1 bar1: 1/4"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7] V4[s8,s9]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R V4 R*"
+ },
+ {
+  "pdf": "03_Ps-8079-Lord-Make-Us-Turn-To-You.pdf",
+  "midi": "digitized_scores/vector_midi/03_Ps-8079-Lord-Make-Us-Turn-To-You.mid",
+  "proof": "digitized_scores/vector_proofs/03_Ps-8079-Lord-Make-Us-Turn-To-You.pdf",
+  "tempo_qpm": 76.0,
+  "systems": 7,
+  "staves": 7,
+  "measures": 28,
+  "notes": 114,
+  "key": -2,
+  "time": [
+   2,
+   2
+  ],
+  "full": 28,
+  "over": [],
+  "under": [],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7]",
+  "pickup_notes": 2,
+  "pickup_kind": "extra",
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf",
+  "midi": "digitized_scores/vector_midi/03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.mid",
+  "proof": "digitized_scores/vector_proofs/03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf",
+  "tempo_qpm": 70.0,
+  "systems": 7,
+  "staves": 7,
+  "measures": 28,
+  "notes": 129,
+  "key": 4,
+  "time": [
+   6,
+   8
+  ],
+  "full": 28,
+  "over": [],
+  "under": [],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "04 - Ps-6766-O-God-Let-All-The-Nations-Praise-You.pdf",
+  "midi": "digitized_scores/vector_midi/04_-_Ps-6766-O-God-Let-All-The-Nations-Praise-You.mid",
+  "proof": "digitized_scores/vector_proofs/04_-_Ps-6766-O-God-Let-All-The-Nations-Praise-You.pdf",
+  "tempo_qpm": 78.0,
+  "systems": 9,
+  "staves": 9,
+  "measures": 30,
+  "notes": 116,
+  "key": 0,
+  "time": [
+   6,
+   8
+  ],
+  "full": 22,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar1: 0.5/3",
+   "sys1 staff1 bar5: 2.5/3",
+   "sys2 staff1 bar1: 0.5/3",
+   "sys4 staff1 bar3: 2.5/3",
+   "sys5 staff1 bar1: 0.5/3",
+   "sys6 staff1 bar3: 2.5/3",
+   "sys7 staff1 bar1: 0.5/3",
+   "sys9 staff1 bar2: 2.5/3"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3,s4] V2[s5,s6] V3[s7,s8,s9]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "04 Happy-Are-Those-Lead-Sheet.pdf",
+  "midi": "digitized_scores/vector_midi/04_Happy-Are-Those-Lead-Sheet.mid",
+  "proof": "digitized_scores/vector_proofs/04_Happy-Are-Those-Lead-Sheet.pdf",
+  "tempo_qpm": 90.0,
+  "systems": 7,
+  "staves": 7,
+  "measures": 32,
+  "notes": 109,
+  "key": -4,
+  "time": [
+   6,
+   8
+  ],
+  "full": 24,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar1: 1.5/3",
+   "sys1 staff1 bar5: 1.5/3",
+   "sys2 staff1 bar1: 1.5/3",
+   "sys3 staff1 bar4: 1.5/3",
+   "sys4 staff1 bar1: 1.5/3",
+   "sys5 staff1 bar4: 1.5/3",
+   "sys6 staff1 bar1: 1.5/3",
+   "sys7 staff1 bar4: 1.5/3"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "04_Corpus-Christi-Ps-109110-You-Are-A-Priest-Forever.pdf",
+  "midi": "digitized_scores/vector_midi/04_Corpus-Christi-Ps-109110-You-Are-A-Priest-Forever.mid",
+  "proof": "digitized_scores/vector_proofs/04_Corpus-Christi-Ps-109110-You-Are-A-Priest-Forever.pdf",
+  "tempo_qpm": 90.0,
+  "systems": 10,
+  "staves": 10,
+  "measures": 48,
+  "notes": 129,
+  "key": 5,
+  "time": [
+   6,
+   8
+  ],
+  "full": 48,
+  "over": [],
+  "under": [],
+  "suspect": [],
+  "sections": "R[s1,s2] V1[s3,s4] V2[s5,s6] V3[s7,s8] V4[s9,s10]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R V4 R*"
+ },
+ {
+  "pdf": "04_Ps-1-Happy-Are-They-Leadsheet.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-1-Happy-Are-They-Leadsheet.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-1-Happy-Are-They-Leadsheet.pdf",
+  "tempo_qpm": 60.0,
+  "systems": 12,
+  "staves": 12,
+  "measures": 27,
+  "notes": 187,
+  "key": 1,
+  "time": [
+   9,
+   8
+  ],
+  "full": 26,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar1: 1.5/4.5"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3,s4,s5] V2[s6,s7,s8] V3[s9,s10,s11,s12]",
+  "pickup_notes": 4,
+  "pickup_kind": "inbar",
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "04_Ps-117116-Go-Out-To-All-The-World.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-117116-Go-Out-To-All-The-World.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-117116-Go-Out-To-All-The-World.pdf",
+  "tempo_qpm": 90.0,
+  "systems": 5,
+  "staves": 5,
+  "measures": 23,
+  "notes": 48,
+  "key": 4,
+  "time": [
+   6,
+   8
+  ],
+  "full": 17,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar1: 0.5/3",
+   "sys1 staff1 bar5: 2.5/3",
+   "sys2 staff1 bar1: 0.5/3",
+   "sys3 staff1 bar4: 2.5/3",
+   "sys4 staff1 bar1: 0.5/3",
+   "sys5 staff1 bar4: 2.5/3"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R*"
+ },
+ {
+  "pdf": "04_Ps-122-I-Rejoiced-Chart.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-122-I-Rejoiced-Chart.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-122-I-Rejoiced-Chart.pdf",
+  "tempo_qpm": 72.0,
+  "systems": 7,
+  "staves": 7,
+  "measures": 28,
+  "notes": 117,
+  "key": 1,
+  "time": [
+   6,
+   8
+  ],
+  "full": 28,
+  "over": [],
+  "under": [],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7]",
+  "pickup_notes": 1,
+  "pickup_kind": "extra",
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "04_Ps-144-The-Hand-Of-The-Lord-Leadsheet.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-144-The-Hand-Of-The-Lord-Leadsheet.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-144-The-Hand-Of-The-Lord-Leadsheet.pdf",
+  "tempo_qpm": 63.0,
+  "systems": 10,
+  "staves": 10,
+  "measures": 44,
+  "notes": 140,
+  "key": 1,
+  "time": [
+   6,
+   8
+  ],
+  "full": 36,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar1: 0.5/3",
+   "sys1 staff1 bar5: 2.5/3",
+   "sys2 staff1 bar1: 0.5/3",
+   "sys4 staff1 bar4: 2.5/3",
+   "sys5 staff1 bar1: 0.5/3",
+   "sys7 staff1 bar4: 2.5/3",
+   "sys8 staff1 bar1: 0.5/3",
+   "sys10 staff1 bar4: 2.5/3"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3,s4] V2[s5,s6,s7] V3[s8,s9,s10]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "04_Ps-146-Praise-the-Lord-My-Soul.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-146-Praise-the-Lord-My-Soul.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-146-Praise-the-Lord-My-Soul.pdf",
+  "tempo_qpm": 100.0,
+  "systems": 7,
+  "staves": 7,
+  "measures": 32,
+  "notes": 116,
+  "key": -4,
+  "time": [
+   4,
+   4
+  ],
+  "full": 28,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar5: 2/4",
+   "sys2 staff1 bar1: 2/4",
+   "sys4 staff1 bar1: 2/4",
+   "sys6 staff1 bar1: 2/4"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "04_Ps-1819-Your-Words-O-Lord.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-1819-Your-Words-O-Lord.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-1819-Your-Words-O-Lord.pdf",
+  "tempo_qpm": 72.0,
+  "systems": 9,
+  "staves": 9,
+  "measures": 36,
+  "notes": 133,
+  "key": 2,
+  "time": [
+   6,
+   8
+  ],
+  "full": 36,
+  "over": [],
+  "under": [],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7] V4[s8,s9]",
+  "pickup_notes": 1,
+  "pickup_kind": "extra",
+  "playback": "R V1 R V2 R V3 R V4 R*"
+ },
+ {
+  "pdf": "04_Ps-3332-The-Lord-Hears-the-Cry-of-the-Poor.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-3332-The-Lord-Hears-the-Cry-of-the-Poor.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-3332-The-Lord-Hears-the-Cry-of-the-Poor.pdf",
+  "tempo_qpm": 108.0,
+  "systems": 10,
+  "staves": 10,
+  "measures": 46,
+  "notes": 136,
+  "key": 2,
+  "time": [
+   2,
+   2
+  ],
+  "full": 46,
+  "over": [],
+  "under": [],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3,s4] V2[s5,s6,s7] V3[s8,s9,s10]",
+  "pickup_notes": 1,
+  "pickup_kind": "extra",
+  "playback": "R V1 R V2 R V3 R*"
+ },
+ {
+  "pdf": "04_Ps-3433-Taste-and-See-Leadsheet.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-3433-Taste-and-See-Leadsheet.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-3433-Taste-and-See-Leadsheet.pdf",
+  "tempo_qpm": 72.0,
+  "systems": 16,
+  "staves": 16,
+  "measures": 44,
+  "notes": 212,
+  "key": 4,
+  "time": [
+   6,
+   8
+  ],
+  "full": 44,
+  "over": [],
+  "under": [],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3,s4] V2[s5,s6,s7] V3[s8,s9,s10] V4[s11,s12,s13] V5[s14,s15,s16]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R V4 R V5 R*"
+ },
+ {
+  "pdf": "04_Ps-9695-Proclaim-His-Marvellous-Deeds.pdf",
+  "midi": "digitized_scores/vector_midi/04_Ps-9695-Proclaim-His-Marvellous-Deeds.mid",
+  "proof": "digitized_scores/vector_proofs/04_Ps-9695-Proclaim-His-Marvellous-Deeds.pdf",
+  "tempo_qpm": 72.0,
+  "systems": 10,
+  "staves": 12,
+  "measures": 54,
+  "notes": 189,
+  "key": 4,
+  "time": [
+   6,
+   8
+  ],
+  "full": 42,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar1: 0.75/3",
+   "sys1 staff2 bar1: 0.5/3",
+   "sys2 staff1 bar1: 0.5/3",
+   "sys3 staff1 bar4: 2.5/3",
+   "sys4 staff1 bar1: 0.5/3",
+   "sys5 staff1 bar4: 2.5/3",
+   "sys6 staff1 bar1: 0.5/3",
+   "sys7 staff1 bar5: 2.5/3",
+   "sys8 staff1 bar1: 0.5/3",
+   "sys9 staff1 bar4: 2.5/3",
+   "sys10 staff1 bar1: 0.75/3",
+   "sys10 staff2 bar1: 0.5/3"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7] V4[s8,s9] Final[s10]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R V4 Final"
+ },
+ {
+  "pdf": "04_Psalm-Lord-on-the-Day-I-Called.pdf",
+  "midi": "digitized_scores/vector_midi/04_Psalm-Lord-on-the-Day-I-Called.mid",
+  "proof": "digitized_scores/vector_proofs/04_Psalm-Lord-on-the-Day-I-Called.pdf",
+  "tempo_qpm": 90.0,
+  "systems": 9,
+  "staves": 9,
+  "measures": 41,
+  "notes": 181,
+  "key": 4,
+  "time": [
+   6,
+   8
+  ],
+  "full": 36,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar4: 2.5/3",
+   "sys2 staff1 bar1: 0.5/3",
+   "sys4 staff1 bar1: 0.5/3",
+   "sys6 staff1 bar1: 0.5/3",
+   "sys8 staff1 bar1: 0.5/3"
+  ],
+  "suspect": [
+   "sys1 staff1 bar4: 2.5/3"
+  ],
+  "sections": "R[s1] V1[s2,s3] V2[s4,s5] V3[s6,s7] V4[s8,s9]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R V4 R*"
+ },
+ {
+  "pdf": "04_psalm-106-oz-12th-sunday-year-b-compact.pdf",
+  "midi": "digitized_scores/vector_midi/04_psalm-106-oz-12th-sunday-year-b-compact.mid",
+  "proof": "digitized_scores/vector_proofs/04_psalm-106-oz-12th-sunday-year-b-compact.pdf",
+  "tempo_qpm": 90.0,
+  "systems": 4,
+  "staves": 25,
+  "measures": 148,
+  "notes": 313,
+  "key": 0,
+  "time": [
+   3,
+   4
+  ],
+  "full": 137,
+  "over": [],
+  "under": [
+   "sys1 staff1 bar1: 1/3",
+   "sys1 staff2 bar1: 1/3",
+   "sys1 staff3 bar1: 1/3",
+   "sys1 staff4 bar1: 1/3",
+   "sys4 staff1 bar6: 2/3",
+   "sys4 staff2 bar6: 2/3",
+   "sys4 staff3 bar6: 2/3",
+   "sys4 staff4 bar6: 2/3",
+   "sys4 staff5 bar6: 2/3",
+   "sys4 staff6 bar6: 2/3",
+   "sys4 staff7 bar6: 2/3"
+  ],
+  "suspect": [],
+  "sections": "R[s1] V1[s2,s3,s4] V2[s2.2,s3.2,s4.2] V3[s2.3,s3.3,s4.3] V4[s2.4,s3.4,s4.4]",
+  "pickup_notes": 0,
+  "pickup_kind": null,
+  "playback": "R V1 R V2 R V3 R V4 R*"
+ }
+]

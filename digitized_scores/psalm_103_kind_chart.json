@@ -1,0 +1,276 @@
+{
+  "id": "psalm_103_kind_chart",
+  "title": "Ps 103(102) The Lord is Kind",
+  "composer": "Aaron Reefman",
+  "key": "Eb Major",
+  "key_signature": "3b",
+  "time_signature": "4/4",
+  "tempo": 52,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "Eb",
+      "Bb/D",
+      "Cm",
+      "Ab",
+      "Fm",
+      "Bb"
+    ],
+    "notes": [
+      {
+        "pitch": "Eb4",
+        "midi": 63,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "The"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Lord"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "is"
+      },
+      {
+        "pitch": "Eb4",
+        "midi": 63,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "kind"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "and"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "mer-"
+      },
+      {
+        "pitch": "Eb4",
+        "midi": 63,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "ci-ful."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "Eb",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bb/D",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Cm",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Ab",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          61,
+          64
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "My soul, give thanks to the Lord, all my being, bless his holy name. My soul give thanks to the Lord and never forget all his blessings.",
+      "chords": [
+        "Cm",
+        "Gm",
+        "Ab",
+        "Bb"
+      ],
+      "notes": [
+        {
+          "pitch": "Eb4",
+          "midi": 63,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "My"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "soul,"
+        },
+        {
+          "pitch": "Ab4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "give"
+        },
+        {
+          "pitch": "Bb4",
+          "midi": 70,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "thanks"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "It is he who forgives all your guilt, who heals every one of your ills, who redeems your life from the grave, who crowns you with love and compassion.",
+      "chords": [
+        "Cm",
+        "Gm",
+        "Ab",
+        "Bb"
+      ],
+      "notes": [
+        {
+          "pitch": "Eb4",
+          "midi": 63,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "It"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "is"
+        },
+        {
+          "pitch": "Ab4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "he"
+        },
+        {
+          "pitch": "Bb4",
+          "midi": 70,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "who"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "The Lord does deeds of justice, gives judgment for all who are oppressed. He made known his ways to Moses and his deeds to Israel's sons.",
+      "chords": [
+        "Ab",
+        "Fm",
+        "Bb",
+        "Eb"
+      ],
+      "notes": [
+        {
+          "pitch": "Eb4",
+          "midi": 63,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord"
+        },
+        {
+          "pitch": "Ab4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "does"
+        },
+        {
+          "pitch": "Bb4",
+          "midi": 70,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "deeds"
+        }
+      ]
+    },
+    {
+      "verse_number": 4,
+      "lyrics_text": "The Lord is compassionate and gracious, slow to anger and rich in mercy. He does not treat us according to our sins nor repay us according to our faults.",
+      "chords": [
+        "Cm",
+        "Gm",
+        "Ab",
+        "Bb"
+      ],
+      "notes": [
+        {
+          "pitch": "Eb4",
+          "midi": 63,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord"
+        },
+        {
+          "pitch": "Ab4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "is"
+        },
+        {
+          "pitch": "Bb4",
+          "midi": 70,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "rich"
+        }
+      ]
+    }
+  ]
+}

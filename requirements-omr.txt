@@ -1,0 +1,11 @@
+# Python packages for score_from_image.py (conda env `omr`, Python 3.12).
+# Also needed outside pip: LilyPond 2.24+ (brew install lilypond), poppler, and optionally Audiveris 5.11 (references.md item 11).
+homr==0.7.0
+music21
+anthropic>=2.3
+scikit-image
+pillow
+numpy
+mido
+pytest
+# <!-- APAF Bioinformatics | requirements-omr.txt | Approved | 2026-10-25 -->

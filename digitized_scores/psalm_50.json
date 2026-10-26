@@ -1,0 +1,182 @@
+{
+  "id": "psalm_50",
+  "title": "Be Merciful Oh Lord (Ps. 50)",
+  "composer": "Isaac Reefman",
+  "key": "Ab Major",
+  "key_signature": "4b",
+  "time_signature": "4/4",
+  "tempo": 80,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "Fm",
+      "Ab",
+      "Db",
+      "Eb",
+      "Fm"
+    ],
+    "notes": [
+      {
+        "pitch": "C4",
+        "midi": 60,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "Be"
+      },
+      {
+        "pitch": "Eb4",
+        "midi": 63,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "mer-"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "ci-"
+      },
+      {
+        "pitch": "Ab4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "ful,"
+      },
+      {
+        "pitch": "Ab4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "oh"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "for"
+      },
+      {
+        "pitch": "Eb4",
+        "midi": 63,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "we"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "have"
+      },
+      {
+        "pitch": "Eb4",
+        "midi": 63,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "sinned."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "Fm",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          60,
+          65,
+          68
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Ab",
+        "bass_midi": 44,
+        "chord_midis": [
+          56,
+          60,
+          63,
+          68
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Db",
+        "bass_midi": 49,
+        "chord_midis": [
+          61,
+          65,
+          68
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Eb",
+        "bass_midi": 51,
+        "chord_midis": [
+          63,
+          67,
+          70
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Fm",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          60,
+          65,
+          68
+        ],
+        "beats": 4.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "Have mercy on me, oh God, in Your kindness. My offences, truly, I know them.",
+      "notes": [
+        {
+          "pitch": "C4",
+          "midi": 60,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Have"
+        },
+        {
+          "pitch": "Eb4",
+          "midi": 63,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "mer-"
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "cy"
+        }
+      ],
+      "chords": [
+        "Fm",
+        "Ab",
+        "Db",
+        "Eb"
+      ]
+    }
+  ]
+}

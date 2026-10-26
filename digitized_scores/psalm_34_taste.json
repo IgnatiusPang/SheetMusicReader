@@ -1,0 +1,219 @@
+{
+  "id": "psalm_34_taste",
+  "title": "Ps 34(33) Taste and See",
+  "composer": "Aaron Reefman",
+  "key": "E Major",
+  "key_signature": "4#",
+  "time_signature": "4/4",
+  "tempo": 48,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "E",
+      "Asus4",
+      "C#m",
+      "Bsus",
+      "A2"
+    ],
+    "notes": [
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Taste"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "and"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "see"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "the"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "good-"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "ness"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "of the Lord."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "E",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Asus4",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          61,
+          64
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C#m",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bsus",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "I will bless the Lord at all times, his praise ever on my lips. In the Lord my soul shall make its boast; the humble shall hear and be glad.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "I"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "will"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "Glorify the Lord with me. Together let us praise his name. I sought the Lord and he answered me; from all my terrors he set me free.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Glo-"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "ri-fy"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "Look towards him and be radiant; let your faces not be abashed. This poor man called, the Lord heard him and rescued him from all his distress.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Look"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "to-wards"
+        }
+      ]
+    },
+    {
+      "verse_number": 4,
+      "lyrics_text": "The angel of the Lord is encamped around those who revere him, to rescue them. Taste and see that the Lord is good. He is happy who seeks refuge in him.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "an-gel"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "id": "psalm_1_happy",
+  "title": "Psalm 1 Happy Are They Who Hope in the Lord",
+  "composer": "Isaac Reefman",
+  "key": "E Major",
+  "key_signature": "4#",
+  "time_signature": "4/4",
+  "tempo": 95,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "E",
+      "B/D#",
+      "C#m7",
+      "F#m",
+      "B"
+    ],
+    "notes": [
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Hap-"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "py"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "are"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "they"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "who"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "hope"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "in the Lord."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "E",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "B/D#",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C#m7",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "F#m",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "Happy indeed is the man who follows not the counsel of the wicked; nor lingers in the way of sinners, nor sits in the company of scorners, but whose delight is the law of the Lord and who ponders his law day and night.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Hap-"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "py"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "He is like a tree that is planted beside the flowing waters, that yields its fruit in due season and whose leaves shall never fade; and all that he does shall prosper.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "He"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "is"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "Not so are the wicked, not so! For they like winnowed chaff shall be driven away by the wind; for the Lord knows the way of the just, but the way of the wicked will perish.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Not"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "so"
+        }
+      ]
+    }
+  ]
+}

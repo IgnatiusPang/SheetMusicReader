@@ -1,0 +1,208 @@
+{
+  "id": "psalm_80_turn",
+  "title": "Ps 80(79) Lord, Make Us Turn To You",
+  "composer": "A. Reefman",
+  "key": "Bb Major",
+  "key_signature": "2b",
+  "time_signature": "4/4",
+  "tempo": 76,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "Bb",
+      "F/A",
+      "Gm7",
+      "Fsus4/Eb",
+      "F",
+      "Eb"
+    ],
+    "notes": [
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "Bb4",
+        "midi": 70,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "make"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "us"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "turn"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "to"
+      },
+      {
+        "pitch": "Bb4",
+        "midi": 70,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "you."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "Bb",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "F/A",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          61,
+          64
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Gm7",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Fsus4/Eb",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "O shepherd of Israel, hear us, enthroned on the cherubim, shine forth. Rouse up your might and come to save us.",
+      "chords": [
+        "Gm",
+        "Dm",
+        "Eb",
+        "F"
+      ],
+      "notes": [
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "O"
+        },
+        {
+          "pitch": "Bb4",
+          "midi": 70,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "shep-"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "herd"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "God of hosts, turn again, we implore, look down from heaven and see. Visit this vine and protect it, the vine your right hand has planted.",
+      "chords": [
+        "Gm",
+        "Dm",
+        "Eb",
+        "F"
+      ],
+      "notes": [
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "God"
+        },
+        {
+          "pitch": "Bb4",
+          "midi": 70,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "of"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "hosts"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "May your hand be on the man you have chosen, the man you have given your strength. And we shall never forsake you again; give us life that we may call upon your name.",
+      "chords": [
+        "Gm",
+        "Dm",
+        "Eb",
+        "F"
+      ],
+      "notes": [
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "May"
+        },
+        {
+          "pitch": "Bb4",
+          "midi": 70,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "your"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "hand"
+        }
+      ]
+    }
+  ]
+}

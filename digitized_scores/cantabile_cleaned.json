@@ -1,0 +1,131 @@
+{
+  "id": "cantabile_cleaned",
+  "title": "Cantabile Cleaned",
+  "composer": "Parsed from PDF",
+  "key": "C Major",
+  "key_signature": "0",
+  "time_signature": "4/4",
+  "tempo": 90,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "C",
+      "F",
+      "G"
+    ],
+    "notes": [
+      {
+        "pitch": "C4",
+        "midi": 60,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "my"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "shep-"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "herd,"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "hear"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "us."
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": ""
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "C",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "G",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "Parsed verse text from PDF.",
+      "notes": [
+        {
+          "pitch": "C4",
+          "midi": 60,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord,"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "my"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "shep-"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "herd,"
+        }
+      ],
+      "chords": [
+        "C",
+        "G"
+      ]
+    }
+  ]
+}

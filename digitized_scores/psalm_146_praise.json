@@ -1,0 +1,178 @@
+{
+  "id": "psalm_146_praise",
+  "title": "Ps 146 Praise the Lord My Soul",
+  "composer": "A. Reefman",
+  "key": "Db Major",
+  "key_signature": "5b",
+  "time_signature": "4/4",
+  "tempo": 100,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "Db2",
+      "Eb4",
+      "Abmaj7",
+      "Fm7"
+    ],
+    "notes": [
+      {
+        "pitch": "Db4",
+        "midi": 61,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Praise"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "the"
+      },
+      {
+        "pitch": "Ab4",
+        "midi": 68,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "Gb4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "my"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "soul!"
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "Db2",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Eb4",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Abmaj7",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          61,
+          64
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Fm7",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "It is the Lord who keeps faith forever, who is just to those who are oppressed. It is he who gives bread to the hungry, the Lord who sets prisoners free.",
+      "chords": [
+        "Fm7",
+        "Bbm7",
+        "Ebm7",
+        "Ab"
+      ],
+      "notes": [
+        {
+          "pitch": "Db4",
+          "midi": 61,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "It"
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "is"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "It is the Lord who gives sight to the blind, who raises up those who are bowed down. It is the Lord who loves the just, the Lord who protects the stranger.",
+      "chords": [
+        "Fm7",
+        "Bbm7",
+        "Ebm7",
+        "Ab"
+      ],
+      "notes": [
+        {
+          "pitch": "Db4",
+          "midi": 61,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "It"
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "is"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "He upholds the widow and orphan but thwarts the path of the wicked. The Lord will reign forever, your God O Zion from age to age.",
+      "chords": [
+        "Fm7",
+        "Bbm7",
+        "Ebm7",
+        "Ab"
+      ],
+      "notes": [
+        {
+          "pitch": "Db4",
+          "midi": 61,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "He"
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "up-holds"
+        }
+      ]
+    }
+  ]
+}

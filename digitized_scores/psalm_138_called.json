@@ -1,0 +1,219 @@
+{
+  "id": "psalm_138_called",
+  "title": "Ps 138(137) Lord, On the Day I Called For Help",
+  "composer": "A. Reefman",
+  "key": "E Major",
+  "key_signature": "4#",
+  "time_signature": "4/4",
+  "tempo": 80,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "E",
+      "Emaj7/G#",
+      "C#m7",
+      "Bsus4",
+      "Asus2"
+    ],
+    "notes": [
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "on"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "the"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "day"
+      },
+      {
+        "pitch": "G#4",
+        "midi": 68,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "I"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "called,"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": "you answered me."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "E",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Emaj7/G#",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "C#m7",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bsus4",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "I thank You, Lord, with all of my heart, You have heard the words from my mouth. Before the angels I will bless You, I will adore before Your holy temple.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "I"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "thank"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "I thank You for Your faithfulness and love which excel all we ever knew of You. On the day I called You answered me, You increased the strength of my soul.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "I"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "thank"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "The Lord is high yet He looks on the lowly and the haughty He knows from afar. Though I walk in the midst of affliction You give me life and frustrate my foes.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "The"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord"
+        }
+      ]
+    },
+    {
+      "verse_number": 4,
+      "lyrics_text": "You stretch out Your hand and save me, Your hand will do all things for me. Your love, O Lord, is eternal, discard not the work of Your hands.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "You"
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "stretch"
+        }
+      ]
+    }
+  ]
+}

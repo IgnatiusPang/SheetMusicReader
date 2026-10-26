@@ -1,0 +1,233 @@
+{
+  "id": "psalm_19_words",
+  "title": "Ps 19(18) Your Words Lord Are Spirit and Life",
+  "composer": "A. Reefman",
+  "key": "D Major",
+  "key_signature": "2#",
+  "time_signature": "6/8",
+  "tempo": 48,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "D",
+      "F#m7",
+      "Bm7",
+      "Bm7/A",
+      "Gmaj7"
+    ],
+    "notes": [
+      {
+        "pitch": "D4",
+        "midi": 62,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "Your"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "words,"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "O"
+      },
+      {
+        "pitch": "B4",
+        "midi": 71,
+        "duration": "dotted_quarter",
+        "beats": 1.5,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "are"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "spi-"
+      },
+      {
+        "pitch": "F#4",
+        "midi": 66,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "rit"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "and"
+      },
+      {
+        "pitch": "D4",
+        "midi": 62,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "life."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "D",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "F#m7",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bm7",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bm7/A",
+        "bass_midi": 45,
+        "chord_midis": [
+          57,
+          61,
+          64
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "The law of the Lord is perfect, it revives the soul. The decree of the Lord is steadfast, it gives wisdom to the simple.",
+      "chords": [
+        "Bm",
+        "F#m",
+        "G",
+        "A"
+      ],
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "The"
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "law"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "The precepts of the Lord are right, they gladden the heart. The command of the Lord is clear, it gives light to the eyes.",
+      "chords": [
+        "Bm",
+        "F#m",
+        "G",
+        "A"
+      ],
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "The"
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "pre-cepts"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "The fear of the Lord is holy, abiding forever. The decrees of the Lord are truth and all of them just.",
+      "chords": [
+        "Bm",
+        "F#m",
+        "G",
+        "A"
+      ],
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "The"
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "fear"
+        }
+      ]
+    },
+    {
+      "verse_number": 4,
+      "lyrics_text": "They are more to be desired than gold, than the purest gold and sweeter are they than honey, than honey from the comb.",
+      "chords": [
+        "Bm",
+        "F#m",
+        "G",
+        "A"
+      ],
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "They"
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "are"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "id": "psalm_128_happy",
+  "title": "Ps 128(127) Happy are Those Who Fear the Lord",
+  "composer": "A. Reefman",
+  "key": "Eb Major",
+  "key_signature": "3b",
+  "time_signature": "6/8",
+  "tempo": 60,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "Eb",
+      "Db(add2)",
+      "Bbm",
+      "Fm",
+      "Db/Ab",
+      "Ab"
+    ],
+    "notes": [
+      {
+        "pitch": "Eb4",
+        "midi": 63,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "Hap-"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "py"
+      },
+      {
+        "pitch": "Ab4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "are"
+      },
+      {
+        "pitch": "Bb4",
+        "midi": 70,
+        "duration": "dotted_quarter",
+        "beats": 1.5,
+        "lyric": "those"
+      },
+      {
+        "pitch": "Ab4",
+        "midi": 68,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "who"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "fear"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "eighth",
+        "beats": 0.5,
+        "lyric": "the"
+      },
+      {
+        "pitch": "Eb4",
+        "midi": 63,
+        "duration": "dotted_half",
+        "beats": 3.0,
+        "lyric": "Lord."
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "Eb",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Db(add2)",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Bbm",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "Fm",
+        "bass_midi": 41,
+        "chord_midis": [
+          53,
+          57,
+          60
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "By the labor of your hands you shall eat. You will be happy and prosper.",
+      "chords": [
+        "Bbm",
+        "Fm",
+        "Ab",
+        "Eb"
+      ],
+      "notes": [
+        {
+          "pitch": "Eb4",
+          "midi": 63,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "By"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "the"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "Your wife like a fruitful vine in the heart of your house. Your children like shoots of the olive all around your table.",
+      "chords": [
+        "Bbm",
+        "Fm",
+        "Ab",
+        "Eb"
+      ],
+      "notes": [
+        {
+          "pitch": "Eb4",
+          "midi": 63,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "Your"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "wife"
+        }
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "Indeed thus shall be blessed the man who fears the Lord. May the Lord bless you from Zion all the days of your life.",
+      "chords": [
+        "Bbm",
+        "Fm",
+        "Ab",
+        "Eb"
+      ],
+      "notes": [
+        {
+          "pitch": "Eb4",
+          "midi": 63,
+          "duration": "eighth",
+          "beats": 0.5,
+          "lyric": "In-"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "deed"
+        }
+      ]
+    }
+  ]
+}
