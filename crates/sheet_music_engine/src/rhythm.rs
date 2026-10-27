@@ -27,6 +27,12 @@ pub struct NoteEvent {
     pub stem: i32,
     pub tie: bool,
     pub midis: Vec<i32>,
+    #[serde(default)]
+    pub beam: Option<String>,
+    #[serde(default)]
+    pub clef: Option<String>,
+    #[serde(default)]
+    pub pitch_str: Option<String>,
 }
 
 impl NoteEvent {
@@ -39,6 +45,9 @@ impl NoteEvent {
             stem,
             tie: false,
             midis: vec![midi],
+            beam: None,
+            clef: None,
+            pitch_str: None,
         }
     }
 
@@ -51,6 +60,9 @@ impl NoteEvent {
             stem: 0,
             tie: false,
             midis: Vec::new(),
+            beam: None,
+            clef: None,
+            pitch_str: None,
         }
     }
 }
@@ -92,7 +104,92 @@ pub fn lily_duration(v: f64) -> String {
     format!("4*{}/{}", n, d)
 }
 
-/// Repairs an overfull measure by checking whole rests, polyphonic split voices, and triplets.
+/// Decomposes a duration deficit into standard LilyPond rest duration values.
+#[must_use]
+pub fn decompose_deficit(deficit: f64) -> Vec<f64> {
+    let mut rem = deficit;
+    let mut vals = Vec::new();
+    for (val, _) in STANDARD_DURATIONS {
+        while rem >= val - 1e-4 {
+            vals.push(val);
+            rem -= val;
+            if rem < 0.01 {
+                break;
+            }
+        }
+        if rem < 0.01 {
+            break;
+        }
+    }
+    vals
+}
+
+/// Workspace Rule 3.7: Restores silent rests in measures with duration deficits.
+#[must_use]
+pub fn restore_silent_rests(events: &[NoteEvent], expected: f64) -> Vec<NoteEvent> {
+    let total: f64 = events.iter().map(|e| e.value).sum();
+    if total >= expected - EPS {
+        return events.to_vec();
+    }
+    let deficit = expected - total;
+    let rest_vals = decompose_deficit(deficit);
+    let mut out = events.to_vec();
+    let mut last_x = out.last().map(|e| e.x).unwrap_or(0.0);
+    for v in rest_vals {
+        last_x += 10.0;
+        out.push(NoteEvent::new_rest(last_x, v));
+    }
+    out
+}
+
+/// Workspace Rule 3.8: Automatically beams runs of consecutive short notes (<= 0.5b).
+#[must_use]
+pub fn apply_stem_beaming(events: &[NoteEvent]) -> Vec<NoteEvent> {
+    let mut out = events.to_vec();
+    let n = out.len();
+    if n < 2 {
+        return out;
+    }
+
+    let is_beamable = |e: &NoteEvent| -> bool {
+        !e.is_rest && !e.midis.is_empty() && e.value <= 0.5 + 1e-4
+    };
+
+    let mut start: Option<usize> = None;
+    for i in 0..n {
+        if is_beamable(&out[i]) {
+            if start.is_none() {
+                start = Some(i);
+            }
+        } else if let Some(s) = start {
+            if s + 2 <= i && s < out.len() && i <= out.len() {
+                if let Some(first) = out.get_mut(s) {
+                    first.beam = Some("[".to_string());
+                }
+                if let Some(last) = out.get_mut(i.saturating_sub(1)) {
+                    last.beam = Some("]".to_string());
+                }
+            }
+            start = None;
+        }
+    }
+    if let Some(s) = start {
+        if s + 2 <= n && s < out.len() && n <= out.len() {
+            if let Some(first) = out.get_mut(s) {
+                first.beam = Some("[".to_string());
+            }
+            if let Some(last) = out.get_mut(n.saturating_sub(1)) {
+                last.beam = Some("]".to_string());
+            }
+        }
+    }
+
+    out
+}
+
+/// Repairs an overfull or underfull measure.
+/// Underfull measures are padded with silent rests (Rule 3.7).
+/// Overfull measures are resolved via whole-rest fill, upper stem precedence, or triplets.
 #[must_use]
 pub fn repair_measure(events: &[NoteEvent], expected: f64) -> Vec<NoteEvent> {
     if events.is_empty() {
@@ -108,6 +205,9 @@ pub fn repair_measure(events: &[NoteEvent], expected: f64) -> Vec<NoteEvent> {
     }
 
     let total: f64 = events.iter().map(|e| e.value).sum();
+    if total < expected - EPS {
+        return restore_silent_rests(events, expected);
+    }
     if total <= expected + EPS {
         return events.to_vec();
     }
@@ -197,4 +297,42 @@ mod tests {
         let sum: f64 = fixed.iter().map(|e| e.value).sum();
         assert!((sum - 4.0).abs() < 1e-4);
     }
+
+    #[test]
+    fn test_decompose_deficit() {
+        assert_eq!(decompose_deficit(1.0), vec![1.0]);
+        assert_eq!(decompose_deficit(1.5), vec![1.5]);
+        assert_eq!(decompose_deficit(2.5), vec![2.0, 0.5]);
+        assert_eq!(decompose_deficit(0.75), vec![0.75]);
+    }
+
+    #[test]
+    fn test_restore_silent_rests() {
+        // Measure with only 2 beats in 4/4 meter -> restores 2-beat rest
+        let events = vec![NoteEvent::new_note(0.0, 2.0, 1, 60)];
+        let restored = restore_silent_rests(&events, 4.0);
+        assert_eq!(restored.len(), 2);
+        assert!(restored[1].is_rest);
+        assert!((restored[1].value - 2.0).abs() < 1e-4);
+
+        // repair_measure handles underfull measures
+        let repaired = repair_measure(&events, 4.0);
+        let sum: f64 = repaired.iter().map(|e| e.value).sum();
+        assert!((sum - 4.0).abs() < 1e-4);
+    }
+
+    #[test]
+    fn test_apply_stem_beaming() {
+        let events = vec![
+            NoteEvent::new_note(0.0, 0.5, 1, 60), // eighth note
+            NoteEvent::new_note(10.0, 0.5, 1, 62), // eighth note
+            NoteEvent::new_note(20.0, 1.0, 1, 64), // quarter note
+        ];
+        let beamed = apply_stem_beaming(&events);
+        assert_eq!(beamed[0].beam, Some("[".to_string()));
+        assert_eq!(beamed[1].beam, Some("]".to_string()));
+        assert_eq!(beamed[2].beam, None);
+    }
 }
+
+// <!-- APAF Bioinformatics | rhythm.rs | Approved | 2026-10-28 -->

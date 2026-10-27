@@ -154,6 +154,115 @@ async function runWasmTests() {
   exports.wasm_dealloc(repOutLenPtr, 4);
   exports.wasm_dealloc(repOutPtr, repLen);
 
+  // 8. Verify wasm_canonical_clef
+  console.log('\n[Test 8] Canonical Clef Resolution (wasm_canonical_clef)...');
+  const clefTests = [
+    { input: 'french', expected: 'treble' },
+    { input: 'subbass', expected: 'bass' },
+    { input: 'soprano', expected: 'alto' },
+    { input: 'tenor', expected: 'tenor' },
+    { input: 'percussion', expected: 'percussion' },
+    { input: 'G8vb', expected: 'treble' },
+    { input: 'unknown_clef_token', expected: 'treble' }
+  ];
+  for (const { input, expected } of clefTests) {
+    const cBytes = Buffer.from(input);
+    const cPtr = exports.wasm_alloc(cBytes.length);
+    new Uint8Array(memory.buffer, cPtr, cBytes.length).set(cBytes);
+    const cOutLenPtr = exports.wasm_alloc(4);
+    const cOutPtr = exports.wasm_canonical_clef(cPtr, cBytes.length, cOutLenPtr);
+    const cLen = new DataView(memory.buffer, cOutLenPtr, 4).getUint32(0, true);
+    const canon = new TextDecoder().decode(new Uint8Array(memory.buffer, cOutPtr, cLen));
+    assert.strictEqual(canon, expected, `Clef ${input} -> expected ${expected}, got ${canon}`);
+    exports.wasm_dealloc(cPtr, cBytes.length);
+    exports.wasm_dealloc(cOutLenPtr, 4);
+    exports.wasm_dealloc(cOutPtr, cLen);
+  }
+  console.log('✓ All canonical clef mappings resolved successfully.');
+
+  // 9. Verify wasm_restore_silent_rests (Rule 3.7)
+  console.log('\n[Test 9] Silent Rest Restoration (wasm_restore_silent_rests - Rule 3.7)...');
+  const underfullEvents = [
+    { x: 10, value: 2.0, is_rest: false, stem: 1, tie: false, midis: [60] }
+  ];
+  const uStr = JSON.stringify(underfullEvents);
+  const uBytes = Buffer.from(uStr);
+  const uPtr = exports.wasm_alloc(uBytes.length);
+  new Uint8Array(memory.buffer, uPtr, uBytes.length).set(uBytes);
+  const restOutLenPtr = exports.wasm_alloc(4);
+  const restOutPtr = exports.wasm_restore_silent_rests(uPtr, uBytes.length, 4.0, restOutLenPtr);
+  const restLen = new DataView(memory.buffer, restOutLenPtr, 4).getUint32(0, true);
+  const restored = JSON.parse(new TextDecoder().decode(new Uint8Array(memory.buffer, restOutPtr, restLen)));
+  assert.strictEqual(restored.length, 2, 'Should add 1 rest');
+  assert.strictEqual(restored[1].is_rest, true, 'Second event must be a rest');
+  assert.strictEqual(restored[1].value, 2.0, 'Rest should be 2.0 beats');
+  exports.wasm_dealloc(uPtr, uBytes.length);
+  exports.wasm_dealloc(restOutLenPtr, 4);
+  exports.wasm_dealloc(restOutPtr, restLen);
+  console.log('✓ Duration deficit restored with standard silent rest.');
+
+  // 10. Verify wasm_apply_stem_beaming (Rule 3.8)
+  console.log('\n[Test 10] Stem Beaming (wasm_apply_stem_beaming - Rule 3.8)...');
+  const shortNotes = [
+    { x: 10, value: 0.5, is_rest: false, stem: 1, tie: false, midis: [60] },
+    { x: 20, value: 0.5, is_rest: false, stem: 1, tie: false, midis: [62] },
+    { x: 30, value: 1.0, is_rest: false, stem: 1, tie: false, midis: [64] }
+  ];
+  const snStr = JSON.stringify(shortNotes);
+  const snBytes = Buffer.from(snStr);
+  const snPtr = exports.wasm_alloc(snBytes.length);
+  new Uint8Array(memory.buffer, snPtr, snBytes.length).set(snBytes);
+  const beamOutLenPtr = exports.wasm_alloc(4);
+  const beamOutPtr = exports.wasm_apply_stem_beaming(snPtr, snBytes.length, beamOutLenPtr);
+  const beamLen = new DataView(memory.buffer, beamOutLenPtr, 4).getUint32(0, true);
+  const beamed = JSON.parse(new TextDecoder().decode(new Uint8Array(memory.buffer, beamOutPtr, beamLen)));
+  assert.strictEqual(beamed[0].beam, '[', 'First eighth note should have beam start [');
+  assert.strictEqual(beamed[1].beam, ']', 'Second eighth note should have beam end ]');
+  assert.strictEqual(beamed[2].beam, null, 'Quarter note should not be beamed');
+  exports.wasm_dealloc(snPtr, snBytes.length);
+  exports.wasm_dealloc(beamOutLenPtr, 4);
+  exports.wasm_dealloc(beamOutPtr, beamLen);
+  console.log('✓ Consecutive short notes automatically beamed.');
+
+  // 11. Verify Polyphonic Score Serialization in LilyPond
+  console.log('\n[Test 11] Polyphonic Voice Serialization (<< { v1 } \\\\ { v2 } >>)...');
+  const polyScore = {
+    title: "Polyphonic Voice Benchmark",
+    bpm: 90,
+    program: 0,
+    measures: [
+      {
+        time: [4, 4], key: 0, clef: "treble",
+        events: [],
+        voices: [
+          [
+            { x: 10, value: 2.0, is_rest: false, stem: 1, tie: false, midis: [67] },
+            { x: 30, value: 2.0, is_rest: false, stem: 1, tie: false, midis: [69] }
+          ],
+          [
+            { x: 10, value: 4.0, is_rest: false, stem: -1, tie: false, midis: [60] }
+          ]
+        ]
+      }
+    ]
+  };
+  const polyStr = JSON.stringify(polyScore);
+  const polyBytes = Buffer.from(polyStr);
+  const polyInPtr = exports.wasm_alloc(polyBytes.length);
+  new Uint8Array(memory.buffer, polyInPtr, polyBytes.length).set(polyBytes);
+  const polyOutLenPtr = exports.wasm_alloc(4);
+  const polyOutPtr = exports.wasm_score_to_lilypond(polyInPtr, polyBytes.length, polyOutLenPtr);
+  const polyOutLen = new DataView(memory.buffer, polyOutLenPtr, 4).getUint32(0, true);
+  const polyLy = new TextDecoder().decode(new Uint8Array(memory.buffer, polyOutPtr, polyOutLen));
+  assert(polyLy.includes('<< {'), 'LilyPond output must contain << { polyphonic start');
+  assert(polyLy.includes('\\\\'), 'LilyPond output must contain \\\\ voice separator');
+  assert(polyLy.includes('g\'2 a\'2'), 'Voice 1 events present');
+  assert(polyLy.includes('c\'1'), 'Voice 2 events present');
+  exports.wasm_dealloc(polyInPtr, polyBytes.length);
+  exports.wasm_dealloc(polyOutLenPtr, 4);
+  exports.wasm_dealloc(polyOutPtr, polyOutLen);
+  console.log('✓ Polyphonic voices serialized correctly into standard LilyPond syntax.');
+
   console.log('\n======================================================');
   console.log('ALL WASM RUNTIME SUITE TESTS PASSED CLEANLY (100%)');
   console.log('======================================================');
@@ -163,3 +272,6 @@ runWasmTests().catch(err => {
   console.error('Test failed:', err);
   process.exit(1);
 });
+
+// <!-- APAF Bioinformatics | test_wasm_runtime.js | Approved | 2026-10-28 -->
+

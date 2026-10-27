@@ -311,4 +311,16 @@ def test_apply_stem_beaming_rule_3_8():
     assert beamed[3].marks == ("[",)
     assert beamed[4].marks == ("]",)
 
-# <!-- APAF Bioinformatics | test_score_from_image.py | Approved | 2026-10-27 -->
+
+def test_polyphonic_measure_emission():
+    v0_evs = (ev("e''", F(1, 2)), ev("g''", F(1, 2)), ev("c''", 1), s.Ev(pitches=(), dur=F(2, 1)))
+    v1_evs = (s.Ev(pitches=(), dur=F(1, 2)), ev("c'", F(3, 2)), s.Ev(pitches=(), dur=F(2, 1)))
+    poly_bar = s.Bar(events=v0_evs, voices=(v0_evs, v1_evs))
+    assert poly_bar.voices and len(poly_bar.voices) == 2
+    sc = s.Score(parts=(s.Part(clef="treble", bars=(poly_bar,)),), breaks=(0,), time=(4, 4))
+    ly = s.lilypond_source(sc)
+    assert "<<" in ly
+    assert r"\\" in ly
+    assert ">>" in ly
+
+# <!-- APAF Bioinformatics | test_score_from_image.py | Approved | 2026-10-28 -->

@@ -4,12 +4,6 @@
 			"path": "."
 		},
 		{
-			"path": "../ManifoldFGW"
-		},
-		{
-			"path": "../ManifoldFGW-bench"
-		},
-		{
 			"path": "../generalkeen"
 		}
 	],

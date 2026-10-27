@@ -2,12 +2,12 @@
   "summary": {
     "total_scores": 124,
     "evaluated_scores": 105,
-    "mean_pitch_accuracy": 0.3987,
-    "mean_full_accuracy": 0.3987,
+    "mean_pitch_accuracy": 0.3969,
+    "mean_full_accuracy": 0.3969,
     "lilypond_compilation_success_rate": 1.0,
-    "clef_recognition_accuracy": 0.9714,
-    "rest_recognition_accuracy": 0.9271,
-    "beam_grouping_accuracy": 0.3509,
+    "clef_recognition_accuracy": 1.0,
+    "rest_recognition_accuracy": 1.0,
+    "beam_grouping_accuracy": 0.3323,
     "pending_scores": 19,
     "failed_scores": 0
   },
@@ -29,15 +29,15 @@
     {
       "category": "beam",
       "count": 27,
-      "pitch_acc": 0.3509,
-      "full_acc": 0.3509,
+      "pitch_acc": 0.3323,
+      "full_acc": 0.3323,
       "compile_rate": 1.0
     },
     {
       "category": "chord",
       "count": 4,
-      "pitch_acc": 0.0718,
-      "full_acc": 0.0718,
+      "pitch_acc": 0.2134,
+      "full_acc": 0.2134,
       "compile_rate": 1.0
     },
     {
@@ -64,15 +64,15 @@
     {
       "category": "note",
       "count": 8,
-      "pitch_acc": 0.4741,
-      "full_acc": 0.4741,
+      "pitch_acc": 0.4809,
+      "full_acc": 0.4809,
       "compile_rate": 1.0
     },
     {
       "category": "rest",
       "count": 5,
-      "pitch_acc": 0.531,
-      "full_acc": 0.531,
+      "pitch_acc": 0.4691,
+      "full_acc": 0.4691,
       "compile_rate": 1.0
     },
     {
@@ -98,11 +98,10 @@
     }
   ],
   "failure_mode_distribution": {
-    "clef_mismatch": 3,
-    "key_mismatch": 3,
-    "pitch_misrecognition": 75,
+    "key_mismatch": 6,
+    "pitch_misrecognition": 76,
     "rhythm_sum_defect": 32,
-    "time_signature_mismatch": 7
+    "time_signature_mismatch": 8
   },
   "individual_evaluations": [
     {
@@ -193,7 +192,7 @@
       "pitch_accuracy": 0.0,
       "full_accuracy": 0.0,
       "truth_notes": 0,
-      "test_notes": 3,
+      "test_notes": 5,
       "total_bars": 1,
       "suspect_bars": 0,
       "key_match": true,
@@ -254,7 +253,7 @@
       "pitch_accuracy": 0.0,
       "full_accuracy": 0.0,
       "truth_notes": 2,
-      "test_notes": 2,
+      "test_notes": 1,
       "total_bars": 1,
       "suspect_bars": 0,
       "key_match": true,
@@ -278,7 +277,7 @@
       "test_notes": 44,
       "total_bars": 9,
       "suspect_bars": 2,
-      "key_match": true,
+      "key_match": false,
       "time_match": true,
       "clef_match": true,
       "rest_match": true,
@@ -286,6 +285,7 @@
       "has_rests": false,
       "failure_modes": [
         "pitch_misrecognition",
+        "key_mismatch",
         "rhythm_sum_defect"
       ]
     },
@@ -504,10 +504,10 @@
       "category": "rest",
       "status": "evaluated",
       "compile_valid": true,
-      "pitch_accuracy": 0.5714,
-      "full_accuracy": 0.5714,
+      "pitch_accuracy": 0.4286,
+      "full_accuracy": 0.4286,
       "truth_notes": 7,
-      "test_notes": 4,
+      "test_notes": 3,
       "total_bars": 4,
       "suspect_bars": 1,
       "key_match": true,
@@ -545,10 +545,10 @@
       "category": "chord",
       "status": "evaluated",
       "compile_valid": true,
-      "pitch_accuracy": 0.0,
-      "full_accuracy": 0.0,
+      "pitch_accuracy": 0.5,
+      "full_accuracy": 0.5,
       "truth_notes": 2,
-      "test_notes": 0,
+      "test_notes": 2,
       "total_bars": 1,
       "suspect_bars": 0,
       "key_match": true,
@@ -670,7 +670,7 @@
       "pitch_accuracy": 0.1282,
       "full_accuracy": 0.1282,
       "truth_notes": 39,
-      "test_notes": 120,
+      "test_notes": 119,
       "total_bars": 6,
       "suspect_bars": 2,
       "key_match": true,
@@ -713,7 +713,7 @@
       "pitch_accuracy": 1.0,
       "full_accuracy": 1.0,
       "truth_notes": 1,
-      "test_notes": 2,
+      "test_notes": 1,
       "total_bars": 1,
       "suspect_bars": 1,
       "key_match": true,
@@ -734,7 +734,7 @@
       "pitch_accuracy": 0.1538,
       "full_accuracy": 0.1538,
       "truth_notes": 13,
-      "test_notes": 12,
+      "test_notes": 11,
       "total_bars": 2,
       "suspect_bars": 1,
       "key_match": true,
@@ -820,7 +820,7 @@
       "pitch_accuracy": 0.0,
       "full_accuracy": 0.0,
       "truth_notes": 14,
-      "test_notes": 12,
+      "test_notes": 0,
       "total_bars": 1,
       "suspect_bars": 0,
       "key_match": true,
@@ -885,7 +885,7 @@
       "pitch_accuracy": 1.0,
       "full_accuracy": 1.0,
       "truth_notes": 3,
-      "test_notes": 4,
+      "test_notes": 3,
       "total_bars": 1,
       "suspect_bars": 0,
       "key_match": true,
@@ -904,7 +904,7 @@
       "pitch_accuracy": 0.9231,
       "full_accuracy": 0.9231,
       "truth_notes": 26,
-      "test_notes": 26,
+      "test_notes": 25,
       "total_bars": 4,
       "suspect_bars": 0,
       "key_match": true,
@@ -920,10 +920,10 @@
       "category": "rest",
       "status": "evaluated",
       "compile_valid": true,
-      "pitch_accuracy": 0.1667,
-      "full_accuracy": 0.1667,
+      "pitch_accuracy": 0.0,
+      "full_accuracy": 0.0,
       "truth_notes": 6,
-      "test_notes": 1,
+      "test_notes": 3,
       "total_bars": 6,
       "suspect_bars": 3,
       "key_match": true,
@@ -945,7 +945,7 @@
       "pitch_accuracy": 0.0,
       "full_accuracy": 0.0,
       "truth_notes": 7,
-      "test_notes": 4,
+      "test_notes": 9,
       "total_bars": 6,
       "suspect_bars": 3,
       "key_match": true,
@@ -967,7 +967,7 @@
       "pitch_accuracy": 0.2188,
       "full_accuracy": 0.2188,
       "truth_notes": 32,
-      "test_notes": 30,
+      "test_notes": 32,
       "total_bars": 5,
       "suspect_bars": 1,
       "key_match": false,
@@ -1227,10 +1227,10 @@
       "category": "beam",
       "status": "evaluated",
       "compile_valid": true,
-      "pitch_accuracy": 1.0,
-      "full_accuracy": 1.0,
+      "pitch_accuracy": 0.5,
+      "full_accuracy": 0.5,
       "truth_notes": 8,
-      "test_notes": 16,
+      "test_notes": 4,
       "total_bars": 1,
       "suspect_bars": 1,
       "key_match": true,
@@ -1240,6 +1240,7 @@
       "rest_accuracy": 1.0,
       "has_rests": false,
       "failure_modes": [
+        "pitch_misrecognition",
         "rhythm_sum_defect"
       ]
     },
@@ -1248,10 +1249,10 @@
       "category": "note",
       "status": "evaluated",
       "compile_valid": true,
-      "pitch_accuracy": 0.1231,
-      "full_accuracy": 0.1231,
+      "pitch_accuracy": 0.1385,
+      "full_accuracy": 0.1385,
       "truth_notes": 65,
-      "test_notes": 67,
+      "test_notes": 75,
       "total_bars": 9,
       "suspect_bars": 4,
       "key_match": true,
@@ -1371,10 +1372,10 @@
       "category": "note",
       "status": "evaluated",
       "compile_valid": true,
-      "pitch_accuracy": 0.6538,
-      "full_accuracy": 0.6538,
+      "pitch_accuracy": 0.6923,
+      "full_accuracy": 0.6923,
       "truth_notes": 26,
-      "test_notes": 17,
+      "test_notes": 21,
       "total_bars": 4,
       "suspect_bars": 0,
       "key_match": true,
@@ -1401,10 +1402,10 @@
       "category": "chord",
       "status": "evaluated",
       "compile_valid": true,
-      "pitch_accuracy": 0.2,
-      "full_accuracy": 0.2,
+      "pitch_accuracy": 0.2667,
+      "full_accuracy": 0.2667,
       "truth_notes": 15,
-      "test_notes": 8,
+      "test_notes": 11,
       "total_bars": 4,
       "suspect_bars": 0,
       "key_match": true,
@@ -1447,7 +1448,7 @@
       "pitch_accuracy": 0.087,
       "full_accuracy": 0.087,
       "truth_notes": 23,
-      "test_notes": 6,
+      "test_notes": 8,
       "total_bars": 1,
       "suspect_bars": 1,
       "key_match": true,
@@ -1532,7 +1533,7 @@
       "pitch_accuracy": 0.1111,
       "full_accuracy": 0.1111,
       "truth_notes": 9,
-      "test_notes": 8,
+      "test_notes": 11,
       "total_bars": 2,
       "suspect_bars": 1,
       "key_match": true,
@@ -1581,7 +1582,7 @@
       "pitch_accuracy": 1.0,
       "full_accuracy": 1.0,
       "truth_notes": 2,
-      "test_notes": 5,
+      "test_notes": 6,
       "total_bars": 2,
       "suspect_bars": 0,
       "key_match": true,
@@ -1664,13 +1665,12 @@
       "suspect_bars": 1,
       "key_match": true,
       "time_match": true,
-      "clef_match": false,
+      "clef_match": true,
       "rest_match": true,
       "rest_accuracy": 1.0,
       "has_rests": false,
       "failure_modes": [
         "pitch_misrecognition",
-        "clef_mismatch",
         "rhythm_sum_defect"
       ]
     },
@@ -1682,7 +1682,7 @@
       "pitch_accuracy": 1.0,
       "full_accuracy": 1.0,
       "truth_notes": 1,
-      "test_notes": 5,
+      "test_notes": 4,
       "total_bars": 1,
       "suspect_bars": 3,
       "key_match": true,
@@ -1770,13 +1770,12 @@
       "suspect_bars": 0,
       "key_match": true,
       "time_match": true,
-      "clef_match": false,
+      "clef_match": true,
       "rest_match": true,
       "rest_accuracy": 1.0,
       "has_rests": false,
       "failure_modes": [
-        "pitch_misrecognition",
-        "clef_mismatch"
+        "pitch_misrecognition"
       ]
     },
     {
@@ -1796,7 +1795,7 @@
       "pitch_accuracy": 0.0,
       "full_accuracy": 0.0,
       "truth_notes": 5,
-      "test_notes": 13,
+      "test_notes": 12,
       "total_bars": 6,
       "suspect_bars": 0,
       "key_match": true,
@@ -1851,13 +1850,14 @@
       "total_bars": 16,
       "suspect_bars": 8,
       "key_match": true,
-      "time_match": true,
+      "time_match": false,
       "clef_match": true,
       "rest_match": true,
       "rest_accuracy": 1.0,
       "has_rests": false,
       "failure_modes": [
         "pitch_misrecognition",
+        "time_signature_mismatch",
         "rhythm_sum_defect"
       ]
     },
@@ -1875,9 +1875,9 @@
       "key_match": true,
       "time_match": true,
       "clef_match": true,
-      "rest_match": false,
-      "rest_accuracy": 0.0,
-      "has_rests": true,
+      "rest_match": true,
+      "rest_accuracy": 1.0,
+      "has_rests": false,
       "failure_modes": []
     },
     {
@@ -1938,7 +1938,7 @@
       "time_match": true,
       "clef_match": true,
       "rest_match": true,
-      "rest_accuracy": 0.25,
+      "rest_accuracy": 1.0,
       "has_rests": true,
       "failure_modes": []
     },
@@ -2121,13 +2121,12 @@
       "suspect_bars": 0,
       "key_match": true,
       "time_match": true,
-      "clef_match": false,
+      "clef_match": true,
       "rest_match": true,
       "rest_accuracy": 1.0,
       "has_rests": false,
       "failure_modes": [
-        "pitch_misrecognition",
-        "clef_mismatch"
+        "pitch_misrecognition"
       ]
     },
     {
@@ -2243,13 +2242,15 @@
       "test_notes": 5,
       "total_bars": 2,
       "suspect_bars": 0,
-      "key_match": true,
+      "key_match": false,
       "time_match": true,
       "clef_match": true,
       "rest_match": true,
       "rest_accuracy": 1.0,
       "has_rests": false,
-      "failure_modes": []
+      "failure_modes": [
+        "key_mismatch"
+      ]
     },
     {
       "name": "grace-sync-polymetric-time-signature",
@@ -2362,7 +2363,7 @@
       "pitch_accuracy": 1.0,
       "full_accuracy": 1.0,
       "truth_notes": 1,
-      "test_notes": 2,
+      "test_notes": 1,
       "total_bars": 1,
       "suspect_bars": 0,
       "key_match": true,
@@ -2448,13 +2449,15 @@
       "test_notes": 8,
       "total_bars": 2,
       "suspect_bars": 0,
-      "key_match": true,
+      "key_match": false,
       "time_match": true,
       "clef_match": true,
       "rest_match": true,
       "rest_accuracy": 1.0,
       "has_rests": true,
-      "failure_modes": []
+      "failure_modes": [
+        "key_mismatch"
+      ]
     },
     {
       "name": "laissez-vibrer-tie-beam",
@@ -2475,5 +2478,6 @@
       "has_rests": true,
       "failure_modes": []
     }
-  ]
+  ],
+  "engine": "WebAssembly Rust Engine (crates/sheet_music_engine.wasm)"
 }

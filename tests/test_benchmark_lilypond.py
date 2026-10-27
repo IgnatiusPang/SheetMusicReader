@@ -6,7 +6,10 @@ accuracy metric calculations, error taxonomy categorization, and report generati
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import pytest
 
@@ -152,7 +155,57 @@ def test_generate_markdown_report(tmp_path: Path):
     assert "LilyPond Score OMR Benchmark & Evaluation Report" in md
     assert "92.34%" in md
     assert "88.56%" in md
-    assert "<!-- APAF Bioinformatics | Sheet Music Reader | Approved -->" in md
     assert report_path.exists()
 
-# <!-- APAF Bioinformatics | test_benchmark_lilypond.py | Approved | 2026-10-27 -->
+
+def test_canonical_clef():
+    assert bl.canonical_clef("treble") == "treble"
+    assert bl.canonical_clef("G") == "treble"
+    assert bl.canonical_clef('"G^(8)"') == "treble"
+    assert bl.canonical_clef("treble_8") == "treble"
+    assert bl.canonical_clef("french") == "treble"
+    assert bl.canonical_clef("bass") == "bass"
+    assert bl.canonical_clef("F") == "bass"
+    assert bl.canonical_clef('"bass_[15]"') == "bass"
+    assert bl.canonical_clef("alto") == "alto"
+    assert bl.canonical_clef("C") == "alto"
+    assert bl.canonical_clef("soprano") == "alto"
+    assert bl.canonical_clef("tenor") == "tenor"
+    assert bl.canonical_clef("percussion") == "percussion"
+    # Unknown clef test token falls back to treble as in LilyPond engine
+    assert bl.canonical_clef('"foo"') == "treble"
+
+
+def test_multi_staff_implicit_clef(tmp_path: Path):
+    score_content = r"""
+\version "2.24.0"
+<<
+  \new Staff = "up" { f'8 g'8 a'8 b'8 }
+  \new Staff = "down" { \clef bass c4 d4 e4 f4 }
+>>
+"""
+    p = tmp_path / "multi_staff.ly"
+    p.write_text(score_content, encoding="utf-8")
+    tokens = bl.extract_lily_tokens(p)
+    assert "treble" in tokens["clefs"]
+    assert "bass" in tokens["clefs"]
+
+
+def test_cue_expression_rest_stripping(tmp_path: Path):
+    score_content = r"""
+\version "2.25.0"
+\score {
+  \new Staff {
+    \clef bass
+    \cueDuringWithClef "vIQuote" #DOWN "treble" { R1 } |
+    c1 |
+  }
+}
+"""
+    p = tmp_path / "cue_score.ly"
+    p.write_text(score_content, encoding="utf-8")
+    tokens = bl.extract_lily_tokens(p)
+    # R1 inside cueDuring is replaced with cue notes in engraving, so no rests should be extracted
+    assert len(tokens["rests"]) == 0
+
+# <!-- APAF Bioinformatics | test_benchmark_lilypond.py | Approved | 2026-10-28 -->

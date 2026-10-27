@@ -14,7 +14,7 @@
 \new Staff \with { midiInstrument = "acoustic grand" } {
   \numericTimeSignature \clef treble \key c \major \time 4/4
   % system 1
-  <e'' e>8[ e''8 g''8 g''8 <g'' c'>16] r8. <c'' a'>8. <g'' e'>16 |  % bar 1
+  << { <e'' e>8[ e''8 g''8 g''8 <g'' c'>16] r8. <c'' a'>8. <g'' e'>16 } \\ { r8 r4. r2 } >> |  % bar 1
   \bar "|."
 }
 \layout {
@@ -28,7 +28,7 @@
 \new Staff \with { midiInstrument = "acoustic grand" } {
   \numericTimeSignature \clef treble \key c \major \time 4/4
   % system 1
-  <e'' e>8[ e''8 g''8 g''8 <g'' c'>16] r8. <c'' a'>8. <g'' e'>16 |  % bar 1
+  << { <e'' e>8[ e''8 g''8 g''8 <g'' c'>16] r8. <c'' a'>8. <g'' e'>16 } \\ { r8 r4. r2 } >> |  % bar 1
   \bar "|."
 }
 \midi { \tempo 4 = 90 }

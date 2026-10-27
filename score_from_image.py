@@ -147,6 +147,7 @@ class Ev:
 class Bar:
     events: tuple[Ev, ...]
     changes: tuple[str, ...] = ()       # \clef, \key, \time at the start of the bar
+    voices: tuple[tuple[Ev, ...], ...] = () # optional multi-voice event tuples
 
     @property
     def length(self) -> Fraction:
@@ -310,15 +311,12 @@ def from_musicxml(path: Path | object, keep_doubtful: bool = True) -> Score:
         tie = n.tie is not None and n.tie.type in ("start", "continue") and not n.isRest
         return Ev(pitches, Fraction(q).limit_denominator(96), tie, grace, tuple(dict.fromkeys(marks)))
 
-    def bar_of(m, changes: tuple[str, ...]) -> Bar:
-        src = m.voices[0] if m.voices else m
-        notes = list(src.notesAndRests)
-        offs = list(map(lambda n: float(n.getOffsetInHierarchy(m)), notes))
+    def bar_of(m, changes: tuple[str, ...], exp_len: Fraction = Fraction(4, 1)) -> Bar:
+        voices = list(m.voices) if m.voices else [m]
+        is_genuine = lambda v: any(not el.isRest for el in v.notesAndRests) or any(
+            el.isRest and float(el.offset) > 1e-6 for el in v.notesAndRests)
+        genuine_voices = list(filter(is_genuine, voices))
         dirs = list(m.recurse().getElementsByClass(("Dynamic", "TextExpression", "Clef")))
-
-        def target(el) -> int:
-            off = float(el.getOffsetInHierarchy(m))
-            return next(filter(lambda i: offs[i] >= off - 1e-6, range(len(notes))), len(notes) - 1)
 
         def element_mark(el) -> str | None:
             if hasattr(el, "sign") or type(el).__name__.endswith("Clef"):
@@ -327,9 +325,44 @@ def from_musicxml(path: Path | object, keep_doubtful: bool = True) -> Score:
                 return None
             return direction_mark(el)
 
+        def extract_voice_events(v) -> tuple[Ev, ...]:
+            notes = list(v.notesAndRests)
+            offs = list(map(lambda n: float(n.getOffsetInHierarchy(m)), notes))
+            def target(el) -> int:
+                off = float(el.getOffsetInHierarchy(m))
+                return next(filter(lambda i: offs[i] >= off - 1e-6, range(len(notes))), len(notes) - 1)
+            attached = reduce(lambda d, el: {**d, target(el): d.get(target(el), ()) + (element_mark(el),)},
+                              filter(lambda el: notes and element_mark(el), dirs), {})
+            def step(acc: tuple[float, tuple[Ev, ...]], ix: tuple[int, object]) -> tuple[float, tuple[Ev, ...]]:
+                cur_time, evs = acc
+                i, n = ix
+                off = offs[i]
+                gap = off - cur_time
+                gap_durs = decompose_deficit(Fraction(gap).limit_denominator(96)) if gap >= 0.24 else ()
+                gap_evs = tuple(map(lambda d: Ev(pitches=(), dur=d), gap_durs))
+                e = ev_of(n, tuple(filter(None, attached.get(i, ()))))
+                dur = 0.0 if n.duration.isGrace else float(n.quarterLength)
+                return max(cur_time, off + dur), evs + gap_evs + (e,)
+            cur_t, evs = reduce(step, enumerate(notes), (0.0, ()))
+            deficit = exp_len - Fraction(cur_t).limit_denominator(96)
+            if deficit > 0:
+                tail_durs = decompose_deficit(deficit)
+                tail_evs = tuple(map(lambda d: Ev(pitches=(), dur=d), tail_durs))
+                evs = evs + tail_evs
+            return evs
+
+        if len(genuine_voices) > 1:
+            all_v_evs = tuple(map(extract_voice_events, genuine_voices))
+            return Bar(all_v_evs[0], changes, all_v_evs)
+
+        src = genuine_voices[0] if genuine_voices else (m.voices[0] if m.voices else m)
+        notes = list(src.notesAndRests)
+        offs = list(map(lambda n: float(n.getOffsetInHierarchy(m)), notes))
+        def target(el) -> int:
+            off = float(el.getOffsetInHierarchy(m))
+            return next(filter(lambda i: offs[i] >= off - 1e-6, range(len(notes))), len(notes) - 1)
         attached = reduce(lambda d, el: {**d, target(el): d.get(target(el), ()) + (element_mark(el),)},
                           filter(lambda el: notes and element_mark(el), dirs), {})
-
         def step(acc: tuple[float, tuple[Ev, ...]], ix: tuple[int, object]) -> tuple[float, tuple[Ev, ...]]:
             cur_time, evs = acc
             i, n = ix
@@ -340,7 +373,6 @@ def from_musicxml(path: Path | object, keep_doubtful: bool = True) -> Score:
             e = ev_of(n, tuple(filter(None, attached.get(i, ()))))
             dur = 0.0 if n.duration.isGrace else float(n.quarterLength)
             return max(cur_time, off + dur), evs + gap_evs + (e,)
-
         _, events = reduce(step, enumerate(notes), (0.0, ()))
         return Bar(events, changes)
 
@@ -403,7 +435,9 @@ def from_musicxml(path: Path | object, keep_doubtful: bool = True) -> Score:
                 now["key"] if bars and now["key"] != state["key"] else None,
                 now["time"] if bars and now["time"] != state["time"] else None,
             )))
-            return bars + [bar_of(m, changes)], now
+            ts_m = m.timeSignature or getattr(p, "timeSignature", None)
+            exp_len = Fraction(ts_m.numerator * 4, ts_m.denominator) if ts_m else Fraction(4, 1)
+            return bars + [bar_of(m, changes, exp_len)], now
 
         start = {"clef": f"\\clef {clef0}", "key": None, "time": None}
         bars, _ = reduce(step, measures, ([], start))
@@ -500,7 +534,9 @@ def restore_silent_rests(score: Score) -> Score:
                 return b
             rest_durs = decompose_deficit(deficit)
             rest_evs = tuple(map(lambda d: Ev(pitches=(), dur=d), rest_durs))
-            return replace(b, events=b.events + rest_evs)
+            new_events = b.events + rest_evs
+            new_voices = tuple(map(lambda v: v + rest_evs if sum(map(lambda e: e.dur, v), Fraction(0)) < exp else v, b.voices)) if b.voices else ()
+            return replace(b, events=new_events, voices=new_voices)
         return replace(p, bars=tuple(map(lambda ib: fix_bar(ib[0], ib[1]), enumerate(p.bars))))
     return replace(score, parts=tuple(map(lambda ip: fix_part(ip[0], ip[1]), enumerate(score.parts))))
 
@@ -527,7 +563,9 @@ def apply_stem_beaming(events: tuple[Ev, ...]) -> tuple[Ev, ...]:
 
 def apply_stem_beaming_to_score(score: Score) -> Score:
     def fix_bar(b: Bar) -> Bar:
-        return replace(b, events=apply_stem_beaming(b.events))
+        beamed_events = apply_stem_beaming(b.events)
+        beamed_voices = tuple(map(apply_stem_beaming, b.voices)) if b.voices else ()
+        return replace(b, events=beamed_events, voices=beamed_voices)
     def fix_part(p: Part) -> Part:
         return replace(p, bars=tuple(map(fix_bar, p.bars)))
     return replace(score, parts=tuple(map(fix_part, score.parts)))
@@ -614,7 +652,11 @@ def part_music(score: Score, part: int, systems: tuple[int, ...], review: bool, 
         set_len = f"\\set Timing.measureLength = #{bar.length / 4} " if odd else ""
         reset = f" \\set Timing.measureLength = #{exp / 4}" if odd else ""
         flag = '<>^\\markup \\with-color #red \\bold "?" ' if review and (part + 1, i + 1) in suspects else ""
-        text = events_text(bar.events) or f"s{lily_duration(exp)}"
+        if bar.voices and len(bar.voices) > 1:
+            v_strs = list(map(events_text, bar.voices))
+            text = "<< { " + " } \\\\ { ".join(v_strs) + " } >>"
+        else:
+            text = events_text(bar.events) or f"s{lily_duration(exp)}"
         return "  " + " ".join(filter(None, [*bar.changes, set_len + flag + text + " |" + reset])) + f"  % bar {i + 1}"
 
     def system_block(k: int) -> str:
@@ -653,6 +695,85 @@ def lilypond_source(score: Score, systems: tuple[int, ...] | None = None, review
                               f"\\score {{\n{group}\n\\midi {{ \\tempo 4 = 90 }}\n}}\n")
     return (f'\\version "2.24.0"\n% <!-- APAF Bioinformatics | score_from_image.py output | Approved -->\n'
             f"{header}{paper}\n\\score {{\n{group}\n{layout}\n}}\n{midi}")
+
+
+# ---------------------------------------------------------------- WebAssembly Engraving Engine Bridge
+
+def ev_to_wasm_dict(e: Ev) -> dict:
+    dur_beats = float(e.dur)  # Quarter-note = 1.0 beat
+    midis = list(map(pitch_midi, e.pitches))
+    beam = "[" if "[" in e.marks else "]" if "]" in e.marks else None
+    clef_mark = next(filter(lambda m: m.startswith(r"\clef"), e.marks), None)
+    clef_val = clef_mark.split()[-1].strip('"') if clef_mark else None
+    pitch_str = ("<" + " ".join(e.pitches) + ">" if len(e.pitches) > 1 else e.pitches[0]) if e.pitches else None
+    return {
+        "x": 0.0,
+        "value": dur_beats,
+        "is_rest": not bool(e.pitches),
+        "stem": 1,
+        "tie": bool(e.tie),
+        "midis": midis,
+        "beam": beam,
+        "clef": clef_val,
+        "pitch_str": pitch_str,
+    }
+
+
+def score_to_wasm_dict(score: Score, title: str = "") -> dict:
+    """Translates Score model to WebAssembly ScoreRequest format without loops."""
+    key_count = score.key[0] if isinstance(score.key, (tuple, list)) else 0
+    time_sig = tuple(score.time) if isinstance(score.time, (tuple, list)) else (4, 4)
+    bpm = score.tempo[1] if score.tempo else 80
+
+    if not score.parts:
+        return {"title": title or score.title or "Sheet Music Engine Score", "bpm": bpm, "program": 40, "measures": [], "staves": None}
+
+    def part_to_wasm_measures(part_idx: int) -> list[dict]:
+        p = score.parts[part_idx]
+        exp_list = bar_expected(score, part_idx)
+        def bar_to_wasm(entry: tuple[int, Bar]) -> dict:
+            i, bar = entry
+            bar_clef_chg = next(filter(lambda c: c.startswith(r"\clef"), reversed(bar.changes)), None)
+            bar_clef = bar_clef_chg.split()[-1].strip('"') if bar_clef_chg else p.clef
+            events = list(map(ev_to_wasm_dict, bar.events))
+            voices = list(map(lambda v: list(map(ev_to_wasm_dict, v)), bar.voices)) if bar.voices and len(bar.voices) > 1 else None
+            expected_beats = float(exp_list[i]) if i < len(exp_list) else 4.0
+            return {
+                "time": time_sig,
+                "key": key_count,
+                "clef": bar_clef,
+                "events": events,
+                "voices": voices,
+                "expected": expected_beats,
+            }
+        return list(map(bar_to_wasm, enumerate(p.bars)))
+
+    all_staves = list(map(part_to_wasm_measures, range(len(score.parts))))
+    primary_measures = all_staves[0] if all_staves else []
+
+    return {
+        "title": title or score.title or "Sheet Music Engine Score",
+        "bpm": bpm,
+        "program": 40,
+        "measures": primary_measures,
+        "staves": all_staves if len(all_staves) > 1 else None,
+    }
+
+
+
+def engrave_with_wasm(score: Score, title: str = "") -> str:
+    """Invokes docs/sheet_music_engine.wasm via Node.js to engrave Score to LilyPond syntax."""
+    req_dict = score_to_wasm_dict(score, title)
+    script_path = Path(__file__).resolve().parent / "scripts" / "wasm_engraver.js"
+    res = subprocess.run(
+        ["node", str(script_path), "--score", "-"],
+        input=json.dumps(req_dict),
+        capture_output=True,
+        text=True,
+        check=True
+    )
+    return res.stdout
+
 
 
 def run_lilypond(ly: Path, out_stem: Path, extra: tuple[str, ...] = ()) -> str:
