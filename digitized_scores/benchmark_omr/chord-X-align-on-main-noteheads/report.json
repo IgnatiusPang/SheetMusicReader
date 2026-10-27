@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/chord-X-align-on-main-noteheads.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 4,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 4,
+  "full": 4,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/chord-X-align-on-main-noteheads/chord-X-align-on-main-noteheads.pdf",
+  "midi": "digitized_scores/benchmark_omr/chord-X-align-on-main-noteheads/chord-X-align-on-main-noteheads.midi",
+  "ly": "digitized_scores/benchmark_omr/chord-X-align-on-main-noteheads/chord-X-align-on-main-noteheads.ly",
+  "review": "digitized_scores/benchmark_omr/chord-X-align-on-main-noteheads/chord-X-align-on-main-noteheads_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/chord-X-align-on-main-noteheads/chord-X-align-on-main-noteheads.homr.musicxml"
+ }
+}

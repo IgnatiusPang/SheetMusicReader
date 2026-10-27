@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/ambitus-slur.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 1,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 1,
+  "full": 1,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/ambitus-slur/ambitus-slur.pdf",
+  "midi": "digitized_scores/benchmark_omr/ambitus-slur/ambitus-slur.midi",
+  "ly": "digitized_scores/benchmark_omr/ambitus-slur/ambitus-slur.ly",
+  "review": "digitized_scores/benchmark_omr/ambitus-slur/ambitus-slur_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/ambitus-slur/ambitus-slur.homr.musicxml"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "input": "data/benchmark_corpus/images/beam-concave-chord.png",
+ "pages": 1,
+ "homr": {
+  "systems": 2,
+  "parts": 1,
+  "bars": 5,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 5,
+  "full": 4,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 5,
+    "system": 2,
+    "got": "4",
+    "expected": "2",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/beam-concave-chord/beam-concave-chord.pdf",
+  "midi": "digitized_scores/benchmark_omr/beam-concave-chord/beam-concave-chord.midi",
+  "ly": "digitized_scores/benchmark_omr/beam-concave-chord/beam-concave-chord.ly",
+  "review": "digitized_scores/benchmark_omr/beam-concave-chord/beam-concave-chord_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/beam-concave-chord/beam-concave-chord.homr.musicxml"
+ }
+}

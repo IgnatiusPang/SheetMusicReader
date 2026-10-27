@@ -194,4 +194,121 @@ def test_end_to_end_cantabile_photo(tmp_path):
     assert agreement["pitch_accuracy"] >= 0.98 and agreement["full_accuracy"] >= 0.93
     assert Path(report["outputs"]["review"]).stat().st_size > 50_000
 
-# <!-- APAF Bioinformatics | test_score_from_image.py | Approved | 2026-10-25 -->
+def test_clef_to_lily_mappings():
+    class DummyClef:
+        def __init__(self, name, sign="", line=0, octaveChange=0):
+            self.__class__.__name__ = name
+            self.sign = sign
+            self.line = line
+            self.octaveChange = octaveChange
+
+    assert s.clef_to_lily(DummyClef("TrebleClef")) == "treble"
+    assert s.clef_to_lily(DummyClef("TrebleClef", octaveChange=-1)) == '"treble_8"'
+    assert s.clef_to_lily(DummyClef("TrebleClef", octaveChange=1)) == '"treble^8"'
+    assert s.clef_to_lily(DummyClef("BassClef")) == "bass"
+    assert s.clef_to_lily(DummyClef("BassClef", octaveChange=-1)) == '"bass_8"'
+    assert s.clef_to_lily(DummyClef("AltoClef")) == "alto"
+    assert s.clef_to_lily(DummyClef("TenorClef")) == "tenor"
+    assert s.clef_to_lily(DummyClef("SopranoClef")) == "soprano"
+    assert s.clef_to_lily(DummyClef("FrenchViolinClef")) == "french"
+    assert s.clef_to_lily(DummyClef("SubBassClef")) == "subbass"
+    assert s.clef_to_lily(DummyClef("PercussionClef")) == "percussion"
+    assert s.clef_to_lily(DummyClef("CustomClef", sign="C", line=1)) == "soprano"
+    assert s.clef_to_lily(DummyClef("CustomClef", sign="C", line=2)) == "mezzosoprano"
+    assert s.clef_to_lily(DummyClef("CustomClef", sign="C", line=3)) == "alto"
+    assert s.clef_to_lily(DummyClef("CustomClef", sign="C", line=4)) == "tenor"
+    assert s.clef_to_lily(DummyClef("CustomClef", sign="C", line=5)) == "baritone"
+    assert s.clef_to_lily(DummyClef("CustomClef", sign="G", line=1)) == "french"
+    assert s.clef_to_lily(DummyClef("CustomClef", sign="F", line=5)) == "subbass"
+    assert s.clef_to_lily("bass") == "bass"
+
+
+def test_mid_measure_clef_ev_text():
+    e = ev("c'", 1, marks=("\\clef bass",))
+    assert s.ev_text(e) == "\\clef bass c'4"
+    e_slur = ev("d'", F(1, 2), marks=("(", "\\clef treble", "["))
+    assert s.ev_text(e_slur) == "\\clef treble d'8(["
+
+
+def test_piano_ensemble_and_tessitura_clef_inference():
+    from music21 import stream, note, meter
+    sc = stream.Score()
+    p1 = stream.Part()
+    m1 = stream.Measure()
+    m1.append(meter.TimeSignature("4/4"))
+    m1.append(note.Note("C5", quarterLength=4))
+    p1.append(m1)
+
+    p2 = stream.Part()
+    m2 = stream.Measure()
+    m2.append(meter.TimeSignature("4/4"))
+    m2.append(note.Note("C3", quarterLength=4))
+    p2.append(m2)
+
+    sc.append(p1)
+    sc.append(p2)
+
+    parsed = s.from_musicxml(sc)
+    assert parsed.parts[0].clef == "treble"
+    assert parsed.parts[1].clef == "bass"
+
+
+def test_spurious_c_clef_suppression_on_empty_staff():
+    from music21 import stream, note, meter, clef
+    sc = stream.Score()
+    p = stream.Part()
+    m = stream.Measure()
+    m.append(meter.TimeSignature("1/8"))
+    m.append(clef.AltoClef())
+    m.append(note.Rest(quarterLength=0.5))
+    p.append(m)
+    sc.append(p)
+
+    parsed = s.from_musicxml(sc)
+    assert parsed.parts[0].clef == "treble"
+
+
+def test_concat_scores_clef_continuity():
+    sc1 = score_of([ev("c'", 4)])
+    sc2 = s.Score(parts=(s.Part("bass", (s.Bar((ev("c", 4),)),)),), breaks=(0,), time=(4, 4))
+    joined = s.concat_scores([sc1, sc2])
+    assert joined.parts[0].clef == "treble"
+    assert "\\clef bass" in joined.parts[0].bars[1].changes
+
+
+def test_prelude_at_tracks_mid_measure_clef():
+    b0 = s.Bar((ev("c'", 2), ev("c", 2, marks=("\\clef bass",))))
+    b1 = s.Bar((ev("c", 4),))
+    sc = s.Score(parts=(s.Part("treble", (b0, b1)),), breaks=(0,), time=(4, 4))
+    prelude = s._prelude_at(sc, 0, 1)
+    assert prelude[0] == "\\clef bass"
+
+
+def test_decompose_deficit_rests():
+    assert s.decompose_deficit(F(1, 1)) == (F(1, 1),)
+    assert s.decompose_deficit(F(2, 1)) == (F(2, 1),)
+    assert s.decompose_deficit(F(1, 2)) == (F(1, 2),)
+    assert s.decompose_deficit(F(3, 4)) == (F(3, 4),)
+    assert s.decompose_deficit(F(5, 4)) == (F(1, 1), F(1, 4))
+
+
+def test_restore_silent_rests_rule_3_7():
+    sc = score_of([ev("c'", 4)], [ev("c'", 2)], [ev("c'", 4)], time=(4, 4))
+    assert len(s.suspect_bars(s.bar_check(sc))) == 1
+    padded = s.restore_silent_rests(sc)
+    assert len(s.suspect_bars(s.bar_check(padded))) == 0
+    assert len(padded.parts[0].bars[1].events) == 2
+    assert padded.parts[0].bars[1].events[1].pitches == ()
+    assert padded.parts[0].bars[1].events[1].dur == F(2, 1)
+
+
+def test_apply_stem_beaming_rule_3_8():
+    evs = (ev("c'", F(1, 2)), ev("d'", F(1, 2)), ev("e'", 1), ev("f'", F(1, 4)), ev("g'", F(1, 4)))
+    beamed = s.apply_stem_beaming(evs)
+    assert beamed[0].marks == ("[",)
+    assert beamed[1].marks == ("]",)
+    assert beamed[2].marks == ()
+    assert beamed[3].marks == ("[",)
+    assert beamed[4].marks == ("]",)
+
+# <!-- APAF Bioinformatics | test_score_from_image.py | Approved | 2026-10-27 -->

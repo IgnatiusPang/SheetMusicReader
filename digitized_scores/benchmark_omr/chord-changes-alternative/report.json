@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/chord-changes-alternative.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 4,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 4,
+  "full": 4,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/chord-changes-alternative/chord-changes-alternative.pdf",
+  "midi": "digitized_scores/benchmark_omr/chord-changes-alternative/chord-changes-alternative.midi",
+  "ly": "digitized_scores/benchmark_omr/chord-changes-alternative/chord-changes-alternative.ly",
+  "review": "digitized_scores/benchmark_omr/chord-changes-alternative/chord-changes-alternative_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/chord-changes-alternative/chord-changes-alternative.homr.musicxml"
+ }
+}

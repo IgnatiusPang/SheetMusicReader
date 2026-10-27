@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/clef-unchanged.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 3,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 3,
+  "full": 3,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/clef-unchanged/clef-unchanged.pdf",
+  "midi": "digitized_scores/benchmark_omr/clef-unchanged/clef-unchanged.midi",
+  "ly": "digitized_scores/benchmark_omr/clef-unchanged/clef-unchanged.ly",
+  "review": "digitized_scores/benchmark_omr/clef-unchanged/clef-unchanged_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/clef-unchanged/clef-unchanged.homr.musicxml"
+ }
+}

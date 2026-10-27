@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/auto-beam-beaming-override.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 2,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 2,
+  "full": 2,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/auto-beam-beaming-override/auto-beam-beaming-override.pdf",
+  "midi": "digitized_scores/benchmark_omr/auto-beam-beaming-override/auto-beam-beaming-override.midi",
+  "ly": "digitized_scores/benchmark_omr/auto-beam-beaming-override/auto-beam-beaming-override.ly",
+  "review": "digitized_scores/benchmark_omr/auto-beam-beaming-override/auto-beam-beaming-override_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/auto-beam-beaming-override/auto-beam-beaming-override.homr.musicxml"
+ }
+}

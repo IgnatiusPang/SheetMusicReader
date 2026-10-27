@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/dynamics-alignment-breaker-subsequent-spanner.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 4,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 4,
+  "full": 4,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/dynamics-alignment-breaker-subsequent-spanner/dynamics-alignment-breaker-subsequent-spanner.pdf",
+  "midi": "digitized_scores/benchmark_omr/dynamics-alignment-breaker-subsequent-spanner/dynamics-alignment-breaker-subsequent-spanner.midi",
+  "ly": "digitized_scores/benchmark_omr/dynamics-alignment-breaker-subsequent-spanner/dynamics-alignment-breaker-subsequent-spanner.ly",
+  "review": "digitized_scores/benchmark_omr/dynamics-alignment-breaker-subsequent-spanner/dynamics-alignment-breaker-subsequent-spanner_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/dynamics-alignment-breaker-subsequent-spanner/dynamics-alignment-breaker-subsequent-spanner.homr.musicxml"
+ }
+}

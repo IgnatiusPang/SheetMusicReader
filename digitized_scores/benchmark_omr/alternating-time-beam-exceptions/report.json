@@ -1,0 +1,90 @@
+{
+ "input": "data/benchmark_corpus/images/alternating-time-beam-exceptions.png",
+ "pages": 1,
+ "homr": {
+  "systems": 5,
+  "parts": 2,
+  "bars": 9,
+  "staff_images": false
+ },
+ "bars": {
+  "total": 9,
+  "full": 11,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 2,
+    "system": 1,
+    "got": "9/2",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 5,
+    "system": 3,
+    "got": "17/4",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 7,
+    "system": 4,
+    "got": "9/2",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 8,
+    "system": 5,
+    "got": "17/4",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 2,
+    "bar": 2,
+    "system": 1,
+    "got": "9/2",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 2,
+    "bar": 7,
+    "system": 4,
+    "got": "33/8",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 2,
+    "bar": 8,
+    "system": 5,
+    "got": "17/4",
+    "expected": "4",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly:26:135: warning: bar check failed at: 1/16",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly:27:3: warning: mid-measure time signature without \\partial",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly:30:3: warning: mid-measure time signature without \\partial",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly:55:3: warning: mid-measure time signature without \\partial",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly:33:3: warning: mid-measure time signature without \\partial",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly:56:3: warning: mid-measure time signature without \\partial",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly:34:3: warning: mid-measure time signature without \\partial",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly:80:135: warning: bar check failed at: 1/16"
+ ],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.pdf",
+  "midi": "digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.midi",
+  "ly": "digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.ly",
+  "review": "digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/alternating-time-beam-exceptions/alternating-time-beam-exceptions.homr.musicxml"
+ }
+}

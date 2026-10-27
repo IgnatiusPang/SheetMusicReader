@@ -1,0 +1,33 @@
+{
+ "input": "data/benchmark_corpus/images/clef-transposition.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 2,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 2,
+  "full": 1,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "4",
+    "expected": "3",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/clef-transposition/clef-transposition.pdf",
+  "midi": "digitized_scores/benchmark_omr/clef-transposition/clef-transposition.midi",
+  "ly": "digitized_scores/benchmark_omr/clef-transposition/clef-transposition.ly",
+  "review": "digitized_scores/benchmark_omr/clef-transposition/clef-transposition_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/clef-transposition/clef-transposition.homr.musicxml"
+ }
+}

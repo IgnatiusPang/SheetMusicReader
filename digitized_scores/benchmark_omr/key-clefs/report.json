@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/key-clefs.png",
+ "pages": 1,
+ "homr": {
+  "systems": 10,
+  "parts": 1,
+  "bars": 39,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 39,
+  "full": 39,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/key-clefs/key-clefs.pdf",
+  "midi": "digitized_scores/benchmark_omr/key-clefs/key-clefs.midi",
+  "ly": "digitized_scores/benchmark_omr/key-clefs/key-clefs.ly",
+  "review": "digitized_scores/benchmark_omr/key-clefs/key-clefs_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/key-clefs/key-clefs.homr.musicxml"
+ }
+}

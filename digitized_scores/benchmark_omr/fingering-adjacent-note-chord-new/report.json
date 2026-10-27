@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/fingering-adjacent-note-chord-new.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 5,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 5,
+  "full": 5,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/fingering-adjacent-note-chord-new/fingering-adjacent-note-chord-new.pdf",
+  "midi": "digitized_scores/benchmark_omr/fingering-adjacent-note-chord-new/fingering-adjacent-note-chord-new.midi",
+  "ly": "digitized_scores/benchmark_omr/fingering-adjacent-note-chord-new/fingering-adjacent-note-chord-new.ly",
+  "review": "digitized_scores/benchmark_omr/fingering-adjacent-note-chord-new/fingering-adjacent-note-chord-new_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/fingering-adjacent-note-chord-new/fingering-adjacent-note-chord-new.homr.musicxml"
+ }
+}

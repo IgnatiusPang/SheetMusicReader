@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/accidental-double.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 1,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 1,
+  "full": 1,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/accidental-double/accidental-double.pdf",
+  "midi": "digitized_scores/benchmark_omr/accidental-double/accidental-double.midi",
+  "ly": "digitized_scores/benchmark_omr/accidental-double/accidental-double.ly",
+  "review": "digitized_scores/benchmark_omr/accidental-double/accidental-double_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/accidental-double/accidental-double.homr.musicxml"
+ }
+}

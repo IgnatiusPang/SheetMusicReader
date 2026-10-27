@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/clef-change-at-end.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 1,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 1,
+  "full": 1,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/clef-change-at-end/clef-change-at-end.pdf",
+  "midi": "digitized_scores/benchmark_omr/clef-change-at-end/clef-change-at-end.midi",
+  "ly": "digitized_scores/benchmark_omr/clef-change-at-end/clef-change-at-end.ly",
+  "review": "digitized_scores/benchmark_omr/clef-change-at-end/clef-change-at-end_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/clef-change-at-end/clef-change-at-end.homr.musicxml"
+ }
+}

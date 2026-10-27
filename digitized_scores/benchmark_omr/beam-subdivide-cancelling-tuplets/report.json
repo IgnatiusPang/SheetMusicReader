@@ -1,0 +1,49 @@
+{
+ "input": "data/benchmark_corpus/images/beam-subdivide-cancelling-tuplets.png",
+ "pages": 1,
+ "homr": {
+  "systems": 3,
+  "parts": 1,
+  "bars": 3,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 3,
+  "full": 0,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "3/2",
+    "expected": "1",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 2,
+    "system": 2,
+    "got": "3/2",
+    "expected": "1",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 3,
+    "system": 3,
+    "got": "3/2",
+    "expected": "1",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/beam-subdivide-cancelling-tuplets/beam-subdivide-cancelling-tuplets.pdf",
+  "midi": "digitized_scores/benchmark_omr/beam-subdivide-cancelling-tuplets/beam-subdivide-cancelling-tuplets.midi",
+  "ly": "digitized_scores/benchmark_omr/beam-subdivide-cancelling-tuplets/beam-subdivide-cancelling-tuplets.ly",
+  "review": "digitized_scores/benchmark_omr/beam-subdivide-cancelling-tuplets/beam-subdivide-cancelling-tuplets_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/beam-subdivide-cancelling-tuplets/beam-subdivide-cancelling-tuplets.homr.musicxml"
+ }
+}

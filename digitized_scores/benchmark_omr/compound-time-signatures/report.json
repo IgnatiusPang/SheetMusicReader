@@ -1,0 +1,89 @@
+{
+ "input": "data/benchmark_corpus/images/compound-time-signatures.png",
+ "pages": 1,
+ "homr": {
+  "systems": 10,
+  "parts": 1,
+  "bars": 16,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 16,
+  "full": 8,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "5",
+    "expected": "9/2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 2,
+    "system": 1,
+    "got": "5",
+    "expected": "9/2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 5,
+    "system": 3,
+    "got": "7",
+    "expected": "9/2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 6,
+    "system": 4,
+    "got": "27/4",
+    "expected": "9/2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 7,
+    "system": 5,
+    "got": "19/2",
+    "expected": "9/2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 8,
+    "system": 6,
+    "got": "9",
+    "expected": "9/2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 9,
+    "system": 7,
+    "got": "5",
+    "expected": "9/2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 10,
+    "system": 7,
+    "got": "5",
+    "expected": "9/2",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/compound-time-signatures/compound-time-signatures.pdf",
+  "midi": "digitized_scores/benchmark_omr/compound-time-signatures/compound-time-signatures.midi",
+  "ly": "digitized_scores/benchmark_omr/compound-time-signatures/compound-time-signatures.ly",
+  "review": "digitized_scores/benchmark_omr/compound-time-signatures/compound-time-signatures_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/compound-time-signatures/compound-time-signatures.homr.musicxml"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "input": "data/benchmark_corpus/images/accidental-contemporary.png",
+ "pages": 1,
+ "homr": {
+  "systems": 4,
+  "parts": 1,
+  "bars": 9,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 9,
+  "full": 7,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 4,
+    "system": 1,
+    "got": "1",
+    "expected": "4",
+    "kind": "short"
+   },
+   {
+    "part": 1,
+    "bar": 9,
+    "system": 4,
+    "got": "5",
+    "expected": "4",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/accidental-contemporary/accidental-contemporary.pdf",
+  "midi": "digitized_scores/benchmark_omr/accidental-contemporary/accidental-contemporary.midi",
+  "ly": "digitized_scores/benchmark_omr/accidental-contemporary/accidental-contemporary.ly",
+  "review": "digitized_scores/benchmark_omr/accidental-contemporary/accidental-contemporary_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/accidental-contemporary/accidental-contemporary.homr.musicxml"
+ }
+}

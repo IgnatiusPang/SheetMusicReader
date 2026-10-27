@@ -1,0 +1,1118 @@
+[
+  {
+    "name": "accidental-accent",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-accent.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-accent.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-ancient",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-ancient.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-ancient.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-broken-tie-spacing",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-broken-tie-spacing.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-broken-tie-spacing.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-cautionary-horizontal-spacing",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-cautionary-horizontal-spacing.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-cautionary-horizontal-spacing.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-cautionary-script-placement",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-cautionary-script-placement.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-cautionary-script-placement.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-cautionary",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-cautionary.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-cautionary-horizontal-spacing.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-clef-change",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-clef-change.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-clef-change.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-collision",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-collision.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-collision.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-contemporary",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-contemporary.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-contemporary.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-double",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-double.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-double.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-fingering-collision",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-fingering-collision.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-fingering-collision.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-forced-tie",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-forced-tie.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-forced-tie.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-grouping",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-grouping.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-grouping.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-ledger",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-ledger.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-ledger.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-tie",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-tie.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-tie.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "accidental-unbroken-tie-spacing",
+    "category": "accidental",
+    "original_ly": "data/benchmark_corpus/original_ly/accidental-unbroken-tie-spacing.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/accidental-unbroken-tie-spacing.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "alternating-time-beam-exceptions",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/alternating-time-beam-exceptions.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/alternating-time-beam-exceptions.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "alternating-time-denominator-zero",
+    "category": "time",
+    "original_ly": "data/benchmark_corpus/original_ly/alternating-time-denominator-zero.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/alternating-time-denominator-zero.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "alternating-time-numerator-zero",
+    "category": "time",
+    "original_ly": "data/benchmark_corpus/original_ly/alternating-time-numerator-zero.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/alternating-time-numerator-zero.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "alternative-mmrest",
+    "category": "rest",
+    "original_ly": "data/benchmark_corpus/original_ly/alternative-mmrest.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/alternative-mmrest.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "ambitus-slur",
+    "category": "slur",
+    "original_ly": "data/benchmark_corpus/original_ly/ambitus-slur.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/ambitus-slur.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "approximate-pitch-chord-repeat",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/approximate-pitch-chord-repeat.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/approximate-pitch-chord-repeat.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "approximate-pitch-tie",
+    "category": "tie",
+    "original_ly": "data/benchmark_corpus/original_ly/approximate-pitch-tie.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/approximate-pitch-tie.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "articulation-snappizzicato",
+    "category": "articulation",
+    "original_ly": "data/benchmark_corpus/original_ly/articulation-snappizzicato.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/articulation-snappizzicato.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-bar",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-bar.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-bar.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-beambreak",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-beambreak.ly",
+    "returncode": 1,
+    "png": "data/benchmark_corpus/images/auto-beam-beambreak.png",
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/a"
+  },
+  {
+    "name": "auto-beam-beaming-override",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-beaming-override.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-beaming-override.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-breathe",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-breathe.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-breathe.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-exceptions",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-exceptions.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-exceptions.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-no-beam",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-no-beam.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-no-beam.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-ossia",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-ossia.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-ossia.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-partial-grace",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-partial-grace.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-partial-grace.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-partial",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-partial.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-partial-grace.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-recheck",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-recheck.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-recheck.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-triplet",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-triplet.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-triplet.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-tuplets",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-tuplets.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-tuplets.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "auto-beam-without-bar-lines",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/auto-beam-without-bar-lines.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/auto-beam-without-bar-lines.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "autobeam-tuplet-recheck",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/autobeam-tuplet-recheck.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/autobeam-tuplet-recheck.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "autochange-after-rest",
+    "category": "rest",
+    "original_ly": "data/benchmark_corpus/original_ly/autochange-after-rest.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/autochange-after-rest.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "autochange-clefs",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/autochange-clefs.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/autochange-clefs.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "bar-number-after-alternative-restore-cadenza",
+    "category": "rest",
+    "original_ly": "data/benchmark_corpus/original_ly/bar-number-after-alternative-restore-cadenza.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/bar-number-after-alternative-restore-cadenza.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "bar-number-after-alternative-restore-grace",
+    "category": "rest",
+    "original_ly": "data/benchmark_corpus/original_ly/bar-number-after-alternative-restore-grace.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/bar-number-after-alternative-restore-grace.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-concave-chord",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-concave-chord.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-concave-chord.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-cross-staff-rest",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-cross-staff-rest.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-cross-staff-rest.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-grace-tuplet-bounds",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-grace-tuplet-bounds.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-grace-tuplet-bounds.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-multiplicity-over-rests",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-multiplicity-over-rests.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-multiplicity-over-rests.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-rest-extreme",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-rest-extreme.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-rest-extreme.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-rest",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-rest.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-rest-extreme.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-subdivide-cancelling-tuplets",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-subdivide-cancelling-tuplets.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-subdivide-cancelling-tuplets.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-subdivide-compound-meter",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-subdivide-compound-meter.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-subdivide-compound-meter.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-subdivide-quarter-notes",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-subdivide-quarter-notes.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-subdivide-quarter-notes.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-subdivide-three-numerator-meter",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-subdivide-three-numerator-meter.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-subdivide-three-numerator-meter.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-subdivide-tuplet-boundaries",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-subdivide-tuplet-boundaries.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-subdivide-tuplet-boundaries.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-subdivide-tuplet-grace",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-subdivide-tuplet-grace.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-subdivide-tuplet-grace.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beam-subdivide-tuplets",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beam-subdivide-tuplets.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beam-subdivide-tuplets.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "beaming-tuplet-regular",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/beaming-tuplet-regular.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/beaming-tuplet-regular.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "bend-spanner-exclude-notes",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/bend-spanner-exclude-notes.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/bend-spanner-exclude-notes.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "bend-spanner-tied-notes",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/bend-spanner-tied-notes.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/bend-spanner-tied-notes.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "break-alignment-dynamics-over-staff",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/break-alignment-dynamics-over-staff.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/break-alignment-dynamics-over-staff.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "break-no-bar-clef",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/break-no-bar-clef.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/break-no-bar-clef.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "break-no-bar-key",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/break-no-bar-key.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/break-no-bar-key.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "choirstaff-dynamics-spacing",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/choirstaff-dynamics-spacing.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/choirstaff-dynamics-spacing.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-X-align-on-main-noteheads",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-X-align-on-main-noteheads.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-X-align-on-main-noteheads.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-additional-pitch-prefix",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-additional-pitch-prefix.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-additional-pitch-prefix.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-changes-alternative",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-changes-alternative.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-changes-alternative.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-changes",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-changes.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-changes-alternative.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-dots",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-dots.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-dots.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-grid-additional-contexts",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-grid-additional-contexts.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-grid-additional-contexts.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-grid-bar-line-attachment",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-grid-bar-line-attachment.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-grid-bar-line-attachment.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-grid-marks",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-grid-marks.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-grid-marks.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-grid-median-style",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-grid-median-style.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-grid-median-style.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-grid-parentheses",
+    "category": "chord",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-grid-parentheses.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-grid-parentheses.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-grid-rests",
+    "category": "rest",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-grid-rests.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-grid-rests.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-names-rests",
+    "category": "rest",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-names-rests.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-names-rests.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-repetition-times",
+    "category": "time",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-repetition-times.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/chord-repetition-times.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "chord-slur-at-right",
+    "category": "slur",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-slur-at-right.ly",
+    "returncode": 1,
+    "png": null,
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/c"
+  },
+  {
+    "name": "chord-slur-positions-bracket",
+    "category": "slur",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-slur-positions-bracket.ly",
+    "returncode": 1,
+    "png": null,
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/c"
+  },
+  {
+    "name": "chord-slur-span-collision",
+    "category": "slur",
+    "original_ly": "data/benchmark_corpus/original_ly/chord-slur-span-collision.ly",
+    "returncode": 1,
+    "png": null,
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/c"
+  },
+  {
+    "name": "chords-and-grace-note-timing",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/chords-and-grace-note-timing.ly",
+    "returncode": 1,
+    "png": "data/benchmark_corpus/images/chords-and-grace-note-timing.png",
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/c"
+  },
+  {
+    "name": "clef-change-at-end",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-change-at-end.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-change-at-end.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "clef-force",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-force.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-force.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "clef-ottava",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-ottava.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-ottava.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "clef-transposition-optional",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-transposition-optional.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-transposition-optional.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "clef-transposition-placement",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-transposition-placement.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-transposition-placement.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "clef-transposition-visibility",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-transposition-visibility.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-transposition-visibility.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "clef-transposition",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-transposition.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-transposition-optional.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "clef-unchanged",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-unchanged.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-unchanged.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "clef-warn",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/clef-warn.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/clef-warn.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "cluster-single-note",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/cluster-single-note.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/cluster-single-note.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "completion-heads-multiple-ties",
+    "category": "tie",
+    "original_ly": "data/benchmark_corpus/original_ly/completion-heads-multiple-ties.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/completion-heads-multiple-ties.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "completion-heads-tie",
+    "category": "tie",
+    "original_ly": "data/benchmark_corpus/original_ly/completion-heads-tie.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/completion-heads-tie.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "completion-rest",
+    "category": "rest",
+    "original_ly": "data/benchmark_corpus/original_ly/completion-rest.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/completion-rest.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "compound-time-signatures",
+    "category": "time",
+    "original_ly": "data/benchmark_corpus/original_ly/compound-time-signatures.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/compound-time-signatures.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "cue-clef-keysignature",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/cue-clef-keysignature.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/cue-clef-keysignature.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dead-notes",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/dead-notes.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dead-notes.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dot-column-note-collision",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/dot-column-note-collision.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dot-column-note-collision.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dot-column-rest-collision",
+    "category": "rest",
+    "original_ly": "data/benchmark_corpus/original_ly/dot-column-rest-collision.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dot-column-rest-collision.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "duration-line-tie",
+    "category": "tie",
+    "original_ly": "data/benchmark_corpus/original_ly/duration-line-tie.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/duration-line-tie.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dynamics-alignment-autobreak",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/dynamics-alignment-autobreak.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dynamics-alignment-autobreak.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dynamics-alignment-breaker-linebreak",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/dynamics-alignment-breaker-linebreak.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dynamics-alignment-breaker-linebreak.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dynamics-alignment-breaker-order",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/dynamics-alignment-breaker-order.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dynamics-alignment-breaker-order.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dynamics-alignment-breaker-subsequent-spanner",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/dynamics-alignment-breaker-subsequent-spanner.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dynamics-alignment-breaker-subsequent-spanner.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dynamics-alignment-breaker",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/dynamics-alignment-breaker.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dynamics-alignment-breaker-linebreak.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dynamics-alignment-no-line-linebreak",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/dynamics-alignment-no-line-linebreak.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dynamics-alignment-no-line-linebreak.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dynamics-alignment-no-line",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/dynamics-alignment-no-line.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dynamics-alignment-no-line-linebreak.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "dynamics-avoid-cross-staff-stem",
+    "category": "dynamic",
+    "original_ly": "data/benchmark_corpus/original_ly/dynamics-avoid-cross-staff-stem.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/dynamics-avoid-cross-staff-stem.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "fingering-adjacent-note-chord-new",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/fingering-adjacent-note-chord-new.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/fingering-adjacent-note-chord-new.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "fingering-adjacent-note-chord",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/fingering-adjacent-note-chord.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/fingering-adjacent-note-chord.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "footnote-auto-numbering-vertical-order",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/footnote-auto-numbering-vertical-order.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/footnote-auto-numbering-vertical-order-page1.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "footnote-auto-numbering",
+    "category": "note",
+    "original_ly": "data/benchmark_corpus/original_ly/footnote-auto-numbering.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/footnote-auto-numbering-page1.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "grace-slashed-no-slur",
+    "category": "slur",
+    "original_ly": "data/benchmark_corpus/original_ly/grace-slashed-no-slur.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/grace-slashed-no-slur.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "grace-sync-acciaccatura-key",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/grace-sync-acciaccatura-key.ly",
+    "returncode": 1,
+    "png": "data/benchmark_corpus/images/grace-sync-acciaccatura-key.png",
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/g"
+  },
+  {
+    "name": "grace-sync-key-before-grace",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/grace-sync-key-before-grace.ly",
+    "returncode": 1,
+    "png": "data/benchmark_corpus/images/grace-sync-key-before-grace.png",
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/g"
+  },
+  {
+    "name": "grace-sync-polymetric-time-signature",
+    "category": "time",
+    "original_ly": "data/benchmark_corpus/original_ly/grace-sync-polymetric-time-signature.ly",
+    "returncode": 1,
+    "png": "data/benchmark_corpus/images/grace-sync-polymetric-time-signature.png",
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/g"
+  },
+  {
+    "name": "grace-sync-time-signature",
+    "category": "time",
+    "original_ly": "data/benchmark_corpus/original_ly/grace-sync-time-signature.ly",
+    "returncode": 1,
+    "png": "data/benchmark_corpus/images/grace-sync-time-signature.png",
+    "midi": null,
+    "stderr": "GNU LilyPond 2.26.0 (running Guile 3.0)\nChanging working directory to: `data/benchmark_corpus/images'\nProcessing `/Users/ignatiuspang/Workings/2026/SheetMusicReader/data/benchmark_corpus/original_ly/g"
+  },
+  {
+    "name": "hairpin-key-signature",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/hairpin-key-signature.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/hairpin-key-signature.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "key-clefs",
+    "category": "clef",
+    "original_ly": "data/benchmark_corpus/original_ly/key-clefs.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/key-clefs.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "key-signature-cancellation",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/key-signature-cancellation.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/key-signature-cancellation.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "key-signature-left-edge",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/key-signature-left-edge.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/key-signature-left-edge.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "key-signature-padding",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/key-signature-padding.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/key-signature-padding.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "key-signature-scordatura-persist",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/key-signature-scordatura-persist.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/key-signature-scordatura-persist.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "key-signature-scordatura",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/key-signature-scordatura.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/key-signature-scordatura-persist.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "key-signature-space",
+    "category": "key",
+    "original_ly": "data/benchmark_corpus/original_ly/key-signature-space.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/key-signature-space.png",
+    "midi": null,
+    "stderr": ""
+  },
+  {
+    "name": "laissez-vibrer-tie-beam",
+    "category": "beam",
+    "original_ly": "data/benchmark_corpus/original_ly/laissez-vibrer-tie-beam.ly",
+    "returncode": 0,
+    "png": "data/benchmark_corpus/images/laissez-vibrer-tie-beam.png",
+    "midi": null,
+    "stderr": ""
+  }
+]

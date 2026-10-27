@@ -1,0 +1,41 @@
+{
+ "input": "data/benchmark_corpus/images/beam-subdivide-three-numerator-meter.png",
+ "pages": 1,
+ "homr": {
+  "systems": 3,
+  "parts": 1,
+  "bars": 7,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 7,
+  "full": 5,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "13/8",
+    "expected": "1",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 2,
+    "system": 2,
+    "got": "3/2",
+    "expected": "1",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/beam-subdivide-three-numerator-meter/beam-subdivide-three-numerator-meter.pdf",
+  "midi": "digitized_scores/benchmark_omr/beam-subdivide-three-numerator-meter/beam-subdivide-three-numerator-meter.midi",
+  "ly": "digitized_scores/benchmark_omr/beam-subdivide-three-numerator-meter/beam-subdivide-three-numerator-meter.ly",
+  "review": "digitized_scores/benchmark_omr/beam-subdivide-three-numerator-meter/beam-subdivide-three-numerator-meter_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/beam-subdivide-three-numerator-meter/beam-subdivide-three-numerator-meter.homr.musicxml"
+ }
+}

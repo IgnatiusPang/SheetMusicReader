@@ -1,0 +1,57 @@
+{
+ "input": "data/benchmark_corpus/images/bend-spanner-exclude-notes.png",
+ "pages": 1,
+ "homr": {
+  "systems": 2,
+  "parts": 2,
+  "bars": 9,
+  "staff_images": false
+ },
+ "bars": {
+  "total": 9,
+  "full": 14,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 2,
+    "system": 1,
+    "got": "13/2",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 7,
+    "system": 1,
+    "got": "5",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 2,
+    "bar": 2,
+    "system": 1,
+    "got": "13/2",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 2,
+    "bar": 7,
+    "system": 1,
+    "got": "5",
+    "expected": "4",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/bend-spanner-exclude-notes/bend-spanner-exclude-notes.pdf",
+  "midi": "digitized_scores/benchmark_omr/bend-spanner-exclude-notes/bend-spanner-exclude-notes.midi",
+  "ly": "digitized_scores/benchmark_omr/bend-spanner-exclude-notes/bend-spanner-exclude-notes.ly",
+  "review": "digitized_scores/benchmark_omr/bend-spanner-exclude-notes/bend-spanner-exclude-notes_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/bend-spanner-exclude-notes/bend-spanner-exclude-notes.homr.musicxml"
+ }
+}

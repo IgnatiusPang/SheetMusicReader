@@ -1,0 +1,37 @@
+{
+ "input": "data/benchmark_corpus/images/accidental-ledger.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 1,
+  "staff_images": true
+ },
+ "audiveris": {
+  "parts": [
+   {
+    "part": 1,
+    "status": "Audiveris produced no MusicXML"
+   }
+  ],
+  "groups": [
+   "bowing",
+   "dynamics",
+   "hairpins"
+  ]
+ },
+ "bars": {
+  "total": 1,
+  "full": 1,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/accidental-ledger/accidental-ledger/accidental-ledger.pdf",
+  "midi": "digitized_scores/benchmark_omr/accidental-ledger/accidental-ledger/accidental-ledger.midi",
+  "ly": "digitized_scores/benchmark_omr/accidental-ledger/accidental-ledger/accidental-ledger.ly",
+  "review": "digitized_scores/benchmark_omr/accidental-ledger/accidental-ledger/accidental-ledger_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/accidental-ledger/accidental-ledger/accidental-ledger.homr.musicxml"
+ }
+}

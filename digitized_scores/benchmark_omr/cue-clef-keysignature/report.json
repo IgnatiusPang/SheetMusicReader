@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/cue-clef-keysignature.png",
+ "pages": 1,
+ "homr": {
+  "systems": 2,
+  "parts": 1,
+  "bars": 5,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 5,
+  "full": 5,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/cue-clef-keysignature/cue-clef-keysignature.pdf",
+  "midi": "digitized_scores/benchmark_omr/cue-clef-keysignature/cue-clef-keysignature.midi",
+  "ly": "digitized_scores/benchmark_omr/cue-clef-keysignature/cue-clef-keysignature.ly",
+  "review": "digitized_scores/benchmark_omr/cue-clef-keysignature/cue-clef-keysignature_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/cue-clef-keysignature/cue-clef-keysignature.homr.musicxml"
+ }
+}

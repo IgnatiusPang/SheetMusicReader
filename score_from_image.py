@@ -96,7 +96,7 @@ MARK_OF_CLASS = {
 }
 DYNAMICS = ("ppppp", "pppp", "ppp", "pp", "p", "mp", "mf", "f", "ff", "fff", "ffff", "fffff",
             "fp", "sf", "sff", "sp", "spp", "sfz", "sfp", "rfz", "fz", "n")
-SPANS = ("(", ")", "\\<", "\\>", "\\!")
+SPANS = ("(", ")", "[", "]", "\\<", "\\>", "\\!")
 AFTER = ("\\breathe", "\\caesura")               # standalone events written after their note
 FIXED_MARKS = frozenset(chain(MARK_OF_CLASS.values(), SPANS, map(lambda d: "\\" + d, DYNAMICS)))
 FINGER_RE = re.compile(r"^-[0-5]$")
@@ -181,9 +181,44 @@ class Score:
 MAJOR = ("ces", "ges", "des", "aes", "ees", "bes", "f", "c", "g", "d", "a", "e", "b", "fis", "cis")
 MINOR = ("aes", "ees", "bes", "f", "c", "g", "d", "a", "e", "b", "fis", "cis", "gis", "dis", "ais")
 CLEF = {"TrebleClef": "treble", "GClef": "treble", "Treble8vbClef": '"treble_8"', "Treble8vaClef": '"treble^8"',
-        "BassClef": "bass", "FClef": "bass", "Bass8vbClef": '"bass_8"', "AltoClef": "alto", "CClef": "alto",
-        "TenorClef": "tenor", "SopranoClef": "soprano", "MezzoSopranoClef": "mezzosoprano",
-        "BaritoneClef": "baritone", "PercussionClef": "percussion"}
+        "FrenchViolinClef": "french",
+        "BassClef": "bass", "FClef": "bass", "Bass8vbClef": '"bass_8"', "SubBassClef": "subbass",
+        "AltoClef": "alto", "CClef": "alto", "TenorClef": "tenor", "SopranoClef": "soprano",
+        "MezzoSopranoClef": "mezzosoprano", "BaritoneClef": "baritone", "PercussionClef": "percussion"}
+
+
+def clef_to_lily(c) -> str:
+    if isinstance(c, str):
+        clean = c.strip().strip('"')
+        return CLEF.get(clean, clean)
+    octave_change = getattr(c, "octaveChange", 0)
+    name = type(c).__name__
+    if name in CLEF:
+        res = CLEF[name]
+        if octave_change == -1 and res == "treble":
+            return '"treble_8"'
+        if octave_change == 1 and res == "treble":
+            return '"treble^8"'
+        if octave_change == -1 and res == "bass":
+            return '"bass_8"'
+        return res
+    sign = getattr(c, "sign", "")
+    line = getattr(c, "line", 0)
+    if sign == "G":
+        if octave_change == -1:
+            return '"treble_8"'
+        if octave_change == 1:
+            return '"treble^8"'
+        return "french" if line == 1 else "treble"
+    if sign == "F":
+        if octave_change == -1:
+            return '"bass_8"'
+        return "subbass" if line == 5 else "bass"
+    if sign == "C":
+        return "soprano" if line == 1 else "mezzosoprano" if line == 2 else "tenor" if line == 4 else "baritone" if line == 5 else "alto"
+    if sign == "percussion":
+        return "percussion"
+    return "treble"
 
 
 def key_token(fifths: int, mode: str) -> str:
@@ -222,11 +257,29 @@ def suspect_bars(rows: list[dict]) -> list[dict]:
     return list(filter(lambda r: r["kind"] in ("over", "short"), rows))
 
 
+# ---------------------------------------------------------------- rest padding & stem beaming
+
+CANDIDATE_RESTS = (
+    Fraction(8, 1), Fraction(6, 1), Fraction(4, 1), Fraction(3, 1),
+    Fraction(2, 1), Fraction(3, 2), Fraction(1, 1), Fraction(3, 4),
+    Fraction(1, 2), Fraction(3, 8), Fraction(1, 4), Fraction(1, 8),
+)
+
+
+def decompose_deficit(rem: Fraction) -> tuple[Fraction, ...]:
+    def step(state: tuple[Fraction, list[Fraction]], cand: Fraction) -> tuple[Fraction, list[Fraction]]:
+        r, acc = state
+        count = int(r // cand)
+        return (r - count * cand, acc + [cand] * count) if count > 0 else (r, acc)
+    _, durs = reduce(step, CANDIDATE_RESTS, (rem, []))
+    return tuple(durs)
+
+
 # ---------------------------------------------------------------- MusicXML -> model
 
-def from_musicxml(path: Path, keep_doubtful: bool = True) -> Score:
+def from_musicxml(path: Path | object, keep_doubtful: bool = True) -> Score:
     import music21 as m21
-    s = m21.converter.parse(str(path))
+    s = path if hasattr(path, "spannerBundle") else m21.converter.parse(str(path))
     parts = list(s.parts) if s.parts else [s]
     span_kind = {"Slur": ("(", ")"), "Crescendo": ("\\<", "\\!"), "Diminuendo": ("\\>", "\\!")}
 
@@ -261,37 +314,102 @@ def from_musicxml(path: Path, keep_doubtful: bool = True) -> Score:
         src = m.voices[0] if m.voices else m
         notes = list(src.notesAndRests)
         offs = list(map(lambda n: float(n.getOffsetInHierarchy(m)), notes))
-        dirs = list(m.recurse().getElementsByClass(("Dynamic", "TextExpression")))
+        dirs = list(m.recurse().getElementsByClass(("Dynamic", "TextExpression", "Clef")))
 
         def target(el) -> int:
             off = float(el.getOffsetInHierarchy(m))
             return next(filter(lambda i: offs[i] >= off - 1e-6, range(len(notes))), len(notes) - 1)
 
-        attached = reduce(lambda d, el: {**d, target(el): d.get(target(el), ()) + (direction_mark(el),)},
-                          filter(lambda el: notes and direction_mark(el), dirs), {})
-        return Bar(tuple(map(lambda i: ev_of(notes[i], tuple(filter(None, attached.get(i, ())))), range(len(notes)))),
-                   changes)
+        def element_mark(el) -> str | None:
+            if hasattr(el, "sign") or type(el).__name__.endswith("Clef"):
+                if float(el.getOffsetInHierarchy(m)) > 1e-6:
+                    return f"\\clef {clef_to_lily(el)}"
+                return None
+            return direction_mark(el)
 
-    def part_of(p) -> tuple[Part, list]:
+        attached = reduce(lambda d, el: {**d, target(el): d.get(target(el), ()) + (element_mark(el),)},
+                          filter(lambda el: notes and element_mark(el), dirs), {})
+
+        def step(acc: tuple[float, tuple[Ev, ...]], ix: tuple[int, object]) -> tuple[float, tuple[Ev, ...]]:
+            cur_time, evs = acc
+            i, n = ix
+            off = offs[i]
+            gap = off - cur_time
+            gap_durs = decompose_deficit(Fraction(gap).limit_denominator(96)) if gap >= 0.24 else ()
+            gap_evs = tuple(map(lambda d: Ev(pitches=(), dur=d), gap_durs))
+            e = ev_of(n, tuple(filter(None, attached.get(i, ()))))
+            dur = 0.0 if n.duration.isGrace else float(n.quarterLength)
+            return max(cur_time, off + dur), evs + gap_evs + (e,)
+
+        _, events = reduce(step, enumerate(notes), (0.0, ()))
+        return Bar(events, changes)
+
+    def part_of(part_idx: int, p: object, num_parts: int) -> tuple[Part, list]:
+        part_name = f"{getattr(p, 'partName', '') or ''} {getattr(p, 'id', '') or ''}".lower()
         measures = list(p.getElementsByClass("Measure"))
         first = measures[0]
-        clef0 = CLEF.get(type(first.clef).__name__, "treble") if first.clef else "treble"
+        first_clefs = list(first.recurse().getElementsByClass("Clef")) or list(p.recurse().getElementsByClass("Clef"))
+
+        notes_in_part = list(p.recurse().getElementsByClass("Note"))
+        note_midis = lambda n: list(map(lambda pt: pt.midi, n.pitches)) if hasattr(n, "pitches") else [n.pitch.midi] if hasattr(n, "pitch") else []
+        all_midis = list(chain.from_iterable(map(note_midis, notes_in_part)))
+        median_midi = sorted(all_midis)[len(all_midis) // 2] if all_midis else None
+
+        # Prior clef based on part index, ensemble structure, instrument name, and pitch tessitura
+        is_bass_inst = any(map(lambda k: k in part_name, ("bass", "cello", "violoncello", "bassoon", "tuba", "trombone", "basso", "left hand", "lh", "pedal")))
+        is_alto_inst = any(map(lambda k: k in part_name, ("viola", "alto voice")))
+        if is_bass_inst or (num_parts == 2 and part_idx == 1) or (num_parts == 4 and part_idx in (2, 3)):
+            default_clef = "bass"
+        elif is_alto_inst:
+            default_clef = "alto"
+        elif median_midi is not None and median_midi < 54:
+            default_clef = "bass"
+        else:
+            default_clef = "treble"
+
+        is_c_clef_allowed = (
+            any(map(lambda k: k in part_name, ("viola", "alto", "tenor", "cello", "bassoon", "trombone")))
+            or (len(all_midis) > 0 and num_parts != 2)
+        )
+
+        raw_clef0 = clef_to_lily(first_clefs[0]) if first_clefs else None
+        if raw_clef0 in ("alto", "tenor") and not is_c_clef_allowed:
+            clef0 = default_clef
+        else:
+            clef0 = raw_clef0 or default_clef
 
         def step(acc: tuple, m) -> tuple:
             bars, state = acc
-            now = {"clef": f"\\clef {CLEF.get(type(m.clef).__name__, 'treble')}" if m.clef else state["clef"],
-                   "key": key_token(m.keySignature.sharps, getattr(m.keySignature, "mode", "major") or "major")
-                   if m.keySignature else state["key"],
-                   "time": f"\\time {m.timeSignature.ratioString}" if m.timeSignature else state["time"]}
-            changes = tuple(filter(None, map(lambda k: now[k] if bars and now[k] != state[k] else None,
-                                             ("clef", "key", "time"))))
+            clefs_in_m = list(m.recurse().getElementsByClass("Clef"))
+            start_clefs = list(filter(lambda c: float(c.getOffsetInHierarchy(m)) <= 1e-6, clefs_in_m))
+            m_clef = clef_to_lily(start_clefs[0]) if start_clefs else None
+            if m_clef in ("alto", "tenor") and not is_c_clef_allowed:
+                m_clef = None
+            clef_start = f"\\clef {m_clef}" if m_clef else state["clef"]
+
+            end_clef = clef_to_lily(clefs_in_m[-1]) if clefs_in_m else (m_clef or state["clef"].replace("\\clef ", ""))
+            if end_clef in ("alto", "tenor") and not is_c_clef_allowed:
+                end_clef = clef_start.replace("\\clef ", "")
+
+            now = {
+                "clef": f"\\clef {end_clef}",
+                "key": key_token(m.keySignature.sharps, getattr(m.keySignature, "mode", "major") or "major")
+                if m.keySignature else state["key"],
+                "time": f"\\time {m.timeSignature.ratioString}" if m.timeSignature else state["time"],
+            }
+            bar_clef_chg = clef_start if (bars and clef_start != state["clef"]) else None
+            changes = tuple(filter(None, (
+                bar_clef_chg,
+                now["key"] if bars and now["key"] != state["key"] else None,
+                now["time"] if bars and now["time"] != state["time"] else None,
+            )))
             return bars + [bar_of(m, changes)], now
 
         start = {"clef": f"\\clef {clef0}", "key": None, "time": None}
         bars, _ = reduce(step, measures, ([], start))
         return Part(clef0, tuple(bars)), measures
 
-    built = list(map(part_of, parts))
+    built = list(map(lambda ip: part_of(ip[0], ip[1], len(parts)), enumerate(parts)))
     measures0 = built[0][1]
     first = measures0[0]
     new_system = lambda m: any(map(lambda lay: getattr(lay, "isNew", False), m.getElementsByClass("SystemLayout")))
@@ -312,7 +430,24 @@ def concat_scores(scores: list[Score]) -> Score:
     """Join page scores into one (same parts on every page)."""
     def join(a: Score, b: Score) -> Score:
         n = len(a.parts[0].bars)
-        parts = tuple(map(lambda pq: Part(pq[0].clef, pq[0].bars + pq[1].bars), zip(a.parts, b.parts)))
+        def join_part(pi: int) -> Part:
+            p_a, p_b = a.parts[pi], b.parts[pi]
+            all_clef_changes = list(filter(lambda c: c.startswith("\\clef"),
+                                           chain.from_iterable(map(lambda bar: bar.changes, p_a.bars))))
+            last_clef_str = all_clef_changes[-1] if all_clef_changes else f"\\clef {p_a.clef}"
+            last_clef = last_clef_str.replace("\\clef ", "")
+            if p_b.clef != last_clef and p_b.bars:
+                first_bar = p_b.bars[0]
+                existing_clef_chg = any(map(lambda c: c.startswith("\\clef"), first_bar.changes))
+                if not existing_clef_chg:
+                    new_first_bar = replace(first_bar, changes=(f"\\clef {p_b.clef}",) + first_bar.changes)
+                    p_b_bars = (new_first_bar,) + p_b.bars[1:]
+                else:
+                    p_b_bars = p_b.bars
+            else:
+                p_b_bars = p_b.bars
+            return Part(p_a.clef, p_a.bars + p_b_bars)
+        parts = tuple(map(join_part, range(len(a.parts))))
         return replace(a, parts=parts, breaks=a.breaks + tuple(map(lambda x: x + n, b.breaks)))
     return reduce(join, scores)
 
@@ -348,20 +483,75 @@ def fix_pairs(part: Part, opens: tuple[str, ...], close: str, restart_ok: bool) 
     return replace(part, bars=tuple(map(clean, range(len(part.bars)))))
 
 
-def tidy(score: Score) -> Score:
-    fix = lambda p: fix_pairs(fix_pairs(p, ("(",), ")", False), ("\\<", "\\>"), "\\!", True)
-    return replace(score, parts=tuple(map(fix, score.parts)))
+# ---------------------------------------------------------------- rest padding & stem beaming
+
+
+
+def restore_silent_rests(score: Score) -> Score:
+    """Workspace Rule 3.7: Pad measures with duration deficits (bar.length < expected) using standard silent rests."""
+    def fix_part(pi: int, p: Part) -> Part:
+        expected = bar_expected(score, pi)
+        def fix_bar(i: int, b: Bar) -> Bar:
+            exp = expected[i]
+            if i == 0 and Fraction(0) < b.length < exp:
+                return b
+            deficit = exp - b.length
+            if deficit <= 0:
+                return b
+            rest_durs = decompose_deficit(deficit)
+            rest_evs = tuple(map(lambda d: Ev(pitches=(), dur=d), rest_durs))
+            return replace(b, events=b.events + rest_evs)
+        return replace(p, bars=tuple(map(lambda ib: fix_bar(ib[0], ib[1]), enumerate(p.bars))))
+    return replace(score, parts=tuple(map(lambda ip: fix_part(ip[0], ip[1]), enumerate(score.parts))))
+
+
+def apply_stem_beaming(events: tuple[Ev, ...]) -> tuple[Ev, ...]:
+    """Workspace Rule 3.8: Join runs of >= 2 consecutive short notes (<= 0.5b) with stem beams."""
+    is_beamable = lambda e: bool(e.pitches) and not e.grace and e.dur <= Fraction(1, 2)
+    indexed = list(enumerate(events))
+    groups = [list(g) for k, g in groupby(indexed, key=lambda ix: is_beamable(ix[1])) if k]
+    runs = list(filter(lambda g: len(g) >= 2, groups))
+    beam_starts = frozenset(map(lambda g: g[0][0], runs))
+    beam_ends = frozenset(map(lambda g: g[-1][0], runs))
+
+    def tag_ev(i: int, e: Ev) -> Ev:
+        marks = e.marks
+        if i in beam_starts and "[" not in marks:
+            marks = marks + ("[",)
+        if i in beam_ends and "]" not in marks:
+            marks = marks + ("]",)
+        return replace(e, marks=marks) if marks != e.marks else e
+
+    return tuple(map(lambda ix: tag_ev(ix[0], ix[1]), indexed))
+
+
+def apply_stem_beaming_to_score(score: Score) -> Score:
+    def fix_bar(b: Bar) -> Bar:
+        return replace(b, events=apply_stem_beaming(b.events))
+    def fix_part(p: Part) -> Part:
+        return replace(p, bars=tuple(map(fix_bar, p.bars)))
+    return replace(score, parts=tuple(map(fix_part, score.parts)))
+
+
+def tidy(score: Score, pad_rests: bool = True, beam_notes: bool = True) -> Score:
+    s = restore_silent_rests(score) if pad_rests else score
+    s = apply_stem_beaming_to_score(s) if beam_notes else s
+    fix = lambda p: fix_pairs(fix_pairs(fix_pairs(p, ("(",), ")", False), ("\\<", "\\>"), "\\!", True), ("[",), "]", False)
+    return replace(s, parts=tuple(map(fix, s.parts)))
 
 
 # ---------------------------------------------------------------- model -> LilyPond
 
 def ev_text(e: Ev, scale: Fraction = Fraction(1)) -> str:
-    order = lambda m: 0 if m == ")" else 2 if m == "(" else 1
+    order = lambda m: 0 if m in (")", "]") else 2 if m in ("(", "[") else 1
+    clef_marks = list(filter(lambda m: m.startswith("\\clef"), e.marks))
+    pre_clef = "".join(map(lambda m: m + " ", clef_marks))
     body = ("<" + " ".join(e.pitches) + ">" if len(e.pitches) > 1 else e.pitches[0]) if e.pitches else "r"
     core = body + lily_duration(e.dur * scale) + ("~" if e.tie and e.pitches else "")
-    post = "".join(map(mark_text, sorted(filter(lambda m: m not in AFTER, e.marks), key=order)))
+    other_marks = filter(lambda m: m not in AFTER and not m.startswith("\\clef"), e.marks)
+    post = "".join(map(mark_text, sorted(other_marks, key=order)))
     after = "".join(map(lambda m: " " + m, filter(lambda m: m in AFTER, e.marks)))
-    return ("\\grace " if e.grace else "") + core + post + after
+    return ("\\grace " if e.grace else "") + pre_clef + core + post + after
 
 
 def triplet_like(e: Ev) -> bool:
@@ -392,8 +582,10 @@ def _prelude_at(score: Score, part: int, start: int) -> list[str]:
     initial = {"clef": f"\\clef {score.parts[part].clef}", "key": key_token(*score.key),
                "time": f"\\time {score.time[0]}/{score.time[1]}"}
     kind = lambda c: c.split()[0][1:]
+    bar_tokens = lambda b: list(b.changes) + list(filter(lambda m: m.startswith("\\clef"),
+                                                         chain.from_iterable(map(lambda ev: ev.marks, b.events))))
     state = reduce(lambda st, c: {**st, kind(c): c}, chain.from_iterable(
-        map(lambda b: b.changes, score.parts[part].bars[:start])), initial)
+        map(bar_tokens, score.parts[part].bars[:start])), initial)
     return [state["clef"], state["key"], state["time"]]
 
 

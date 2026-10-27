@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/break-alignment-dynamics-over-staff.png",
+ "pages": 1,
+ "homr": {
+  "systems": 2,
+  "parts": 1,
+  "bars": 2,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 2,
+  "full": 2,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/break-alignment-dynamics-over-staff/break-alignment-dynamics-over-staff.pdf",
+  "midi": "digitized_scores/benchmark_omr/break-alignment-dynamics-over-staff/break-alignment-dynamics-over-staff.midi",
+  "ly": "digitized_scores/benchmark_omr/break-alignment-dynamics-over-staff/break-alignment-dynamics-over-staff.ly",
+  "review": "digitized_scores/benchmark_omr/break-alignment-dynamics-over-staff/break-alignment-dynamics-over-staff_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/break-alignment-dynamics-over-staff/break-alignment-dynamics-over-staff.homr.musicxml"
+ }
+}

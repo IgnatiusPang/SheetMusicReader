@@ -1,0 +1,41 @@
+{
+ "input": "data/benchmark_corpus/images/chord-changes.png",
+ "pages": 1,
+ "homr": {
+  "systems": 3,
+  "parts": 1,
+  "bars": 9,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 9,
+  "full": 7,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 3,
+    "system": 2,
+    "got": "4",
+    "expected": "2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 8,
+    "system": 3,
+    "got": "4",
+    "expected": "2",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/chord-changes/chord-changes.pdf",
+  "midi": "digitized_scores/benchmark_omr/chord-changes/chord-changes.midi",
+  "ly": "digitized_scores/benchmark_omr/chord-changes/chord-changes.ly",
+  "review": "digitized_scores/benchmark_omr/chord-changes/chord-changes_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/chord-changes/chord-changes.homr.musicxml"
+ }
+}

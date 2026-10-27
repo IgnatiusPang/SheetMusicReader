@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/break-no-bar-clef.png",
+ "pages": 1,
+ "homr": {
+  "systems": 4,
+  "parts": 1,
+  "bars": 4,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 4,
+  "full": 4,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/break-no-bar-clef/break-no-bar-clef.pdf",
+  "midi": "digitized_scores/benchmark_omr/break-no-bar-clef/break-no-bar-clef.midi",
+  "ly": "digitized_scores/benchmark_omr/break-no-bar-clef/break-no-bar-clef.ly",
+  "review": "digitized_scores/benchmark_omr/break-no-bar-clef/break-no-bar-clef_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/break-no-bar-clef/break-no-bar-clef.homr.musicxml"
+ }
+}

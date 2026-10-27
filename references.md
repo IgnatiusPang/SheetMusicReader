@@ -92,6 +92,16 @@
 23. **ouropy** — Python/R/Rust polyglot verification, dashboard, and metrics engine.
     - Repository: `https://github.com/APAF-bioinformatics/ouropy`
 
+## Open-Source LilyPond Score Datasets & Training Corpora
+
+24. **GNU LilyPond Regression & Benchmark Test Corpus**. LilyPond Official Test Suites (`input/regression`).
+    - Repository: `https://gitlab.com/lilypond/lilypond`
+    - GitHub Mirror: `https://github.com/lilypond/lilypond`
+
+25. **Mutopia Project**. Free sheet music archive in GNU LilyPond format.
+    - Repository: `https://github.com/MutopiaProject/MutopiaProject`
+    - Website: `https://www.mutopiaproject.org`
+
 ---
 
 <!-- APAF Bioinformatics | Sheet Music Reader | Approved -->

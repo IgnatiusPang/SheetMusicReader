@@ -1,0 +1,52 @@
+{
+ "input": "data/benchmark_corpus/images/clef-transposition-placement.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 6,
+  "bars": 1,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 1,
+  "full": 3,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 4,
+    "bar": 1,
+    "system": 1,
+    "got": "6",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 5,
+    "bar": 1,
+    "system": 1,
+    "got": "24",
+    "expected": "4",
+    "kind": "over"
+   },
+   {
+    "part": 6,
+    "bar": 1,
+    "system": 1,
+    "got": "30",
+    "expected": "4",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/clef-transposition-placement/clef-transposition-placement.ly:18:11: warning: bar check failed at: 1",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/clef-transposition-placement/clef-transposition-placement.ly:64:11: warning: bar check failed at: 1"
+ ],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/clef-transposition-placement/clef-transposition-placement.pdf",
+  "midi": "digitized_scores/benchmark_omr/clef-transposition-placement/clef-transposition-placement.midi",
+  "ly": "digitized_scores/benchmark_omr/clef-transposition-placement/clef-transposition-placement.ly",
+  "review": "digitized_scores/benchmark_omr/clef-transposition-placement/clef-transposition-placement_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/clef-transposition-placement/clef-transposition-placement.homr.musicxml"
+ }
+}

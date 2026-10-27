@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/chords-and-grace-note-timing.png",
+ "pages": 1,
+ "homr": {
+  "systems": 2,
+  "parts": 2,
+  "bars": 2,
+  "staff_images": false
+ },
+ "bars": {
+  "total": 2,
+  "full": 4,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/chords-and-grace-note-timing/chords-and-grace-note-timing.pdf",
+  "midi": "digitized_scores/benchmark_omr/chords-and-grace-note-timing/chords-and-grace-note-timing.midi",
+  "ly": "digitized_scores/benchmark_omr/chords-and-grace-note-timing/chords-and-grace-note-timing.ly",
+  "review": "digitized_scores/benchmark_omr/chords-and-grace-note-timing/chords-and-grace-note-timing_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/chords-and-grace-note-timing/chords-and-grace-note-timing.homr.musicxml"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "input": "data/benchmark_corpus/images/beam-subdivide-compound-meter.png",
+ "pages": 1,
+ "homr": {
+  "systems": 2,
+  "parts": 1,
+  "bars": 2,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 2,
+  "full": 0,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "11/4",
+    "expected": "2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 2,
+    "system": 2,
+    "got": "21/8",
+    "expected": "2",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/beam-subdivide-compound-meter/beam-subdivide-compound-meter.pdf",
+  "midi": "digitized_scores/benchmark_omr/beam-subdivide-compound-meter/beam-subdivide-compound-meter.midi",
+  "ly": "digitized_scores/benchmark_omr/beam-subdivide-compound-meter/beam-subdivide-compound-meter.ly",
+  "review": "digitized_scores/benchmark_omr/beam-subdivide-compound-meter/beam-subdivide-compound-meter_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/beam-subdivide-compound-meter/beam-subdivide-compound-meter.homr.musicxml"
+ }
+}

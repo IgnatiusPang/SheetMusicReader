@@ -1,0 +1,33 @@
+{
+ "input": "data/benchmark_corpus/images/beam-rest-extreme.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 1,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 1,
+  "full": 0,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "17/4",
+    "expected": "4",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/beam-rest-extreme/beam-rest-extreme.pdf",
+  "midi": "digitized_scores/benchmark_omr/beam-rest-extreme/beam-rest-extreme.midi",
+  "ly": "digitized_scores/benchmark_omr/beam-rest-extreme/beam-rest-extreme.ly",
+  "review": "digitized_scores/benchmark_omr/beam-rest-extreme/beam-rest-extreme_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/beam-rest-extreme/beam-rest-extreme.homr.musicxml"
+ }
+}

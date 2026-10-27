@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/footnote-auto-numbering-vertical-order-page1.png",
+ "pages": 1,
+ "homr": {
+  "systems": 2,
+  "parts": 2,
+  "bars": 6,
+  "staff_images": false
+ },
+ "bars": {
+  "total": 6,
+  "full": 12,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/footnote-auto-numbering-vertical-order-page1/footnote-auto-numbering-vertical-order-page1.pdf",
+  "midi": "digitized_scores/benchmark_omr/footnote-auto-numbering-vertical-order-page1/footnote-auto-numbering-vertical-order-page1.midi",
+  "ly": "digitized_scores/benchmark_omr/footnote-auto-numbering-vertical-order-page1/footnote-auto-numbering-vertical-order-page1.ly",
+  "review": "digitized_scores/benchmark_omr/footnote-auto-numbering-vertical-order-page1/footnote-auto-numbering-vertical-order-page1_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/footnote-auto-numbering-vertical-order-page1/footnote-auto-numbering-vertical-order-page1.homr.musicxml"
+ }
+}

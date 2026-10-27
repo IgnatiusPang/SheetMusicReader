@@ -1,0 +1,49 @@
+{
+ "input": "data/benchmark_corpus/images/bar-number-after-alternative-restore-cadenza.png",
+ "pages": 1,
+ "homr": {
+  "systems": 3,
+  "parts": 1,
+  "bars": 6,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 6,
+  "full": 2,
+  "pickup_or_closing": 1,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 2,
+    "system": 1,
+    "got": "4",
+    "expected": "2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 4,
+    "system": 2,
+    "got": "4",
+    "expected": "2",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 6,
+    "system": 3,
+    "got": "4",
+    "expected": "2",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/bar-number-after-alternative-restore-cadenza/bar-number-after-alternative-restore-cadenza.pdf",
+  "midi": "digitized_scores/benchmark_omr/bar-number-after-alternative-restore-cadenza/bar-number-after-alternative-restore-cadenza.midi",
+  "ly": "digitized_scores/benchmark_omr/bar-number-after-alternative-restore-cadenza/bar-number-after-alternative-restore-cadenza.ly",
+  "review": "digitized_scores/benchmark_omr/bar-number-after-alternative-restore-cadenza/bar-number-after-alternative-restore-cadenza_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/bar-number-after-alternative-restore-cadenza/bar-number-after-alternative-restore-cadenza.homr.musicxml"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/grace-sync-polymetric-time-signature.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 2,
+  "bars": 1,
+  "staff_images": false
+ },
+ "bars": {
+  "total": 1,
+  "full": 2,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/grace-sync-polymetric-time-signature/grace-sync-polymetric-time-signature.pdf",
+  "midi": "digitized_scores/benchmark_omr/grace-sync-polymetric-time-signature/grace-sync-polymetric-time-signature.midi",
+  "ly": "digitized_scores/benchmark_omr/grace-sync-polymetric-time-signature/grace-sync-polymetric-time-signature.ly",
+  "review": "digitized_scores/benchmark_omr/grace-sync-polymetric-time-signature/grace-sync-polymetric-time-signature_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/grace-sync-polymetric-time-signature/grace-sync-polymetric-time-signature.homr.musicxml"
+ }
+}

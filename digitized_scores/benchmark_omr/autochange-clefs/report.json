@@ -1,0 +1,27 @@
+{
+ "input": "data/benchmark_corpus/images/autochange-clefs.png",
+ "pages": 1,
+ "homr": {
+  "systems": 2,
+  "parts": 2,
+  "bars": 4,
+  "staff_images": false
+ },
+ "bars": {
+  "total": 4,
+  "full": 7,
+  "pickup_or_closing": 1,
+  "suspect": []
+ },
+ "lilypond_warnings": [
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/autochange-clefs/autochange-clefs.ly:18:30: warning: bar check failed at: 5/8",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/autochange-clefs/autochange-clefs.ly:50:30: warning: bar check failed at: 5/8"
+ ],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/autochange-clefs/autochange-clefs.pdf",
+  "midi": "digitized_scores/benchmark_omr/autochange-clefs/autochange-clefs.midi",
+  "ly": "digitized_scores/benchmark_omr/autochange-clefs/autochange-clefs.ly",
+  "review": "digitized_scores/benchmark_omr/autochange-clefs/autochange-clefs_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/autochange-clefs/autochange-clefs.homr.musicxml"
+ }
+}

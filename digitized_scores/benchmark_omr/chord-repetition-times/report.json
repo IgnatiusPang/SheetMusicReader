@@ -1,0 +1,33 @@
+{
+ "input": "data/benchmark_corpus/images/chord-repetition-times.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 2,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 2,
+  "full": 0,
+  "pickup_or_closing": 1,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "4",
+    "expected": "2",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/chord-repetition-times/chord-repetition-times.pdf",
+  "midi": "digitized_scores/benchmark_omr/chord-repetition-times/chord-repetition-times.midi",
+  "ly": "digitized_scores/benchmark_omr/chord-repetition-times/chord-repetition-times.ly",
+  "review": "digitized_scores/benchmark_omr/chord-repetition-times/chord-repetition-times_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/chord-repetition-times/chord-repetition-times.homr.musicxml"
+ }
+}

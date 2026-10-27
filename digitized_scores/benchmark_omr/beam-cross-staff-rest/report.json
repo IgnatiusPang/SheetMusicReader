@@ -1,0 +1,41 @@
+{
+ "input": "data/benchmark_corpus/images/beam-cross-staff-rest.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 2,
+  "bars": 2,
+  "staff_images": false
+ },
+ "bars": {
+  "total": 2,
+  "full": 2,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "3",
+    "expected": "2",
+    "kind": "over"
+   },
+   {
+    "part": 2,
+    "bar": 1,
+    "system": 1,
+    "got": "3",
+    "expected": "2",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/beam-cross-staff-rest/beam-cross-staff-rest.pdf",
+  "midi": "digitized_scores/benchmark_omr/beam-cross-staff-rest/beam-cross-staff-rest.midi",
+  "ly": "digitized_scores/benchmark_omr/beam-cross-staff-rest/beam-cross-staff-rest.ly",
+  "review": "digitized_scores/benchmark_omr/beam-cross-staff-rest/beam-cross-staff-rest_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/beam-cross-staff-rest/beam-cross-staff-rest.homr.musicxml"
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "input": "data/benchmark_corpus/images/auto-beam-bar.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 1,
+  "bars": 4,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 4,
+  "full": 0,
+  "pickup_or_closing": 0,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 1,
+    "system": 1,
+    "got": "3/2",
+    "expected": "1",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 2,
+    "system": 1,
+    "got": "3",
+    "expected": "1",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 3,
+    "system": 1,
+    "got": "3/2",
+    "expected": "1",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 4,
+    "system": 1,
+    "got": "3/2",
+    "expected": "1",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/auto-beam-bar/auto-beam-bar.pdf",
+  "midi": "digitized_scores/benchmark_omr/auto-beam-bar/auto-beam-bar.midi",
+  "ly": "digitized_scores/benchmark_omr/auto-beam-bar/auto-beam-bar.ly",
+  "review": "digitized_scores/benchmark_omr/auto-beam-bar/auto-beam-bar_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/auto-beam-bar/auto-beam-bar.homr.musicxml"
+ }
+}

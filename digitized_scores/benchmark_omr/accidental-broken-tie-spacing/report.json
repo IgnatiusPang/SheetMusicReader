@@ -1,0 +1,24 @@
+{
+ "input": "data/benchmark_corpus/images/accidental-broken-tie-spacing.png",
+ "pages": 1,
+ "homr": {
+  "systems": 3,
+  "parts": 1,
+  "bars": 3,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 3,
+  "full": 3,
+  "pickup_or_closing": 0,
+  "suspect": []
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/accidental-broken-tie-spacing/accidental-broken-tie-spacing.pdf",
+  "midi": "digitized_scores/benchmark_omr/accidental-broken-tie-spacing/accidental-broken-tie-spacing.midi",
+  "ly": "digitized_scores/benchmark_omr/accidental-broken-tie-spacing/accidental-broken-tie-spacing.ly",
+  "review": "digitized_scores/benchmark_omr/accidental-broken-tie-spacing/accidental-broken-tie-spacing_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/accidental-broken-tie-spacing/accidental-broken-tie-spacing.homr.musicxml"
+ }
+}

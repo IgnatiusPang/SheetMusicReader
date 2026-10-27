@@ -1,0 +1,41 @@
+{
+ "input": "data/benchmark_corpus/images/auto-beam-exceptions.png",
+ "pages": 1,
+ "homr": {
+  "systems": 4,
+  "parts": 1,
+  "bars": 6,
+  "staff_images": true
+ },
+ "bars": {
+  "total": 6,
+  "full": 3,
+  "pickup_or_closing": 1,
+  "suspect": [
+   {
+    "part": 1,
+    "bar": 5,
+    "system": 3,
+    "got": "35/8",
+    "expected": "3",
+    "kind": "over"
+   },
+   {
+    "part": 1,
+    "bar": 6,
+    "system": 4,
+    "got": "13/4",
+    "expected": "3",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/auto-beam-exceptions/auto-beam-exceptions.pdf",
+  "midi": "digitized_scores/benchmark_omr/auto-beam-exceptions/auto-beam-exceptions.midi",
+  "ly": "digitized_scores/benchmark_omr/auto-beam-exceptions/auto-beam-exceptions.ly",
+  "review": "digitized_scores/benchmark_omr/auto-beam-exceptions/auto-beam-exceptions_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/auto-beam-exceptions/auto-beam-exceptions.homr.musicxml"
+ }
+}

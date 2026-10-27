@@ -1,0 +1,36 @@
+{
+ "input": "data/benchmark_corpus/images/auto-beam-ossia.png",
+ "pages": 1,
+ "homr": {
+  "systems": 1,
+  "parts": 2,
+  "bars": 1,
+  "staff_images": false
+ },
+ "bars": {
+  "total": 1,
+  "full": 0,
+  "pickup_or_closing": 1,
+  "suspect": [
+   {
+    "part": 2,
+    "bar": 1,
+    "system": 1,
+    "got": "2",
+    "expected": "1",
+    "kind": "over"
+   }
+  ]
+ },
+ "lilypond_warnings": [
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/auto-beam-ossia/auto-beam-ossia.ly:24:39: warning: bar check failed at: 3/8",
+  "/Users/ignatiuspang/Workings/2026/SheetMusicReader/digitized_scores/benchmark_omr/auto-beam-ossia/auto-beam-ossia.ly:46:39: warning: bar check failed at: 3/8"
+ ],
+ "outputs": {
+  "pdf": "digitized_scores/benchmark_omr/auto-beam-ossia/auto-beam-ossia.pdf",
+  "midi": "digitized_scores/benchmark_omr/auto-beam-ossia/auto-beam-ossia.midi",
+  "ly": "digitized_scores/benchmark_omr/auto-beam-ossia/auto-beam-ossia.ly",
+  "review": "digitized_scores/benchmark_omr/auto-beam-ossia/auto-beam-ossia_review.pdf",
+  "homr_musicxml": "digitized_scores/benchmark_omr/auto-beam-ossia/auto-beam-ossia.homr.musicxml"
+ }
+}
