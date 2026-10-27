@@ -231,6 +231,7 @@ def test_mid_measure_clef_ev_text():
 
 
 def test_piano_ensemble_and_tessitura_clef_inference():
+    pytest.importorskip("music21")
     from music21 import stream, note, meter
     sc = stream.Score()
     p1 = stream.Part()
@@ -254,6 +255,7 @@ def test_piano_ensemble_and_tessitura_clef_inference():
 
 
 def test_spurious_c_clef_suppression_on_empty_staff():
+    pytest.importorskip("music21")
     from music21 import stream, note, meter, clef
     sc = stream.Score()
     p = stream.Part()

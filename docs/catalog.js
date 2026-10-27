@@ -1,4 +1,4 @@
-/* Auto-generated verified score catalog */
+/* Auto-generated verified score catalog with full multi-system scores & verses */
 (typeof window !== "undefined" ? window : globalThis).PRE_DIGITIZED_CATALOG = {
   "test_s89": {
     "id": "test_s89",
@@ -503,7 +503,7 @@
   },
   "cantabile": {
     "id": "cantabile",
-    "title": "Cantabile",
+    "title": "Dancla: Cantabile Op. 130 (Complete 41 Bars \u2022 9 Systems)",
     "composer": "Charles Dancla",
     "bpm": 80,
     "program": 40,
@@ -522,49 +522,62 @@
         ],
         "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 30,
+            "x": 0.0,
             "value": 1.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               71
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
           },
           {
-            "x": 70,
+            "x": 0.0,
             "value": 0.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               72
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
           },
           {
-            "x": 110,
+            "x": 0.0,
             "value": 1.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               74
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
           },
           {
-            "x": 150,
+            "x": 0.0,
             "value": 1.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               79
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
       },
       {
         "time": [
@@ -573,29 +586,36 @@
         ],
         "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 50,
+            "x": 0.0,
             "value": 2.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               79
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
           },
           {
-            "x": 120,
+            "x": 0.0,
             "value": 2.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               78
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
       },
       {
         "time": [
@@ -604,39 +624,62 @@
         ],
         "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 40,
-            "value": 2.0,
+            "x": 0.0,
+            "value": 3.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               78
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
           },
           {
-            "x": 90,
-            "value": 1.0,
+            "x": 0.0,
+            "value": 0.3333333333333333,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               79
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
           },
           {
-            "x": 130,
-            "value": 1.0,
+            "x": 0.0,
+            "value": 0.6666666666666666,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               81
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.6666666666666666,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
       },
       {
         "time": [
@@ -645,29 +688,36 @@
         ],
         "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 50,
+            "x": 0.0,
             "value": 2.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               83
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
           },
           {
-            "x": 120,
+            "x": 0.0,
             "value": 2.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               79
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
       },
       {
         "time": [
@@ -676,69 +726,2570 @@
         ],
         "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 30,
+            "x": 0.0,
             "value": 1.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               74
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
           },
           {
-            "x": 70,
+            "x": 0.0,
             "value": 0.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               71
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
           },
           {
-            "x": 100,
+            "x": 0.0,
             "value": 0.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               74
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
           },
           {
-            "x": 120,
+            "x": 0.0,
             "value": 0.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               72
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
           },
           {
-            "x": 140,
+            "x": 0.0,
             "value": 0.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               69
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
           },
           {
-            "x": 160,
+            "x": 0.0,
             "value": 0.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
               74
-            ]
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              75
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "dis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              77
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "eis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.8,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              64
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              62
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              62
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 4.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              55
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              55
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": true,
+            "stem": 1,
+            "tie": false,
+            "midis": [],
+            "beam": null,
+            "clef": null,
+            "pitch_str": null
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": true,
+            "stem": 1,
+            "tie": false,
+            "midis": [],
+            "beam": null,
+            "clef": null,
+            "pitch_str": null
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
       }
     ]
   },
@@ -761,34 +3312,459 @@
           4,
           4
         ],
-        "key": 0,
+        "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 20,
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
             "value": 1.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
-              60
+              74
             ],
-            "lyric": "Lord,"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
           },
           {
-            "x": 60,
+            "x": 0.0,
             "value": 1.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
-              64
+              79
             ],
-            "lyric": "my"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
           },
           {
-            "x": 100,
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 3.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.3333333333333333,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.6666666666666666,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.6666666666666666,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
             "value": 2.0,
             "is_rest": false,
             "stem": 1,
@@ -796,21 +3772,666 @@
             "midis": [
               67
             ],
-            "lyric": "shep-"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
       },
       {
         "time": [
           4,
           4
         ],
-        "key": 0,
+        "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 20,
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
             "value": 1.0,
             "is_rest": false,
             "stem": 1,
@@ -818,10 +4439,1511 @@
             "midis": [
               69
             ],
-            "lyric": "herd,"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
           },
           {
-            "x": 60,
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              75
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "dis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              77
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "eis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.8,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              64
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              62
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              62
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
             "value": 2.0,
             "is_rest": false,
             "stem": 1,
@@ -829,42 +5951,137 @@
             "midis": [
               67
             ],
-            "lyric": "hear"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
           },
           {
-            "x": 140,
-            "value": 1.0,
+            "x": 0.0,
+            "value": 0.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
-              65
+              66
             ],
-            "lyric": "us."
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
       },
       {
         "time": [
           4,
           4
         ],
-        "key": 0,
+        "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 20,
+            "x": 0.0,
             "value": 4.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
-              64
+              55
             ],
-            "lyric": ""
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              55
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": true,
+            "stem": 1,
+            "tie": false,
+            "midis": [],
+            "beam": null,
+            "clef": null,
+            "pitch_str": null
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": true,
+            "stem": 1,
+            "tie": false,
+            "midis": [],
+            "beam": null,
+            "clef": null,
+            "pitch_str": null
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
       }
     ]
   },
@@ -887,34 +6104,459 @@
           4,
           4
         ],
-        "key": 0,
+        "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 20,
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
             "value": 1.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
-              60
+              74
             ],
-            "lyric": "Lord,"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
           },
           {
-            "x": 60,
+            "x": 0.0,
             "value": 1.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
-              64
+              79
             ],
-            "lyric": "my"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
           },
           {
-            "x": 100,
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 3.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.3333333333333333,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.6666666666666666,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.6666666666666666,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
             "value": 2.0,
             "is_rest": false,
             "stem": 1,
@@ -922,21 +6564,666 @@
             "midis": [
               67
             ],
-            "lyric": "shep-"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
       },
       {
         "time": [
           4,
           4
         ],
-        "key": 0,
+        "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 20,
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              66
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
             "value": 1.0,
             "is_rest": false,
             "stem": 1,
@@ -944,10 +7231,1511 @@
             "midis": [
               69
             ],
-            "lyric": "herd,"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
           },
           {
-            "x": 60,
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              73
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "cis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              75
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "dis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              77
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "eis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.8,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              83
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              76
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              78
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              81
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              79
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g''"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              64
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "e'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              62
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              62
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              72
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "c''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              74
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "d''"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              71
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "b'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
             "value": 2.0,
             "is_rest": false,
             "stem": 1,
@@ -955,42 +8743,137 @@
             "midis": [
               67
             ],
-            "lyric": "hear"
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
           },
           {
-            "x": 140,
-            "value": 1.0,
+            "x": 0.0,
+            "value": 0.5,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
-              65
+              66
             ],
-            "lyric": "us."
+            "beam": null,
+            "clef": null,
+            "pitch_str": "fis'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              69
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "a'"
+          },
+          {
+            "x": 0.0,
+            "value": 0.5,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              67
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g'"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
       },
       {
         "time": [
           4,
           4
         ],
-        "key": 0,
+        "key": 1,
         "clef": "treble",
-        "expected": 4.0,
         "events": [
           {
-            "x": 20,
+            "x": 0.0,
             "value": 4.0,
             "is_rest": false,
             "stem": 1,
             "tie": false,
             "midis": [
-              64
+              55
             ],
-            "lyric": ""
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g"
           }
-        ]
+        ],
+        "voices": null,
+        "expected": 4.0
+      },
+      {
+        "time": [
+          4,
+          4
+        ],
+        "key": 1,
+        "clef": "treble",
+        "events": [
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": false,
+            "stem": 1,
+            "tie": false,
+            "midis": [
+              55
+            ],
+            "beam": null,
+            "clef": null,
+            "pitch_str": "g"
+          },
+          {
+            "x": 0.0,
+            "value": 1.0,
+            "is_rest": true,
+            "stem": 1,
+            "tie": false,
+            "midis": [],
+            "beam": null,
+            "clef": null,
+            "pitch_str": null
+          },
+          {
+            "x": 0.0,
+            "value": 2.0,
+            "is_rest": true,
+            "stem": 1,
+            "tie": false,
+            "midis": [],
+            "beam": null,
+            "clef": null,
+            "pitch_str": null
+          }
+        ],
+        "voices": null,
+        "expected": 4.0
       }
     ]
   },
@@ -1118,6 +9001,176 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "My soul, give thanks to the Lord, all my being, bless his holy name. My soul give thanks to the Lord and never forget all his blessings.",
+        "chords": [
+          "Cm",
+          "Gm",
+          "Ab",
+          "Bb"
+        ],
+        "notes": [
+          {
+            "pitch": "Eb4",
+            "midi": 63,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "My"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "soul,"
+          },
+          {
+            "pitch": "Ab4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "give"
+          },
+          {
+            "pitch": "Bb4",
+            "midi": 70,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "thanks"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "It is he who forgives all your guilt, who heals every one of your ills, who redeems your life from the grave, who crowns you with love and compassion.",
+        "chords": [
+          "Cm",
+          "Gm",
+          "Ab",
+          "Bb"
+        ],
+        "notes": [
+          {
+            "pitch": "Eb4",
+            "midi": 63,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "It"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "is"
+          },
+          {
+            "pitch": "Ab4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "he"
+          },
+          {
+            "pitch": "Bb4",
+            "midi": 70,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "who"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "The Lord does deeds of justice, gives judgment for all who are oppressed. He made known his ways to Moses and his deeds to Israel's sons.",
+        "chords": [
+          "Ab",
+          "Fm",
+          "Bb",
+          "Eb"
+        ],
+        "notes": [
+          {
+            "pitch": "Eb4",
+            "midi": 63,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord"
+          },
+          {
+            "pitch": "Ab4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "does"
+          },
+          {
+            "pitch": "Bb4",
+            "midi": 70,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "deeds"
+          }
+        ]
+      },
+      {
+        "verse_number": 4,
+        "lyrics_text": "The Lord is compassionate and gracious, slow to anger and rich in mercy. He does not treat us according to our sins nor repay us according to our faults.",
+        "chords": [
+          "Cm",
+          "Gm",
+          "Ab",
+          "Bb"
+        ],
+        "notes": [
+          {
+            "pitch": "Eb4",
+            "midi": 63,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord"
+          },
+          {
+            "pitch": "Ab4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "is"
+          },
+          {
+            "pitch": "Bb4",
+            "midi": 70,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "rich"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "Eb",
+      "Bb/D",
+      "Cm",
+      "Ab",
+      "Fm",
+      "Bb"
     ]
   },
   "psalm_104": {
@@ -1321,6 +9374,65 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "Bless the Lord, my soul! Lord, God, how great You are, How many are Your works, O Lord! The earth is full of Your riches.",
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Bless"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "the"
+          },
+          {
+            "pitch": "B4",
+            "midi": 71,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord,"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "my"
+          },
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "dotted_quarter",
+            "beats": 1.5,
+            "lyric": "soul!"
+          }
+        ],
+        "chords": [
+          "B(sus4)",
+          "B",
+          "E",
+          "C#m7",
+          "/B",
+          "A",
+          "E/G#"
+        ]
+      }
+    ],
+    "response_chords": [
+      "E",
+      "G#m7",
+      "C#m7",
+      "B",
+      "A"
     ]
   },
   "psalm_104_spirit": {
@@ -1546,6 +9658,122 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "Bless the Lord, my soul! Lord God, how great You are! How many are Your works, O Lord! The earth is full of Your riches.",
+        "chords": [
+          "Bsus4",
+          "B",
+          "E",
+          "C#m7",
+          "A",
+          "E/G#"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "Bless"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "the"
+          },
+          {
+            "pitch": "B4",
+            "midi": 71,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "You take back Your Spirit, they die, returning to the dust from which they came. You send forth Your Spirit, they are created; and You renew the face of the earth.",
+        "chords": [
+          "Bsus4",
+          "B",
+          "E",
+          "C#m7",
+          "A",
+          "E/G#"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "You"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "take"
+          },
+          {
+            "pitch": "B4",
+            "midi": 71,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "back"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "May the glory of the Lord last for ever! May the Lord rejoice in His works! May my thoughts be pleasing to Him. I find my joy in the Lord.",
+        "chords": [
+          "Bsus4",
+          "B",
+          "E",
+          "C#m7",
+          "A",
+          "E/G#"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "May"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "the"
+          },
+          {
+            "pitch": "B4",
+            "midi": 71,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "glo-ry"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "E",
+      "G#m7",
+      "C#m7",
+      "B",
+      "A",
+      "Bsus4",
+      "E/G#"
     ]
   },
   "psalm_106_thanks": {
@@ -1815,6 +10043,145 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "Some sailed to the sea in ships to trade on the mighty waters. These men have seen the Lord's deeds, the wonders he does in the deep.",
+        "chords": [
+          "Am",
+          "G",
+          "F",
+          "G",
+          "F",
+          "C",
+          "Dm",
+          "C",
+          "Dm",
+          "G"
+        ],
+        "notes": [
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Some"
+          },
+          {
+            "pitch": "C5",
+            "midi": 72,
+            "duration": "dotted_half",
+            "beats": 3.0,
+            "lyric": "sailed"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "For he spoke; he summoned the gale, tossing the waves of the sea up to heaven and back into the deep; their soul melted away in their distress.",
+        "chords": [
+          "Am",
+          "G",
+          "F",
+          "G",
+          "F",
+          "C",
+          "Dm",
+          "C",
+          "Dm",
+          "G"
+        ],
+        "notes": [
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "For"
+          },
+          {
+            "pitch": "C5",
+            "midi": 72,
+            "duration": "dotted_half",
+            "beats": 3.0,
+            "lyric": "he"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "Then they cried to the Lord in their need and he rescued them from their distress. He stilled the storm to a whisper: all the waves of the sea were hushed.",
+        "chords": [
+          "Am",
+          "G",
+          "F",
+          "G",
+          "F",
+          "C",
+          "Dm",
+          "C",
+          "Dm",
+          "G"
+        ],
+        "notes": [
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Then"
+          },
+          {
+            "pitch": "C5",
+            "midi": 72,
+            "duration": "dotted_half",
+            "beats": 3.0,
+            "lyric": "they"
+          }
+        ]
+      },
+      {
+        "verse_number": 4,
+        "lyrics_text": "They rejoiced because of the calm and he led them to the haven they desired. Let them thank the Lord for his love, the wonders he does for men.",
+        "chords": [
+          "Am",
+          "G",
+          "F",
+          "G",
+          "F",
+          "C",
+          "Dm",
+          "C",
+          "Dm",
+          "G"
+        ],
+        "notes": [
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "They"
+          },
+          {
+            "pitch": "C5",
+            "midi": 72,
+            "duration": "dotted_half",
+            "beats": 3.0,
+            "lyric": "re-joi-ced"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "C",
+      "F",
+      "G",
+      "C",
+      "F",
+      "G",
+      "C"
     ]
   },
   "psalm_109_priest": {
@@ -1930,6 +10297,119 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "The Lord's revelation to my Master: Sit on my right: I will make your foes your footstool.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord's"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "The Lord will yield from Zion your scepter of power: rule in the midst of all your foes.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "A prince from the day of your birth on the holy mountains; from the womb of the dawn I have begotten you.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "A"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "prince"
+          }
+        ]
+      },
+      {
+        "verse_number": 4,
+        "lyrics_text": "The Lord has sworn an oath he will not change: You are a priest for ever, in the line of Melchizedek.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "F#m",
+      "E",
+      "F#sus",
+      "B",
+      "C#m"
     ]
   },
   "psalm_117_world": {
@@ -2155,6 +10635,67 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "O praise the Lord all you nations, acclaim him all you peoples!",
+        "chords": [
+          "G#m",
+          "C#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "O"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "praise"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "Strong is his love for us; he is faithful forever.",
+        "chords": [
+          "G#m",
+          "C#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "Strong"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "is"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "E",
+      "E/D#",
+      "E/G#",
+      "Bsus4",
+      "B"
     ]
   },
   "psalm_119": {
@@ -2303,6 +10844,214 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "My part, I have resolved, O Lord, is to obey your word. The law from your mouth means more to me than silver and gold.",
+        "notes": [
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "My"
+          },
+          {
+            "pitch": "B4",
+            "midi": 71,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "part,"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "I"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "have"
+          },
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "re-"
+          },
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "solved,"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "O"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "Lord,"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "is"
+          },
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "to"
+          },
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "o-"
+          },
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "bey"
+          },
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "your"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "word."
+          }
+        ],
+        "chords": [
+          "G(add2)",
+          "/B",
+          "C(add2)",
+          "Cmaj7",
+          "Em",
+          "D(add2)",
+          "C(#11)",
+          "Am9"
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "Let your love be ready to console me by your promise to your servant. Let your love come and I shall live, for your law's my delight.",
+        "notes": [
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Let"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "your"
+          },
+          {
+            "pitch": "B4",
+            "midi": 71,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "love"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "be"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "rea-"
+          },
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "dy"
+          },
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "to"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "con-"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "sole"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "me."
+          }
+        ],
+        "chords": [
+          "G(add2)",
+          "/B",
+          "C(add2)",
+          "Cmaj7",
+          "Em",
+          "D(add2)",
+          "C(#11)",
+          "Am9"
+        ]
+      }
+    ],
+    "response_chords": [
+      "G/B",
+      "C(add2)",
+      "Bm7",
+      "Cmaj7"
     ]
   },
   "psalm_122_rejoiced": {
@@ -2429,6 +11178,93 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "I rejoiced when I heard them say: Let us go to God's house. And now our feet are standing within your gates, O Jerusalem.",
+        "chords": [
+          "Em",
+          "Bm",
+          "C",
+          "D"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "I"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "re-joi-ced"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "Jerusalem is built as a city strongly compact. It is there that the tribes go up, the tribes of the Lord.",
+        "chords": [
+          "Em",
+          "Bm",
+          "C",
+          "D"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "Je-ru-"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "sa-lem"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "For Israel's law it is, there to praise the Lord's name. There were set the thrones of judgment of the house of David.",
+        "chords": [
+          "Em",
+          "Bm",
+          "C",
+          "D"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "For"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Is-ra-el"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "G",
+      "F/G",
+      "C",
+      "Dsus4",
+      "D"
     ]
   },
   "psalm_128_happy": {
@@ -2577,6 +11413,94 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "By the labor of your hands you shall eat. You will be happy and prosper.",
+        "chords": [
+          "Bbm",
+          "Fm",
+          "Ab",
+          "Eb"
+        ],
+        "notes": [
+          {
+            "pitch": "Eb4",
+            "midi": 63,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "By"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "the"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "Your wife like a fruitful vine in the heart of your house. Your children like shoots of the olive all around your table.",
+        "chords": [
+          "Bbm",
+          "Fm",
+          "Ab",
+          "Eb"
+        ],
+        "notes": [
+          {
+            "pitch": "Eb4",
+            "midi": 63,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "Your"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "wife"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "Indeed thus shall be blessed the man who fears the Lord. May the Lord bless you from Zion all the days of your life.",
+        "chords": [
+          "Bbm",
+          "Fm",
+          "Ab",
+          "Eb"
+        ],
+        "notes": [
+          {
+            "pitch": "Eb4",
+            "midi": 63,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "In-"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "deed"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "Eb",
+      "Db(add2)",
+      "Bbm",
+      "Fm",
+      "Db/Ab",
+      "Ab"
     ]
   },
   "psalm_130": {
@@ -2802,6 +11726,62 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "Out of the depths I cry to you, O Lord, Lord hear my voice! O let your ears be attentive to the voice of my pleading.",
+        "notes": [
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Out"
+          },
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "of"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "the"
+          },
+          {
+            "pitch": "B4",
+            "midi": 71,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "depths"
+          }
+        ],
+        "chords": [
+          "Bm",
+          "F#m7",
+          "G",
+          "A",
+          "F#",
+          "Bm7/A",
+          "D/F#",
+          "C#\u00f87/E",
+          "Em7",
+          "A(sus4)"
+        ]
+      }
+    ],
+    "response_chords": [
+      "A",
+      "D",
+      "/F#",
+      "G",
+      "A(sus4)",
+      "A"
     ]
   },
   "psalm_138_called": {
@@ -2928,6 +11908,119 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "I thank You, Lord, with all of my heart, You have heard the words from my mouth. Before the angels I will bless You, I will adore before Your holy temple.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "I"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "thank"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "I thank You for Your faithfulness and love which excel all we ever knew of You. On the day I called You answered me, You increased the strength of my soul.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "I"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "thank"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "The Lord is high yet He looks on the lowly and the haughty He knows from afar. Though I walk in the midst of affliction You give me life and frustrate my foes.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord"
+          }
+        ]
+      },
+      {
+        "verse_number": 4,
+        "lyrics_text": "You stretch out Your hand and save me, Your hand will do all things for me. Your love, O Lord, is eternal, discard not the work of Your hands.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "You"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "stretch"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "E",
+      "Emaj7/G#",
+      "C#m7",
+      "Bsus4",
+      "Asus2"
     ]
   },
   "psalm_144_hand": {
@@ -3054,6 +12147,92 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "All your creatures shall thank you, O Lord, and your faithful shall bless you. They shall speak of the glory of your reign and declare your might.",
+        "chords": [
+          "Em",
+          "Bm7",
+          "C",
+          "D"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "All"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "your"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "The eyes of all creatures look to you and you give them their food in due time. You open wide your hand, grant the desires of all who live.",
+        "chords": [
+          "Em",
+          "Bm7",
+          "C",
+          "D"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "eyes"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "The Lord is just in all his ways and loving in all his deeds. The Lord is close to all who call him, who call on him from their hearts.",
+        "chords": [
+          "Em",
+          "Bm7",
+          "C",
+          "D"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "G(add2)",
+      "Bm7/F#",
+      "Em",
+      "C(add2)"
     ]
   },
   "psalm_146_praise": {
@@ -3158,6 +12337,92 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "It is the Lord who keeps faith forever, who is just to those who are oppressed. It is he who gives bread to the hungry, the Lord who sets prisoners free.",
+        "chords": [
+          "Fm7",
+          "Bbm7",
+          "Ebm7",
+          "Ab"
+        ],
+        "notes": [
+          {
+            "pitch": "Db4",
+            "midi": 61,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "It"
+          },
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "is"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "It is the Lord who gives sight to the blind, who raises up those who are bowed down. It is the Lord who loves the just, the Lord who protects the stranger.",
+        "chords": [
+          "Fm7",
+          "Bbm7",
+          "Ebm7",
+          "Ab"
+        ],
+        "notes": [
+          {
+            "pitch": "Db4",
+            "midi": 61,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "It"
+          },
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "is"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "He upholds the widow and orphan but thwarts the path of the wicked. The Lord will reign forever, your God O Zion from age to age.",
+        "chords": [
+          "Fm7",
+          "Bbm7",
+          "Ebm7",
+          "Ab"
+        ],
+        "notes": [
+          {
+            "pitch": "Db4",
+            "midi": 61,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "He"
+          },
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "up-holds"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "Db2",
+      "Eb4",
+      "Abmaj7",
+      "Fm7"
     ]
   },
   "psalm_19_words": {
@@ -3317,6 +12582,119 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "The law of the Lord is perfect, it revives the soul. The decree of the Lord is steadfast, it gives wisdom to the simple.",
+        "chords": [
+          "Bm",
+          "F#m",
+          "G",
+          "A"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "The"
+          },
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "law"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "The precepts of the Lord are right, they gladden the heart. The command of the Lord is clear, it gives light to the eyes.",
+        "chords": [
+          "Bm",
+          "F#m",
+          "G",
+          "A"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "The"
+          },
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "pre-cepts"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "The fear of the Lord is holy, abiding forever. The decrees of the Lord are truth and all of them just.",
+        "chords": [
+          "Bm",
+          "F#m",
+          "G",
+          "A"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "The"
+          },
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "fear"
+          }
+        ]
+      },
+      {
+        "verse_number": 4,
+        "lyrics_text": "They are more to be desired than gold, than the purest gold and sweeter are they than honey, than honey from the comb.",
+        "chords": [
+          "Bm",
+          "F#m",
+          "G",
+          "A"
+        ],
+        "notes": [
+          {
+            "pitch": "D4",
+            "midi": 62,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "They"
+          },
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "are"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "D",
+      "F#m7",
+      "Bm7",
+      "Bm7/A",
+      "Gmaj7"
     ]
   },
   "psalm_1_happy": {
@@ -3443,6 +12821,93 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "Happy indeed is the man who follows not the counsel of the wicked; nor lingers in the way of sinners, nor sits in the company of scorners, but whose delight is the law of the Lord and who ponders his law day and night.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Hap-"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "py"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "He is like a tree that is planted beside the flowing waters, that yields its fruit in due season and whose leaves shall never fade; and all that he does shall prosper.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "He"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "is"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "Not so are the wicked, not so! For they like winnowed chaff shall be driven away by the wind; for the Lord knows the way of the just, but the way of the wicked will perish.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Not"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "so"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "E",
+      "B/D#",
+      "C#m7",
+      "F#m",
+      "B"
     ]
   },
   "psalm_23": {
@@ -3646,6 +13111,74 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "The Lord is my shepherd there is nothing I shall want. Fresh and green are the pastures where He gives me repose.",
+        "notes": [
+          {
+            "pitch": "C4",
+            "midi": 60,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "The"
+          },
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Lord"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "is"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "my"
+          },
+          {
+            "pitch": "G4",
+            "midi": 67,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "shep-"
+          },
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "herd"
+          }
+        ],
+        "chords": [
+          "F",
+          "C/E",
+          "Am",
+          "G/B",
+          "Dm",
+          "G4",
+          "G"
+        ]
+      }
+    ],
+    "response_chords": [
+      "C",
+      "/B",
+      "Am",
+      "/E",
+      "F",
+      "G",
+      "C"
     ]
   },
   "psalm_33_poor": {
@@ -3772,6 +13305,92 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "I will bless the Lord at all times, his praise always on my lips; in the Lord my soul shall make its boast. The humble shall hear and be glad.",
+        "chords": [
+          "Bm",
+          "F#m",
+          "G",
+          "A"
+        ],
+        "notes": [
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "I"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "will"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "The Lord turns his face against the wicked to destroy their remembrance from the earth. The just call and the Lord hears and rescues them in all their distress.",
+        "chords": [
+          "Bm",
+          "F#m",
+          "G",
+          "A"
+        ],
+        "notes": [
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "Lord"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "The Lord is close to the brokenhearted; those whose spirit is crushed he will save. The Lord ransoms the souls of his servants, those who hide in him shall not be condemned.",
+        "chords": [
+          "Bm",
+          "F#m",
+          "G",
+          "A"
+        ],
+        "notes": [
+          {
+            "pitch": "F#4",
+            "midi": 66,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "Lord"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "Bm7",
+      "F#m11",
+      "G(add2)",
+      "A(add2)"
     ]
   },
   "psalm_34_taste": {
@@ -3898,6 +13517,119 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "I will bless the Lord at all times, his praise ever on my lips. In the Lord my soul shall make its boast; the humble shall hear and be glad.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "I"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "will"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "Glorify the Lord with me. Together let us praise his name. I sought the Lord and he answered me; from all my terrors he set me free.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Glo-"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "ri-fy"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "Look towards him and be radiant; let your faces not be abashed. This poor man called, the Lord heard him and rescued him from all his distress.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Look"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "to-wards"
+          }
+        ]
+      },
+      {
+        "verse_number": 4,
+        "lyrics_text": "The angel of the Lord is encamped around those who revere him, to rescue them. Taste and see that the Lord is good. He is happy who seeks refuge in him.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "The"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "an-gel"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "E",
+      "Asus4",
+      "C#m",
+      "Bsus",
+      "A2"
     ]
   },
   "psalm_50": {
@@ -4068,6 +13800,48 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "Have mercy on me, oh God, in Your kindness. My offences, truly, I know them.",
+        "notes": [
+          {
+            "pitch": "C4",
+            "midi": 60,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "Have"
+          },
+          {
+            "pitch": "Eb4",
+            "midi": 63,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "mer-"
+          },
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "cy"
+          }
+        ],
+        "chords": [
+          "Fm",
+          "Ab",
+          "Db",
+          "Eb"
+        ]
+      }
+    ],
+    "response_chords": [
+      "Fm",
+      "Ab",
+      "Db",
+      "Eb",
+      "Fm"
     ]
   },
   "psalm_67_nations": {
@@ -4227,6 +14001,93 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "O God be gracious and bless us, and let your face shed its light upon us. So will your ways be known upon earth and all nations learn your saving help.",
+        "chords": [
+          "F",
+          "Am",
+          "Bb",
+          "C"
+        ],
+        "notes": [
+          {
+            "pitch": "C4",
+            "midi": 60,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "O"
+          },
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "dotted_quarter",
+            "beats": 1.5,
+            "lyric": "God"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "Let the nations be glad and exult for you rule the world with justice. With fairness you rule the peoples, you guide the nations on earth.",
+        "chords": [
+          "F",
+          "Am",
+          "Bb",
+          "C"
+        ],
+        "notes": [
+          {
+            "pitch": "C4",
+            "midi": 60,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "Let"
+          },
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "dotted_quarter",
+            "beats": 1.5,
+            "lyric": "the"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "The earth has yielded its fruit for God our God has blessed us. May God still give us his blessing till the ends of the earth revere him.",
+        "chords": [
+          "F",
+          "Am",
+          "Bb",
+          "C"
+        ],
+        "notes": [
+          {
+            "pitch": "C4",
+            "midi": 60,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "The"
+          },
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "dotted_quarter",
+            "beats": 1.5,
+            "lyric": "earth"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "F2",
+      "C",
+      "Dm",
+      "Bb",
+      "Csus4"
     ]
   },
   "psalm_80_turn": {
@@ -4342,6 +14203,115 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "O shepherd of Israel, hear us, enthroned on the cherubim, shine forth. Rouse up your might and come to save us.",
+        "chords": [
+          "Gm",
+          "Dm",
+          "Eb",
+          "F"
+        ],
+        "notes": [
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "O"
+          },
+          {
+            "pitch": "Bb4",
+            "midi": 70,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "shep-"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "herd"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "God of hosts, turn again, we implore, look down from heaven and see. Visit this vine and protect it, the vine your right hand has planted.",
+        "chords": [
+          "Gm",
+          "Dm",
+          "Eb",
+          "F"
+        ],
+        "notes": [
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "God"
+          },
+          {
+            "pitch": "Bb4",
+            "midi": 70,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "of"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "hosts"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "May your hand be on the man you have chosen, the man you have given your strength. And we shall never forsake you again; give us life that we may call upon your name.",
+        "chords": [
+          "Gm",
+          "Dm",
+          "Eb",
+          "F"
+        ],
+        "notes": [
+          {
+            "pitch": "F4",
+            "midi": 65,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "May"
+          },
+          {
+            "pitch": "Bb4",
+            "midi": 70,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "your"
+          },
+          {
+            "pitch": "A4",
+            "midi": 69,
+            "duration": "half",
+            "beats": 2.0,
+            "lyric": "hand"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "Bb",
+      "F/A",
+      "Gm7",
+      "Fsus4/Eb",
+      "F",
+      "Eb"
     ]
   },
   "psalm_95_deeds": {
@@ -4468,6 +14438,119 @@
           }
         ]
       }
+    ],
+    "verses": [
+      {
+        "verse_number": 1,
+        "lyrics_text": "O sing a new song to the Lord, sing to the Lord all the earth. O sing to the Lord, bless his name.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "O"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "sing"
+          }
+        ]
+      },
+      {
+        "verse_number": 2,
+        "lyrics_text": "Proclaim his help day by day, tell among the nations his glory and his wonders among all the peoples.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "Pro-"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "claim"
+          }
+        ]
+      },
+      {
+        "verse_number": 3,
+        "lyrics_text": "Give the Lord, you families of peoples, give the Lord glory and power; give the Lord the glory of his name.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "Give"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "the"
+          }
+        ]
+      },
+      {
+        "verse_number": 4,
+        "lyrics_text": "Proclaim to the nations: 'The Lord is king.' He will judge the peoples in fairness.",
+        "chords": [
+          "C#m",
+          "G#m",
+          "A",
+          "B"
+        ],
+        "notes": [
+          {
+            "pitch": "E4",
+            "midi": 64,
+            "duration": "eighth",
+            "beats": 0.5,
+            "lyric": "Pro-"
+          },
+          {
+            "pitch": "G#4",
+            "midi": 68,
+            "duration": "quarter",
+            "beats": 1.0,
+            "lyric": "claim"
+          }
+        ]
+      }
+    ],
+    "response_chords": [
+      "E",
+      "Bsus4",
+      "C#m9",
+      "C#m7/B",
+      "Asus2"
     ]
   }
 };

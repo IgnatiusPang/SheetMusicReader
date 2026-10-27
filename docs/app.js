@@ -716,6 +716,19 @@ function downloadBlob(blob, filename) {
   }, 100);
 }
 
+// Render HTML for Psalm Verses with Chords
+function renderVerseHtml(verse) {
+  if (!verse) return '<p style="color:#94a3b8;">No verse data available.</p>';
+  const chordsHtml = verse.chords && verse.chords.length > 0 ? `
+    <div class="verse-chords-row">
+      <span class="chord-label">Chords:</span>
+      ${verse.chords.map(c => `<span class="chord-badge">${c}</span>`).join('')}
+    </div>
+  ` : '';
+  const textHtml = `<div class="verse-lyrics-body">${verse.lyrics_text || ''}</div>`;
+  return chordsHtml + textHtml;
+}
+
 // UI Score Card Generation
 function createScoreCard(scoreObj, idx) {
   const card = document.createElement('div');
@@ -834,6 +847,28 @@ function createScoreCard(scoreObj, idx) {
       </div>
     </div>
 
+    <!-- Psalm Verses & Guitar Chords Section (All Lines of PDF) -->
+    ${scoreObj.verses && scoreObj.verses.length > 0 ? `
+    <div class="verses-section-card" id="verses-section-${idx}">
+      <div class="verses-card-header">
+        <div class="verses-card-title">
+          <span>📖</span> Psalm Verses & Guitar Chords (All Lines of Score)
+        </div>
+        <span class="badge-verses">${scoreObj.verses.length} Verses Extracted</span>
+      </div>
+      <div class="verses-tabs" id="verse-tabs-${idx}">
+        ${scoreObj.verses.map((v, vIdx) => `
+          <button class="verse-tab-btn ${vIdx === 0 ? 'active' : ''}" data-score-idx="${idx}" data-verse-idx="${vIdx}">
+            Verse ${v.verse_number || (vIdx + 1)}
+          </button>
+        `).join('')}
+      </div>
+      <div class="verse-content-box" id="verse-content-${idx}">
+        ${renderVerseHtml(scoreObj.verses[0])}
+      </div>
+    </div>
+    ` : ''}
+
     <!-- LilyPond Source Code Preview -->
     <div class="code-preview" id="code-${idx}">${lilypondText}</div>
   `;
@@ -847,6 +882,22 @@ function createScoreCard(scoreObj, idx) {
   // Render Piano Keyboard
   const pianoEl = document.getElementById(`piano-keyboard-${idx}`);
   renderPianoKeyboard(pianoEl, idx, scoreObj);
+
+  // Bind Verse Tabs
+  if (scoreObj.verses && scoreObj.verses.length > 0) {
+    const tabBtns = card.querySelectorAll(`.verse-tab-btn[data-score-idx="${idx}"]`);
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const vIdx = parseInt(btn.getAttribute('data-verse-idx'), 10);
+        const contentEl = document.getElementById(`verse-content-${idx}`);
+        if (contentEl && scoreObj.verses[vIdx]) {
+          contentEl.innerHTML = renderVerseHtml(scoreObj.verses[vIdx]);
+        }
+      });
+    });
+  }
 
   // Bind Buttons
   document.getElementById(`pdf-btn-${idx}`).addEventListener('click', () => {
@@ -1401,7 +1452,7 @@ async function processImageFile(file) {
           wasmFloats.set(densities);
 
           const outLenPtr = wasmInstance.exports.wasm_alloc(4);
-          const outPtr = wasmInstance.exports.wasm_detect_systems(ptr, count, 0.25, img.width, outLenPtr);
+          const outPtr = wasmInstance.exports.wasm_detect_systems(ptr, count, 0.12, img.width, outLenPtr);
           const outLen = new DataView(wasmMemory.buffer, outLenPtr, 4).getUint32(0, true);
           const jsonStr = readStringFromWasm(outPtr, outLen);
           try {
@@ -1490,7 +1541,7 @@ async function processPdfFile(file) {
       wasmFloats.set(densities);
 
       const outLenPtr = wasmInstance.exports.wasm_alloc(4);
-      const outPtr = wasmInstance.exports.wasm_detect_systems(ptr, count, 0.25, canvas.width, outLenPtr);
+      const outPtr = wasmInstance.exports.wasm_detect_systems(ptr, count, 0.12, canvas.width, outLenPtr);
       const outLen = new DataView(wasmMemory.buffer, outLenPtr, 4).getUint32(0, true);
       const jsonStr = readStringFromWasm(outPtr, outLen);
       try {
