@@ -30,10 +30,11 @@ from xml.sax.saxutils import escape as xml_escape
 import mido
 from mido import Message, MidiFile, MidiTrack
 
-import score_formatter
-import vector_omr
-from audio_synth import AudioEvent, convert_wav_to_mp3, play_wav, render_wav_bytes
-from lean_bridge import (
+from sheet_music_reader import paths
+from sheet_music_reader.export import score_formatter
+from sheet_music_reader.omr import vector_omr
+from sheet_music_reader.export.audio_synth import AudioEvent, convert_wav_to_mp3, play_wav, render_wav_bytes
+from sheet_music_reader.export.lean_bridge import (
     LeanBar,
     LeanEvent,
     LeanScoreSpec,
@@ -166,7 +167,7 @@ def load_score_input(
             return spec, fifths, None
 
     # Fallback for scanned PDF or raster image (.png/.jpg/.jpeg/.tif)
-    import score_from_image
+    from sheet_music_reader.omr import score_from_image
 
     work_out = input_path.parent / "_omr_work"
     res = score_from_image.convert(input_path, work_out)
@@ -456,7 +457,7 @@ def run_convert_pipeline(
 
     base_accomp_events: tuple[AudioEvent, ...] = ()
     if psalm_data is None and accompaniment and input_path.suffix.lower() == ".pdf":
-        import karaoke_trainer
+        from sheet_music_reader.karaoke import extract as karaoke_trainer
 
         k_data = karaoke_trainer.extract_karaoke_score_from_pdf(input_path)
         target_mode = "full_arrangement" if arrangement else "chart_as_written"
@@ -594,7 +595,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     p_conv = sub.add_parser("convert", help="Convert score to MusicXML, LilyPond, MIDI, WAV, and verify with Lean 4")
     p_conv.add_argument("input", type=Path)
-    p_conv.add_argument("--out-dir", type=Path, default=Path("practice_output"))
+    p_conv.add_argument("--out-dir", type=Path, default=paths.PRACTICE_DIR)
     p_conv.add_argument("--speed", default="1.0", help="Playback speed fraction or decimal (e.g. 0.5, 1/3, 0.25)")
     p_conv.add_argument("--speeds", default=None, help="Comma-separated speeds (e.g. 1.0,0.5,0.25)")
     p_conv.add_argument("--bpm", type=float, default=None, help="Target quarter-note BPM")
@@ -615,7 +616,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     p_sing = sub.add_parser("sing", help="Generate (and optionally play) a Vocal Guide WAV practice track")
     p_sing.add_argument("input", type=Path)
-    p_sing.add_argument("--out-dir", type=Path, default=Path("sing_output"))
+    p_sing.add_argument("--out-dir", type=Path, default=paths.PACKS_DIR)
     p_sing.add_argument("--speed", default="0.5")
     p_sing.add_argument("--bpm", type=float, default=None)
     p_sing.add_argument("--augment", type=int, default=1)
@@ -654,7 +655,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     if args.cmd == "karaoke":
-        import karaoke_trainer
+        from sheet_music_reader.karaoke import extract as karaoke_trainer
 
         stem = re.sub(r"[^A-Za-z0-9_-]+", "_", args.input.stem)
         out_html = args.out if args.out is not None else args.input.with_name(f"{stem}_Karaoke_Trainer.html")

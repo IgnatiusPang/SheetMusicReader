@@ -12,7 +12,7 @@ Pipeline of `convert`:
                  photo staff above its engraving, with suspect bars marked, for proof-reading.
 
 Interpreter: the `omr` conda env (homr, music21, anthropic, scikit-image):
-    /Users/ignatiuspang/anaconda3/envs/omr/bin/python score_from_image.py convert photo.jpg --out digitized_scores/from_image
+    /Users/ignatiuspang/anaconda3/envs/omr/bin/python -m sheet_music_reader.omr.score_from_image convert photo.jpg --out data/output/digitized_scores/from_image
 """
 from __future__ import annotations
 
@@ -36,6 +36,8 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+
+from sheet_music_reader import paths
 
 MODEL = "claude-opus-5-5"
 PRICE_PER_MTOK = (4.0, 20.0)                     # USD input / output for MODEL
@@ -764,7 +766,7 @@ def score_to_wasm_dict(score: Score, title: str = "") -> dict:
 def engrave_with_wasm(score: Score, title: str = "") -> str:
     """Invokes docs/sheet_music_engine.wasm via Node.js to engrave Score to LilyPond syntax."""
     req_dict = score_to_wasm_dict(score, title)
-    script_path = Path(__file__).resolve().parent / "scripts" / "wasm_engraver.js"
+    script_path = paths.WASM_ENGRAVER_JS
     res = subprocess.run(
         ["node", str(script_path), "--score", "-"],
         input=json.dumps(req_dict),
@@ -1280,7 +1282,7 @@ def main(argv: list[str]) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
     c = sub.add_parser("convert", help="image(s) or scanned PDF(s) -> PDF, MIDI, LilyPond, review sheet")
     c.add_argument("inputs", nargs="+", type=Path)
-    c.add_argument("--out", type=Path, default=Path("digitized_scores/from_image"))
+    c.add_argument("--out", type=Path, default=paths.SCORES_DIR / "from_image")
     c.add_argument("--refine", choices=("none", "claude"), default="none",
                    help="claude: check every staff with the Claude API (needs ANTHROPIC_API_KEY or `ant auth login`)")
     c.add_argument("--model", default=MODEL)

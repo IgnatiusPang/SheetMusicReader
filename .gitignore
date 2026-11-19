@@ -14,7 +14,7 @@ htmlcov/
 # Scratch & temporary testing files
 scratch/
 *.log
-digitized_scores/**/work/
+data/output/**/work/
 
 # macOS
 .DS_Store
@@ -34,6 +34,6 @@ digitized_scores/**/work/
 # Lean build output
 formalization/lean/.lake/
 # Regenerable practice audio
-sing_along_packs/**/*.wav
-sing_along_packs/**/*.mp3
+data/output/sing_along_packs/**/*.wav
+data/output/sing_along_packs/**/*.mp3
 _omr_work/

@@ -3,17 +3,17 @@ import tempfile
 from itertools import chain
 from pathlib import Path
 from flask import Flask, render_template, jsonify, request, Response
-import psalms_db
-import score_formatter
-import pdf_parser
-import digitize_all
-import lean_bridge
-import vector_omr
-import karaoke_trainer
-from music_pipeline import FIFTHS_TO_KEY_NAME
+from sheet_music_reader import paths, psalms_db
+from sheet_music_reader.export import score_formatter
+from sheet_music_reader.omr import pdf_parser
+from sheet_music_reader.cli import digitize_all
+from sheet_music_reader.export import lean_bridge
+from sheet_music_reader.omr import vector_omr
+from sheet_music_reader.karaoke import extract as karaoke_trainer
+from sheet_music_reader.cli.music_pipeline import FIFTHS_TO_KEY_NAME
 
-app = Flask(__name__, template_folder="templates", static_folder="static")
-DATA_DIR = Path(__file__).resolve().parent / "data"
+app = Flask(__name__, template_folder=str(paths.TEMPLATES_DIR), static_folder=str(paths.STATIC_DIR))
+DATA_DIR = paths.PSALM_PDF_DIR
 
 # Ensure default and digitized scores are loaded
 psalms_db.ensure_scores_dir()
@@ -24,7 +24,7 @@ def _list_karaoke_sources() -> list[dict]:
     pdfs = (
         sorted(
             DATA_DIR.glob("*.pdf"),
-            key=lambda p: (0 if p.name == "Ps-122-I-Rejoiced-Chart.pdf" else 1, p.name.lower()),
+            key=lambda p: (0 if p.name == "04_Ps-122-I-Rejoiced-Chart.pdf" else 1, p.name.lower()),
         )
         if DATA_DIR.is_dir()
         else ()

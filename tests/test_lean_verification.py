@@ -12,13 +12,11 @@ import mido
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
 
-import lean_bridge
-import music_pipeline
-import psalms_db
-import score_formatter
+from sheet_music_reader.export import lean_bridge
+from sheet_music_reader.cli import music_pipeline
+from sheet_music_reader import psalms_db
+from sheet_music_reader.export import score_formatter
 
 
 def _write_psalm_artifacts(psalm_data: dict, out_dir: Path, speed: float = 1.0, augment: int = 1) -> tuple[Path, Path, Path]:
@@ -69,7 +67,7 @@ def test_psalm_roundtrip_and_slowdown_lean_verified(tmp_path: Path):
 
 def test_real_vector_pdf_full_kernel_certificate(tmp_path: Path):
     """Converts a real vector PDF in data/ and proves equivalence in the Lean 4 kernel (`lake env lean`)."""
-    pdf_path = ROOT / "data" / "03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf"
+    pdf_path = ROOT / "data" / "input" / "psalms" / "03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf"
     assert pdf_path.is_file()
 
     rep = music_pipeline.run_convert_pipeline(
@@ -210,7 +208,7 @@ def test_d5_falsifier_corrupt_midi_pitch_on_disk(tmp_path: Path):
 
 def test_psalm_122_as_written_and_full_arrangement_lean_kernel(tmp_path: Path):
     """Real vector PDF with Sibelius cue pickup passes Lean kernel in both chart and arrangement modes."""
-    pdf_path = ROOT / "data" / "Ps-122-I-Rejoiced-Chart.pdf"
+    pdf_path = ROOT / "data" / "input" / "psalms" / "04_Ps-122-I-Rejoiced-Chart.pdf"
     rep1 = music_pipeline.run_convert_pipeline(
         pdf_path,
         tmp_path / "as_written",

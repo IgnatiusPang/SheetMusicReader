@@ -31,16 +31,16 @@ Use this skill when you want to **learn and sing a melody straight from sheet mu
 
 ```bash
 # Generate and immediately play a 50% speed Vocal Guide track with 1-bar count-in:
-python3 music_pipeline.py sing path/to/song.pdf \
-    --out-dir output/sing_practice \
+python3 -m sheet_music_reader.cli.music_pipeline sing path/to/song.pdf \
+    --out-dir data/output/practice/sing_practice \
     --speed 0.5 \
     --voice vocal_guide \
     --count-in 1 \
     --play
 
 # Build a complete graduated singing ladder (100%, 75%, 50%, 33%, 25%) + MP3 + printable LilyPond PDF + Lean 4 check:
-python3 music_pipeline.py convert path/to/song.pdf \
-    --out-dir output/sing_ladder \
+python3 -m sheet_music_reader.cli.music_pipeline convert path/to/song.pdf \
+    --out-dir data/output/practice/sing_ladder \
     --speeds 1.0,0.75,0.5,1/3,0.25 \
     --voice vocal_guide \
     --render-pdf \
@@ -48,8 +48,8 @@ python3 music_pipeline.py convert path/to/song.pdf \
     --lean-cert
 
 # Practice reading halved note speed + visually doubled note values (e.g., quarter notes shown as half notes):
-python3 music_pipeline.py convert path/to/song.pdf \
-    --out-dir output/augmented \
+python3 -m sheet_music_reader.cli.music_pipeline convert path/to/song.pdf \
+    --out-dir data/output/practice/augmented \
     --speed 0.5 \
     --augment 2 \
     --voice vocal_guide
@@ -59,7 +59,7 @@ python3 music_pipeline.py convert path/to/song.pdf \
 
 ## Using the Interactive Web Player (port `5050`)
 
-1. Start the app (`python3 app.py`) and select or upload your PDF score.
+1. Start the app (`python3 -m sheet_music_reader.web.app`) and select or upload your PDF score.
 2. Keep **Vocal Guide (Sing-Along)** switched ON for sustained pitch-matching playback (switch it off to hear percussive piano).
 3. Turn ON **Beat Click** if you want live beat clicks during practice.
 4. Click a speed preset (**`100%`**, **`75%`**, **`50%`**, **`33%`**, **`25%`**) or drag the tempo slider all the way down to `15` BPM.

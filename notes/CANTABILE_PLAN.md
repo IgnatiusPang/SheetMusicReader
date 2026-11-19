@@ -6,6 +6,8 @@
 <!-- apaf_version: 1.0 -->
 <!-- apaf_org: APAF Bioinformatics -->
 
+> **Layout note (2026-11-19):** the repository was restructured after this note was written. Code now lives in `sheet_music_reader/`, source files in `data/input/`, generated files in `data/output/`. Paths below are the old ones; see the README for the current layout.
+
 ## Goal
 Reproduce `data/cantabile.jpeg` (photographed, pencil-annotated AMEB List A No 1 score) as a clean
 engraved PDF with no pencil markings. `data/cantabile_engraved.pdf` was the work-in-progress; its red

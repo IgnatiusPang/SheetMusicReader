@@ -16,8 +16,8 @@ from itertools import chain
 from typing import Any, Dict, Sequence, Tuple
 from xml.sax.saxutils import escape as xml_escape
 
-from audio_synth import AudioEvent, render_wav_bytes
-from lean_bridge import (
+from sheet_music_reader.export.audio_synth import AudioEvent, render_wav_bytes
+from sheet_music_reader.export.lean_bridge import (
     LeanBar,
     LeanEvent,
     TICKS_PER_QUARTER,

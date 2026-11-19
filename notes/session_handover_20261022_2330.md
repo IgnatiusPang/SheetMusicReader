@@ -7,6 +7,8 @@ purpose: Session handover — SheetMusicReader / Cantabile photo-to-engraving
 filename_convention: notes/session_handover_YYYYMMDD_HHMM.md (MANDATORY SUFFIX)
 ---
 
+> **Layout note (2026-11-19):** the repository was restructured after this note was written. Code now lives in `sheet_music_reader/`, source files in `data/input/`, generated files in `data/output/`. Paths below are the old ones; see the README for the current layout.
+
 # Handover: 2026-10-22 23:30 — Ignatius Pang
 
 ## Repository/Project

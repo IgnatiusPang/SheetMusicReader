@@ -1,33 +1,5 @@
-import os
-import sys
-import time
-import subprocess
-import socket
 import pytest
 from playwright.sync_api import sync_playwright
-
-def get_free_port():
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind(('127.0.0.1', 0))
-        return s.getsockname()[1]
-
-@pytest.fixture(scope="module")
-def flask_server():
-    """Starts Flask application server in background on free port for testing."""
-    port = get_free_port()
-    env = dict(os.environ)
-    env["PORT"] = str(port)
-    
-    proc = subprocess.Popen(
-        [sys.executable, "app.py"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        env=env
-    )
-    time.sleep(2.0)
-    yield f"http://127.0.0.1:{port}"
-    proc.terminate()
-    proc.wait()
 
 def test_homepage_loads(flask_server):
     with sync_playwright() as p:

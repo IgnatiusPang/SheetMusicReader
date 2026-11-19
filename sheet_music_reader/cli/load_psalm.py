@@ -10,9 +10,9 @@ import os
 import sys
 import json
 import argparse
-import pdf_parser
-import psalms_db
-import score_formatter
+from sheet_music_reader.omr import pdf_parser
+from sheet_music_reader import psalms_db
+from sheet_music_reader.export import score_formatter
 
 def load_from_pdf(pdf_path: str):
     if not os.path.exists(pdf_path):

@@ -11,7 +11,7 @@ Pipeline (functional / vectorised, no imperative loops):
        -> ties (render) -> lanes (staff index within system) -> MIDI, optional LilyPond proof
 
 Usage:
-  python vector_omr.py convert data/*.pdf --out digitized_scores/vector_midi [--proof DIR] [--report report.json]
+  python -m sheet_music_reader.omr.vector_omr convert data/input/psalms/*.pdf --out data/output/digitized_scores/vector_midi [--proof DIR] [--report report.json]
 """
 from __future__ import annotations
 
@@ -31,6 +31,8 @@ import mido
 import numpy as np
 import pdfplumber
 from PIL import Image
+
+from sheet_music_reader import paths
 
 DPI = 288
 PX = DPI / 72.0
@@ -960,7 +962,7 @@ def main(argv: list[str]) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
     c = sub.add_parser("convert")
     c.add_argument("pdfs", nargs="+", type=Path)
-    c.add_argument("--out", type=Path, default=Path("digitized_scores/vector_midi"))
+    c.add_argument("--out", type=Path, default=paths.SCORES_DIR / "vector_midi")
     c.add_argument("--proof", type=Path, default=None)
     c.add_argument("--report", type=Path, default=None)
     c.add_argument("--as-written", action="store_true", help="play the page top to bottom once (no response/verse arrangement)")

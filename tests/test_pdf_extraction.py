@@ -4,14 +4,11 @@ import glob
 import json
 import pytest
 
-# Ensure root workspace directory is in python path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from sheet_music_reader.omr import pdf_parser
+from sheet_music_reader.export import score_formatter
+from sheet_music_reader import psalms_db
 
-import pdf_parser
-import score_formatter
-import psalms_db
-
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "input", "psalms")
 
 @pytest.fixture
 def pdf_files():

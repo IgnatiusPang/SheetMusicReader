@@ -2,7 +2,9 @@ import os
 import json
 from typing import Dict, List, Any
 
-SCORES_DIR = os.path.join(os.path.dirname(__file__), "digitized_scores")
+from sheet_music_reader import paths
+
+SCORES_DIR = str(paths.SCORES_DIR)
 
 # Default high-fidelity digitized scores for the 5 attached psalm examples
 DEFAULT_PSALMS: Dict[str, Dict[str, Any]] = {

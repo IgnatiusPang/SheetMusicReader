@@ -29,7 +29,8 @@ from functools import reduce
 from itertools import chain
 from pathlib import Path
 
-import score_from_image as sfi
+from sheet_music_reader import paths
+from sheet_music_reader.omr import score_from_image as sfi
 
 LILYPOND_BIN = os.environ.get("LILYPOND_BIN", "/opt/homebrew/bin/lilypond")
 RAW_REPO_BASE = "https://raw.githubusercontent.com/lilypond/lilypond/master/input/regression"
@@ -670,7 +671,7 @@ def run_wasm_benchmark(
     if items_to_engrave:
         batch_tmp = omr_dir / "_wasm_batch.json"
         batch_tmp.write_text(json.dumps(items_to_engrave), encoding="utf-8")
-        engraver_script = Path(__file__).resolve().parent / "scripts" / "wasm_engraver.js"
+        engraver_script = paths.WASM_ENGRAVER_JS
         print(f"Executing sheet_music_engine.wasm on {len(items_to_engrave)} scores via Node.js...")
         res = subprocess.run(["node", str(engraver_script), "--batch", str(batch_tmp)], capture_output=True, text=True)
         print(res.stdout)
@@ -731,40 +732,40 @@ def main(argv: list[str]) -> int:
 
     d = sub.add_parser("download", help="Download >= 100 LilyPond scores from official regression suite")
     d.add_argument("--count", type=int, default=104, help="Target number of scores to download")
-    d.add_argument("--out", type=Path, default=Path("data/benchmark_corpus/original_ly"))
+    d.add_argument("--out", type=Path, default=paths.BENCHMARK_INPUT_DIR / "original_ly")
 
     r = sub.add_parser("render", help="Compile LilyPond scores to 300 DPI PNG images, MIDI and PDF")
-    r.add_argument("--src", type=Path, default=Path("data/benchmark_corpus/original_ly"))
-    r.add_argument("--img-out", type=Path, default=Path("data/benchmark_corpus/images"))
-    r.add_argument("--midi-out", type=Path, default=Path("data/benchmark_corpus/ground_truth_midi"))
-    r.add_argument("--manifest", type=Path, default=Path("data/benchmark_corpus/manifest.json"))
+    r.add_argument("--src", type=Path, default=paths.BENCHMARK_INPUT_DIR / "original_ly")
+    r.add_argument("--img-out", type=Path, default=paths.BENCHMARK_DIR / "images")
+    r.add_argument("--midi-out", type=Path, default=paths.BENCHMARK_DIR / "ground_truth_midi")
+    r.add_argument("--manifest", type=Path, default=paths.BENCHMARK_DIR / "manifest.json")
 
     c = sub.add_parser("convert", help="Convert rendered score images back to LilyPond using score_from_image")
-    c.add_argument("--img-dir", type=Path, default=Path("data/benchmark_corpus/images"))
-    c.add_argument("--out", type=Path, default=Path("digitized_scores/benchmark_omr"))
+    c.add_argument("--img-dir", type=Path, default=paths.BENCHMARK_DIR / "images")
+    c.add_argument("--out", type=Path, default=paths.SCORES_DIR / "benchmark_omr")
     c.add_argument("--limit", type=int, default=None, help="Optional limit for rapid testing")
     c.add_argument("--balanced-per-cat", type=int, default=None, help="Select up to N images per category")
-    c.add_argument("--manifest", type=Path, default=Path("data/benchmark_corpus/manifest.json"))
+    c.add_argument("--manifest", type=Path, default=paths.BENCHMARK_DIR / "manifest.json")
 
     e = sub.add_parser("evaluate", help="Evaluate converted scores against ground truth")
-    e.add_argument("--manifest", type=Path, default=Path("data/benchmark_corpus/manifest.json"))
-    e.add_argument("--omr-dir", type=Path, default=Path("digitized_scores/benchmark_omr"))
-    e.add_argument("--report-json", type=Path, default=Path("data/benchmark_corpus/benchmark_report.json"))
-    e.add_argument("--report-md", type=Path, default=Path("data/benchmark_corpus/benchmark_report.md"))
+    e.add_argument("--manifest", type=Path, default=paths.BENCHMARK_DIR / "manifest.json")
+    e.add_argument("--omr-dir", type=Path, default=paths.SCORES_DIR / "benchmark_omr")
+    e.add_argument("--report-json", type=Path, default=paths.BENCHMARK_DIR / "benchmark_report.json")
+    e.add_argument("--report-md", type=Path, default=paths.BENCHMARK_DIR / "benchmark_report.md")
     e.add_argument("--engine", choices=["python", "wasm"], default="python", help="Engine to evaluate")
 
     w = sub.add_parser("wasm-benchmark", help="Re-run benchmark evaluation using WebAssembly (Rust) engine")
-    w.add_argument("--manifest", type=Path, default=Path("data/benchmark_corpus/manifest.json"))
-    w.add_argument("--omr-dir", type=Path, default=Path("digitized_scores/benchmark_omr"))
-    w.add_argument("--report-json", type=Path, default=Path("data/benchmark_corpus/benchmark_report_wasm.json"))
-    w.add_argument("--report-md", type=Path, default=Path("data/benchmark_corpus/benchmark_report_wasm.md"))
+    w.add_argument("--manifest", type=Path, default=paths.BENCHMARK_DIR / "manifest.json")
+    w.add_argument("--omr-dir", type=Path, default=paths.SCORES_DIR / "benchmark_omr")
+    w.add_argument("--report-json", type=Path, default=paths.BENCHMARK_DIR / "benchmark_report_wasm.json")
+    w.add_argument("--report-md", type=Path, default=paths.BENCHMARK_DIR / "benchmark_report_wasm.md")
     w.add_argument("--no-update-main", dest="update_main", action="store_false", default=True)
 
     a = sub.add_parser("run-all", help="Execute complete pipeline: download, render, convert, and evaluate")
     a.add_argument("--count", type=int, default=104, help="Number of LilyPond scores")
     a.add_argument("--eval-limit", type=int, default=25, help="Number of scores to convert and evaluate in this run")
-    a.add_argument("--data-root", type=Path, default=Path("data/benchmark_corpus"))
-    a.add_argument("--omr-root", type=Path, default=Path("digitized_scores/benchmark_omr"))
+    a.add_argument("--data-root", type=Path, default=paths.BENCHMARK_DIR, help="Generated images, manifest and reports")
+    a.add_argument("--omr-root", type=Path, default=paths.SCORES_DIR / "benchmark_omr")
 
     args = ap.parse_args(argv[1:])
 
@@ -845,7 +846,7 @@ def main(argv: list[str]) -> int:
 
 
     if args.cmd == "run-all":
-        orig_dir = args.data_root / "original_ly"
+        orig_dir = paths.BENCHMARK_INPUT_DIR / "original_ly"
         img_dir = args.data_root / "images"
         midi_dir = args.data_root / "ground_truth_midi"
         manifest_path = args.data_root / "manifest.json"

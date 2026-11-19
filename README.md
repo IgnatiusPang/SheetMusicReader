@@ -6,7 +6,7 @@ A Python web application for church choir singers to view, parse, play, digitize
 
 ## 🎵 Features
 
-- **20 Pre-Digitized Psalm Sheet Music PDFs**: Parsed and digitized from [data/](data/) into standardized `.json`, `.musicxml`, and `.mid` files in [digitized_scores/](digitized_scores/).
+- **20 Pre-Digitized Psalm Sheet Music PDFs**: Parsed and digitized from [data/input/psalms/](data/input/psalms/) into standardized `.json`, `.musicxml`, and `.mid` files in [data/output/digitized_scores/](data/output/digitized_scores/).
 - **Lyrics Overlaid Directly Underneath Notes**: Music staves render melody notes with corresponding lyric syllables placed directly underneath note heads, highlighting in real-time as audio plays.
 - **Full Verse & Refrain Support**: Seamlessly switch between the **Response Refrain** and all **Verses** (Verse 1, Verse 2, Verse 3, Verse 4) via interactive tab selectors.
 - **Realistic Piano & Vocal Guide Audio Engine**: High-fidelity Web Audio API synthesizer with sustained Vocal Guide sing-along tone (for non-pianists), beat clicks, accompaniment chord toggling, wide tempo range (15–200 BPM), speed presets (`100%`, `75%`, `50%`, `33%`, `25%`), and pitch transposition (-4 to +4 semitones).
@@ -37,7 +37,7 @@ playwright install chromium
 
 ### 2. Run the Web Application
 ```bash
-python app.py
+python -m sheet_music_reader.web.app
 ```
 
 Open your browser and navigate to:
@@ -49,16 +49,16 @@ Open your browser and navigate to:
 
 ## 🛠️ Additional Commands & Batch Utilities
 
-### Batch Digitize All PDF Sheets in `data/`
-To parse and convert all PDF files in the `data/` folder into digitized `.json`, `.musicxml`, and `.mid` scores:
+### Batch Digitize All PDF Sheets in `data/input/psalms/`
+To parse and convert all PDF files in the `data/input/psalms/` folder into digitized `.json`, `.musicxml`, and `.mid` scores:
 ```bash
-python digitize_all.py
+python -m sheet_music_reader.cli.digitize_all
 ```
 *Alternatively, click the **⚡ Digitize All PDFs** button in the top navigation header of the web app.*
 
 ### Load & Digitize a Single PDF Sheet Music File
 ```bash
-python load_psalm.py path/to/your_psalm.pdf
+python -m sheet_music_reader.cli.load_psalm path/to/your_psalm.pdf
 ```
 
 ---
@@ -68,10 +68,10 @@ python load_psalm.py path/to/your_psalm.pdf
 Reads PDFs exported from Sibelius, MuseScore 2/3/4 or Finale-style software glyph by glyph (no image guessing for pitches) and writes one MIDI file per PDF, plus an optional LilyPond proof and a bar-by-bar check report.
 
 ```bash
-python vector_omr.py convert data/*.pdf \
-    --out digitized_scores/vector_midi \
-    --proof digitized_scores/vector_proofs \
-    --report digitized_scores/vector_midi/report.json
+python -m sheet_music_reader.omr.vector_omr convert data/input/psalms/*.pdf \
+    --out data/output/digitized_scores/vector_midi \
+    --proof data/output/digitized_scores/vector_proofs \
+    --report data/output/digitized_scores/vector_midi/report.json
 ```
 
 - Needs `pdftoppm` (poppler) and Python packages numpy, pdfplumber, Pillow, mido; LilyPond only for `--proof`.
@@ -87,14 +87,14 @@ Convert any PDF, image, MusicXML, LilyPond, or Psalm JSON file into synchronized
 
 ```bash
 # Convert at 100%, 50%, and 25% speed with printable LilyPond PDF + MP3 + Lean 4 certificate:
-python3 music_pipeline.py convert data/03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf \
-    --out-dir output/verified_practice \
+python3 -m sheet_music_reader.cli.music_pipeline convert data/input/psalms/03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf \
+    --out-dir data/output/practice/verified_practice \
     --speeds 1.0,0.5,0.25 \
     --voice vocal_guide \
     --render-pdf --mp3 --lean-cert
 
 # Generate and immediately play a 50% speed Vocal Guide singing track:
-python3 music_pipeline.py sing data/03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf \
+python3 -m sheet_music_reader.cli.music_pipeline sing data/input/psalms/03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf \
     --speed 0.5 --count-in 1 --play
 
 # Build & run Lean 4 theorems and kernel verifier directly:
@@ -108,7 +108,7 @@ cd formalization/lean && lake build && ./.lake/build/bin/test_runner
 Run the complete suite of PDF extraction, REST API, OMR, MuseScore helper, Lean 4 formal verification, pipeline synthesis, and Playwright E2E tests:
 
 ```bash
-pytest tests/test_pdf_extraction.py tests/test_flask_routes.py tests/test_vector_omr.py tests/test_musescore_helper.py tests/test_lean_verification.py tests/test_music_pipeline.py tests/test_app.py -v
+python -m pytest
 ```
 
 ---
@@ -117,33 +117,30 @@ pytest tests/test_pdf_extraction.py tests/test_flask_routes.py tests/test_vector
 
 ```
 SheetMusicReader/
-├── app.py                      # Flask REST API & Web Server (incl. /verify & ?speed=/)
-├── music_pipeline.py           # Unified PDF/XML/LY/JSON -> LilyPond, MusicXML, MIDI, WAV & Lean CLI
-├── audio_synth.py              # Vocal Guide, Violin, Piano WAV synthesis + count-in + clicks
-├── lean_bridge.py              # Independent disk parsers + Lean 4 kernel verification bridge
-├── score_formatter.py          # MusicXML 3.1, GNU LilyPond 2.26, MIDI & WAV exporter
-├── pdf_parser.py               # Psalm PDF metadata/score extraction
-├── vector_omr.py               # Direct PDF glyph OMR -> MIDI & LilyPond
-├── score_from_image.py         # Raster image / scanned PDF OMR -> LilyPond & MusicXML
+├── sheet_music_reader/         # ALL Python code (one importable package)
+│   ├── paths.py                # The only module that knows where data lives
+│   ├── psalms_db.py            # JSON score store
+│   ├── omr/                    # Reading scores: vector_omr, omr_pointcloud, score_from_image, pdf_parser
+│   ├── export/                 # Writing scores: score_formatter, audio_synth, lean_bridge
+│   ├── karaoke/                # extract.py (PDF -> timeline of notes, words, chords), render.py (offline HTML)
+│   ├── cli/                    # music_pipeline, digitize_all, load_psalm, benchmark_lilypond
+│   └── web/                    # Flask app.py, templates/, static/ (css, js, js/karaoke)
+├── data/
+│   ├── input/                  # Source material only: psalms/*.pdf, Cantabile/, samples/, benchmark_corpus/
+│   └── output/                 # Everything generated: digitized_scores/, sing_along_packs/, benchmark/, practice/
+├── tests/                      # pytest + Playwright (conftest.py starts the Flask server)
 ├── formalization/lean/         # Lean 4 project (`SheetMusic` library, `score_verifier`, `test_runner`)
-├── .agents/skills/             # Agent & human skills (pdf-to-musescore, slow-practice-musescore, lean4-music-verification, sing-from-sheet-music)
-├── data/                       # Source Psalm PDF sheet music files
-├── digitized_scores/           # Digitized JSON, MusicXML, and MIDI files
-├── templates/
-│   └── index.html              # Glassmorphic Web UI with Vocal Guide & Lean 4 Verify
-├── static/
-│   ├── css/style.css           # Styling, speed preset pills & verification badges
-│   └── js/
-│       ├── piano_synth.js      # Web Audio API Vocal Guide & Piano synthesizer + beat clicks
-│       └── app.js              # Application controller, score renderer & export handlers
-├── tests/
-│   ├── test_pdf_extraction.py  # Unit tests for PDF music parsing
-│   ├── test_flask_routes.py    # Unit tests for REST API endpoints
-│   ├── test_lean_verification.py # Lean 4 conservation & D5 falsifier tests
-│   ├── test_music_pipeline.py  # Audio synth, LilyPond compilation & pipeline tests
-│   └── test_app.py             # Playwright E2E browser tests
+├── crates/sheet_music_engine/  # Rust engraving engine (builds docs/sheet_music_engine.wasm)
+├── docs/                       # Static WebAssembly demo site
+├── scripts/                    # Node helper for the wasm engraver
+├── notes/                      # How-tos, plans, handovers, engraving specification
+├── dist/                       # Packaged skill bundles
+├── .claude/skills/, .agents/skills/   # Agent & human skills
+├── pyproject.toml              # pytest configuration
 ├── requirements.txt            # Python dependencies
-└── README.md                   # Application documentation
+└── README.md
 ```
+
+Run every tool as a module from the repo root, for example `python -m sheet_music_reader.cli.music_pipeline --help`.
 
 <!-- APAF Bioinformatics | README.md | Approved | 2026-11-15 -->

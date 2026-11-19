@@ -2,7 +2,7 @@
 import time
 import subprocess
 from pathlib import Path
-import vector_omr as v
+from sheet_music_reader.omr import vector_omr as v
 
 ROOT = Path(__file__).resolve().parents[1]
 

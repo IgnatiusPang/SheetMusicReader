@@ -12,11 +12,11 @@ from types import SimpleNamespace
 import pytest
 from PIL import Image
 
-import score_from_image as s
+from sheet_music_reader.omr import score_from_image as s
 
 ROOT = Path(__file__).resolve().parents[1]
-PHOTO = ROOT / "data" / "Cantabile" / "cantabile.jpeg"
-TRUTH = ROOT / "digitized_scores" / "cantabile.midi"
+PHOTO = ROOT / "data" / "input" / "Cantabile" / "cantabile.jpeg"
+TRUTH = ROOT / "data" / "output" / "digitized_scores" / "cantabile.midi"
 F = Fraction
 
 

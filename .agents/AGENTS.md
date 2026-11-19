@@ -9,7 +9,7 @@
 ## Sheet Music Reading & Engraving Rules
 
 ### Rule 1: Deduplicated Score Library Hygiene
-- The workspace maintains a clean, deduplicated library of unique Psalm scores in `data/` and `digitized_scores/`.
+- The workspace maintains a clean, deduplicated library of unique Psalm scores in `data/` and `data/output/digitized_scores/`.
 - No duplicate titles or redundant PDF score files are allowed.
 
 ### Rule 2: Standard Treble Staff Engraving Layout Order

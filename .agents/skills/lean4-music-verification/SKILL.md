@@ -39,18 +39,18 @@ Use this skill when you want mathematical certainty that converting sheet music 
 
 ```bash
 # Convert a PDF or JSON score into MusicXML, LilyPond, MIDI, WAV, AND generate + check a standalone Lean 4 kernel certificate:
-python3 music_pipeline.py convert data/03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf \
-    --out-dir output/verified_score \
+python3 -m sheet_music_reader.cli.music_pipeline convert data/input/psalms/03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf \
+    --out-dir data/output/practice/verified_score \
     --speeds 1.0,0.5,0.25 \
     --lean-cert
 
 # Verify existing MusicXML, LilyPond, and MIDI files on disk against a source score:
-python3 music_pipeline.py verify path/to/source.pdf \
-    --musicxml output/score.musicxml \
-    --lilypond output/score.ly \
-    --midi output/score.mid \
+python3 -m sheet_music_reader.cli.music_pipeline verify path/to/source.pdf \
+    --musicxml data/output/practice/score.musicxml \
+    --lilypond data/output/practice/score.ly \
+    --midi data/output/practice/score.mid \
     --speed 0.5 \
-    --lean-cert output/score_cert.lean
+    --lean-cert data/output/practice/score_cert.lean
 ```
 
 Inside the web app, click **✓ Lean 4 Verify** to run real-time disk-based verification on the currently selected score and speed (`GET /api/psalms/<id>/verify?speed=<ratio>`).

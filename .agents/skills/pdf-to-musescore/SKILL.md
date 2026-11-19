@@ -56,12 +56,12 @@ Run `from-repo` and tell it whether the piece is for **violin** or **piano**:
 ```bash
 # For a violin piece:
 python3 scripts/musescore_helper.py from-repo path/to/violin_piece.pdf \
-    --out output/musescore \
+    --out data/output/practice/musescore \
     --instrument violin
 
 # For a piano piece:
 python3 scripts/musescore_helper.py from-repo path/to/piano_piece.pdf \
-    --out output/musescore \
+    --out data/output/practice/musescore \
     --instrument piano
 ```
 
@@ -84,7 +84,7 @@ Music recognition tools—and AI assistants—make predictable mistakes. A speck
 Before giving any file to the teacher or student, the AI **must** run the `verify` command:
 
 ```bash
-python3 scripts/musescore_helper.py verify output/musescore/piece.musicxml --instrument violin
+python3 scripts/musescore_helper.py verify data/output/practice/musescore/piece.musicxml --instrument violin
 ```
 
 *(Use `--instrument piano` for piano scores).*
@@ -117,8 +117,8 @@ Instead of opening MuseScore and manually dragging the tempo slider to 50% every
 
 ```bash
 # Default practice ladder: 100%, 75%, 50% (half), 33% (one-third), and 25% (quarter speed)
-python3 scripts/musescore_helper.py slow output/musescore/piece.musicxml \
-    --out output/musescore/practice_pack \
+python3 scripts/musescore_helper.py slow data/output/practice/musescore/piece.musicxml \
+    --out data/output/practice/musescore/practice_pack \
     --speeds 1.0,0.75,0.5,0.33,0.25 \
     --instrument violin
 ```
@@ -128,12 +128,12 @@ When a student is first learning shifting on the violin or coordinating both han
 
 ```bash
 # Custom ultra-slow speeds (e.g. 50%, 35%, 25%, and 20% speed):
-python3 scripts/musescore_helper.py slow output/musescore/piece.musicxml \
+python3 scripts/musescore_helper.py slow data/output/practice/musescore/piece.musicxml \
     --speeds 50%,35%,25%,20% \
     --instrument violin
 
 # Or exact metronome numbers (e.g. quarter note = 30, 40, 50, 60 BPM):
-python3 scripts/musescore_helper.py slow output/musescore/piece.musicxml \
+python3 scripts/musescore_helper.py slow data/output/practice/musescore/piece.musicxml \
     --bpm 30,40,50,60 \
     --instrument piano \
     --hands-separate

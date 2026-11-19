@@ -15,9 +15,9 @@ A music font must be embedded: Leland/Bravura (MuseScore 3/4), MScore (MuseScore
 ## 2. Convert
 Use the anaconda interpreter, which has numpy, pdfplumber, Pillow and mido. LilyPond is needed only for proofs.
 ```
-/Users/ignatiuspang/anaconda3/bin/python vector_omr.py convert data/*.pdf \
-    --out digitized_scores/vector_midi --proof digitized_scores/vector_proofs \
-    --report digitized_scores/vector_midi/report.json
+/Users/ignatiuspang/anaconda3/bin/python -m sheet_music_reader.omr.vector_omr convert data/input/psalms/*.pdf \
+    --out data/output/digitized_scores/vector_midi --proof data/output/digitized_scores/vector_proofs \
+    --report data/output/digitized_scores/vector_midi/report.json
 ```
 Output: one `.mid` per PDF. Track 1 is the top staff of each system (the melody). Further tracks follow staff order within the system. Ties are merged and tempo comes from the metronome mark (default 90 quarter beats per minute).
 
@@ -36,7 +36,7 @@ The report shows `sections` (e.g. `R[s1] V1[s2,s3]`), `playback` and `pickup_not
 Open the proof PDF (bars that do not add up carry a `%{ got/expected %}` comment in the `.ly`). Compare it with the original rendered at 70–90 dpi (`pdftoppm -r 80 -png -f 1 -l 1`). Crop a bar at 300 dpi with `-x -y -W -H` when a detail matters. Print a bar's events:
 ```python
 from pathlib import Path; import vector_omr as v
-sc = v.read_score(Path("data/X.pdf")); m = sc.systems[S][0].measures[B]
+sc = v.read_score(Path("data/input/psalms/X.pdf")); m = sc.systems[S][0].measures[B]
 print(list(map(lambda e: (round(e.x), e.midis, e.value, e.stem), m.events)))
 ```
 

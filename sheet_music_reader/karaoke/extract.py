@@ -24,10 +24,10 @@ from typing import Any, Sequence
 
 import pdfplumber
 
-import lean_bridge
-import score_formatter
-import vector_omr
-from audio_synth import AudioEvent
+from sheet_music_reader.export import lean_bridge
+from sheet_music_reader.export import score_formatter
+from sheet_music_reader.omr import vector_omr
+from sheet_music_reader.export.audio_synth import AudioEvent
 
 STEP_TO_SEMI = {"C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11}
 FIFTHS_TO_KEY_NAME = {

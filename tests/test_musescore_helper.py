@@ -113,12 +113,12 @@ def _sample_piano_xml(lh_bars: int = 2) -> str:
 
 
 def test_inspect_vector_pdf_and_image():
-    ps19 = ROOT / "data" / "04_Ps-1819-Your-Words-O-Lord.pdf"
+    ps19 = ROOT / "data" / "input" / "psalms" / "04_Ps-1819-Your-Words-O-Lord.pdf"
     if ps19.exists():
         info = mh.inspect_file(ps19)
         assert info["kind"] == "vector_pdf"
         assert len(info["music_fonts"]) >= 1
-    photo = ROOT / "data" / "Cantabile" / "cantabile.jpeg"
+    photo = ROOT / "data" / "input" / "Cantabile" / "cantabile.jpeg"
     if photo.exists():
         p_info = mh.inspect_file(photo)
         assert p_info["kind"] == "image_score"

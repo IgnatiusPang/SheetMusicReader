@@ -45,7 +45,7 @@ PY=/Users/ignatiuspang/anaconda3/envs/omr/bin/python
 The free pipeline uses homr and Audiveris:
 
 ```
-$PY score_from_image.py convert data/Cantabile/cantabile.jpeg \
+$PY -m sheet_music_reader.omr.score_from_image convert data/input/Cantabile/cantabile.jpeg \
     --title "Cantabile" --composer "Charles Dancla" --instrument violin
 ```
 
@@ -53,10 +53,10 @@ For the most accurate result, add the Claude pass. It needs an API key and costs
 per page:
 
 ```
-$PY score_from_image.py convert data/Cantabile/cantabile.jpeg --refine claude --instrument violin
+$PY -m sheet_music_reader.omr.score_from_image convert data/input/Cantabile/cantabile.jpeg --refine claude --instrument violin
 ```
 
-Output goes to `digitized_scores/from_image/<name>/` unless you pass `--out DIR`. Several images in one call
+Output goes to `data/output/digitized_scores/from_image/<name>/` unless you pass `--out DIR`. Several images in one call
 are converted one by one. A scanned PDF is rasterised at 300 dpi, and its pages are joined into one score.
 
 | Option | Use it when |
@@ -74,8 +74,8 @@ The terminal prints one summary per file:
 
 ```
 cantabile.jpeg: 41 bars, 2 suspect, 0 pickup/closing, audiveris marks 19
-  -> digitized_scores/from_image/cantabile/cantabile.pdf
-  -> review digitized_scores/from_image/cantabile/cantabile_review.pdf
+  -> data/output/digitized_scores/from_image/cantabile/cantabile.pdf
+  -> review data/output/digitized_scores/from_image/cantabile/cantabile_review.pdf
 ```
 
 ## 3. Proof-read
@@ -93,7 +93,7 @@ cantabile.jpeg: 41 bars, 2 suspect, 0 pickup/closing, audiveris marks 19
    - Pitches are absolute: `c'` is middle C and `fis''` is the F♯ an octave and a half above.
    - Durations: `4` is a crotchet (quarter note), `8` a quaver (eighth note), `4.` a dotted crotchet.
    - Markings follow the note: `\downbow`, `-3` (fingering), `\p`, `\<` … `\!`, `(` … `)`.
-4. **Rebuild** with `lilypond -dno-point-and-click -o digitized_scores/from_image/<name>/<name> digitized_scores/from_image/<name>/<name>.ly`,
+4. **Rebuild** with `lilypond -dno-point-and-click -o data/output/digitized_scores/from_image/<name>/<name> data/output/digitized_scores/from_image/<name>/<name>.ly`,
    which rewrites the PDF and the MIDI.
 
 Pencil and handwriting are ignored. homr was trained on printed music. Claude is told to transcribe only printed
@@ -104,15 +104,15 @@ engraving. Audiveris reads only the darkest ink.
 When a correct MIDI or MusicXML exists, compare note by note:
 
 ```
-$PY score_from_image.py compare digitized_scores/from_image/cantabile/cantabile.midi digitized_scores/cantabile.midi
+$PY -m sheet_music_reader.omr.score_from_image compare data/output/digitized_scores/from_image/cantabile/cantabile.midi data/output/digitized_scores/cantabile.midi
 ```
 
 The output reports `pitch_accuracy` (right notes) and `full_accuracy` (right notes with right lengths).
 
 ## 5. What to expect
 
-Measured on `data/Cantabile/cantabile.jpeg`, a phone photo with pencil marks and a curved page, against the
-hand-verified `digitized_scores/cantabile.ly`:
+Measured on `data/input/Cantabile/cantabile.jpeg`, a phone photo with pencil marks and a curved page, against the
+hand-verified `data/output/digitized_scores/cantabile.ly`:
 
 | Stage | Result |
 | --- | --- |

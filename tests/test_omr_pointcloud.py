@@ -2,7 +2,7 @@
 import numpy as np
 import pytest
 
-from omr_pointcloud import _glyph_role, align_report, five_lines, pitch_name
+from sheet_music_reader.omr.omr_pointcloud import _glyph_role, align_report, five_lines, pitch_name
 
 
 @pytest.mark.parametrize("steps, name", [(0, "E4"), (1, "F4"), (2, "G4"), (4, "B4"), (5, "C5"), (8, "F5"),

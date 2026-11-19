@@ -13,16 +13,14 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / ".agents" / "skills" / "pdf-to-musescore" / "scripts"))
 
-import app as flask_app_mod
-import audio_synth
+from sheet_music_reader.web import app as flask_app_mod
+from sheet_music_reader.export import audio_synth
 import musescore_helper
-import music_pipeline
-import psalms_db
-import score_formatter
+from sheet_music_reader.cli import music_pipeline
+from sheet_music_reader import psalms_db
+from sheet_music_reader.export import score_formatter
 
 
 def _wav_duration_frames(wav_bytes: bytes) -> tuple[int, int]:
@@ -100,7 +98,7 @@ def test_musescore_helper_lilypond_and_lean_cli(tmp_path: Path):
 
 def test_music_pipeline_cli_convert_and_sing(tmp_path: Path):
     """music_pipeline CLI convert produces MusicXML, LilyPond, PDF, WAV, MP3, and Lean cert."""
-    pdf_src = ROOT / "data" / "03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf"
+    pdf_src = ROOT / "data" / "input" / "psalms" / "03_Ps104103-Lord-Send-Out-Your-Spirit-Chart.pdf"
     out_dir = tmp_path / "cli_out"
     rc = music_pipeline.main([
         "convert",
@@ -141,9 +139,9 @@ def test_flask_new_routes_lilypond_wav_and_lean_verify():
 
 def test_karaoke_pdf_extraction_chords_lyrics_and_html(tmp_path: Path):
     """Karaoke extraction aligns Psalm 122 chords, lyrics, Je- pickup, HTML export, and Flask APIs."""
-    import karaoke_trainer
+    from sheet_music_reader.karaoke import extract as karaoke_trainer
 
-    pdf_src = Path("data/Ps-122-I-Rejoiced-Chart.pdf")
+    pdf_src = ROOT / "data" / "input" / "psalms" / "04_Ps-122-I-Rejoiced-Chart.pdf"
     data = karaoke_trainer.extract_karaoke_score_from_pdf(pdf_src)
     assert data["key"] == "G Major"
     assert data["time_signature"] == "6/8"
@@ -192,9 +190,9 @@ def test_karaoke_pdf_extraction_chords_lyrics_and_html(tmp_path: Path):
         scores = r_list.get_json()["scores"]
         assert scores
         assert "label" in scores[0]
-        assert scores[0]["id"] == "pdf:Ps-122-I-Rejoiced-Chart.pdf"
+        assert scores[0]["id"] == "pdf:04_Ps-122-I-Rejoiced-Chart.pdf"
 
-        r_score = client.get("/api/karaoke/score/pdf:Ps-122-I-Rejoiced-Chart.pdf")
+        r_score = client.get("/api/karaoke/score/pdf:04_Ps-122-I-Rejoiced-Chart.pdf")
         assert r_score.status_code == 200
         score_json = r_score.get_json()
         assert len(score_json["modes"]) == 6

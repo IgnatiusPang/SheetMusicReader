@@ -3,11 +3,8 @@ import sys
 import json
 import pytest
 
-# Ensure root workspace directory is in python path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-from app import app
-import psalms_db
+from sheet_music_reader.web.app import app
+from sheet_music_reader import psalms_db
 
 @pytest.fixture
 def client():

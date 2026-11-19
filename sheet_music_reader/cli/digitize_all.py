@@ -7,13 +7,13 @@ Digitzes all PDFs into standardized JSON, MusicXML, and MIDI files in digitized_
 import os
 import glob
 import json
-import pdf_parser
-import psalms_db
-import score_formatter
+from sheet_music_reader.omr import pdf_parser
+from sheet_music_reader import paths, psalms_db
+from sheet_music_reader.export import score_formatter
 
 def digitize_all_psalms(data_dir: str = None, force: bool = True):
     if data_dir is None:
-        data_dir = os.path.join(os.path.dirname(__file__), "data")
+        data_dir = str(paths.PSALM_PDF_DIR)
 
     scores_dir = psalms_db.SCORES_DIR
     os.makedirs(scores_dir, exist_ok=True)

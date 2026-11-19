@@ -20,7 +20,7 @@ it, how to tell whether the result is right, and what to do when it is not.
 To check which one a PDF is:
 
 ```
-pdffonts data/<file>.pdf
+pdffonts data/input/psalms/<file>.pdf
 ```
 
 A **vector** score embeds a music font. Look for `Leland` or `Bravura` (MuseScore 3/4), `MScore` (MuseScore 2),
@@ -37,10 +37,10 @@ picture of a page and `vector_omr.py` cannot read it.
 ## 2. Convert
 
 ```
-/Users/ignatiuspang/anaconda3/bin/python vector_omr.py convert data/*.pdf \
-    --out digitized_scores/vector_midi \
-    --proof digitized_scores/vector_proofs \
-    --report digitized_scores/vector_midi/report.json
+/Users/ignatiuspang/anaconda3/bin/python -m sheet_music_reader.omr.vector_omr convert data/input/psalms/*.pdf \
+    --out data/output/digitized_scores/vector_midi \
+    --proof data/output/digitized_scores/vector_proofs \
+    --report data/output/digitized_scores/vector_midi/report.json
 ```
 
 | Option | Meaning |
@@ -70,7 +70,7 @@ A file that fails does not stop the batch; its error is printed and the rest car
      `sysN staffM barK: got/expected`.
 2. **Check the structure.** `play:` should read `R V1 R V2 … R*` for a psalm. `play: all` means no verse labels were
    found (see section 6).
-3. **Compare the proof with the original.** Open `digitized_scores/vector_proofs/<name>.pdf` next to the source PDF.
+3. **Compare the proof with the original.** Open `data/output/digitized_scores/vector_proofs/<name>.pdf` next to the source PDF.
    Boxed `R` / `V1` marks show where each section was detected to start.
 4. **Listen** to the `.mid` while following the printed score.
 
@@ -134,12 +134,12 @@ To look at one bar's events:
 ```python
 from pathlib import Path
 import vector_omr as v
-sc = v.read_score(Path("data/X.pdf"))
+sc = v.read_score(Path("data/input/psalms/X.pdf"))
 m = sc.systems[S][0].measures[B]          # system S, top staff, bar B
 print(list(map(lambda e: (round(e.x), e.midis, e.value, e.stem), m.events)))
 ```
 
-To see a bar of the original close up: `pdftoppm -r 300 -png -f 1 -l 1 -x X -y Y -W W -H H data/X.pdf crop`.
+To see a bar of the original close up: `pdftoppm -r 300 -png -f 1 -l 1 -x X -y Y -W W -H H data/input/psalms/X.pdf crop`.
 
 After any code change, rerun **all** PDFs and confirm no file got worse, then run the tests:
 
@@ -155,7 +155,7 @@ Project rule: no imperative `for` loops; use `map`, `filter`, `reduce` or numpy 
 - The "(8)" under a tenor clef is not read, so such staves sound an octave high (Psalm 96, accompaniment only).
 - Chord symbols and lyrics are not converted. Cue-size notes are skipped.
 - When two voices share a staff and the bar overflows, only the upper voice is kept.
-- The app still plays the older `digitized_scores/<id>.mid` files; the new files in `digitized_scores/vector_midi/`
+- The app still plays the older `data/output/digitized_scores/<id>.mid` files; the new files in `data/output/digitized_scores/vector_midi/`
   are not yet wired in.
 
 ## Further reading

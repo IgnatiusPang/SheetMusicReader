@@ -5,10 +5,10 @@ from pathlib import Path
 import mido
 import pytest
 
-import vector_omr as v
+from sheet_music_reader.omr import vector_omr as v
 
 ROOT = Path(__file__).resolve().parents[1]
-PS19 = ROOT / "data" / "04_Ps-1819-Your-Words-O-Lord.pdf"
+PS19 = ROOT / "data" / "input" / "psalms" / "04_Ps-1819-Your-Words-O-Lord.pdf"
 
 
 @pytest.mark.parametrize("font, text, role", [
@@ -85,8 +85,8 @@ def test_end_to_end_psalm_19(tmp_path):
     assert score.report["playback"] == "R V1 R V2 R V3 R V4 R*"
 
 
-PS80 = ROOT / "data" / "03_Ps-8079-Lord-Make-Us-Turn-To-You.pdf"
-PS106 = ROOT / "data" / "04_psalm-106-oz-12th-sunday-year-b-compact.pdf"
+PS80 = ROOT / "data" / "input" / "psalms" / "03_Ps-8079-Lord-Make-Us-Turn-To-You.pdf"
+PS106 = ROOT / "data" / "input" / "psalms" / "04_psalm-106-oz-12th-sunday-year-b-compact.pdf"
 needs = lambda f: pytest.mark.skipif(not f.exists() or shutil.which("pdftoppm") is None, reason="needs the PDF and poppler")
 
 

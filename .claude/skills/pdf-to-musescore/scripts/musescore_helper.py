@@ -358,7 +358,7 @@ def vector_score_to_musicxml(score, title: str | None = None, instrument: str = 
 
 def image_score_to_musicxml(score, instrument: str = "auto") -> str:
     """Convert a score_from_image.Score object into standard MusicXML 3.1 for MuseScore."""
-    import score_from_image as sfi
+    from sheet_music_reader.omr import score_from_image as sfi
     divisions = 48
     work_title = score.title or "Score"
     tempo_bpm = int(score.tempo[1]) if score.tempo else 90
@@ -1299,7 +1299,7 @@ def try_lean_verify(
     if str(repo_root) not in sys.path:
         sys.path.insert(0, str(repo_root))
     try:
-        import lean_bridge
+        from sheet_music_reader.export import lean_bridge
         if not lean_bridge.SCORE_VERIFIER_BIN.is_file():
             return {"lean_available": False, "skipped": True, "reason": "score_verifier binary not built"}
     except Exception as exc:
@@ -1446,13 +1446,13 @@ def convert_with_repo_tools(
     mid_path = out_dir / f"{stem}.mid"
 
     if info["kind"] == "vector_pdf":
-        import vector_omr as vomr
+        from sheet_music_reader.omr import vector_omr as vomr
         score = vomr.read_score(input_path)
         xml_text = vector_score_to_musicxml(score, title=title, instrument=instrument)
         xml_path.write_text(xml_text, encoding="utf-8")
         vomr.write_midi(score, mid_path, as_written=True)
     elif info["kind"] in ("image_score", "scanned_pdf"):
-        import score_from_image as sfi
+        from sheet_music_reader.omr import score_from_image as sfi
         rep = sfi.convert(input_path, out_dir, use_audiveris=False, title=title)
         raw_xml = Path(rep["outputs"]["homr_musicxml"])
         parsed = sfi.tidy(sfi.restore_silent_rests(sfi.from_musicxml(raw_xml)))
@@ -1500,7 +1500,7 @@ def main(argv: list[str]) -> int:
 
     p_repo = sub.add_parser("from-repo", help="Convert a PDF/image to MusicXML using repo OMR tools")
     p_repo.add_argument("path", type=Path)
-    p_repo.add_argument("--out", type=Path, default=Path("digitized_scores/musescore_out"))
+    p_repo.add_argument("--out", type=Path, default=Path("data/output/digitized_scores/musescore_out"))
     p_repo.add_argument("--title", default=None)
     p_repo.add_argument("--instrument", choices=("auto", "violin", "piano"), default="auto")
     p_repo.add_argument("--lilypond", action="store_true", help="Also emit a GNU LilyPond (.ly) file")

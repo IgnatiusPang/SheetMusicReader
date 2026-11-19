@@ -32,8 +32,10 @@ import mido
 TICKS_PER_QUARTER = 48
 TICKS_PER_WHOLE = 192
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-LEAN_DIR = PROJECT_ROOT / "formalization" / "lean"
+from sheet_music_reader import paths
+
+PROJECT_ROOT = paths.REPO_ROOT
+LEAN_DIR = paths.LEAN_DIR
 SCORE_VERIFIER_BIN = LEAN_DIR / ".lake" / "build" / "bin" / "score_verifier"
 
 _STEP_TO_SEMITONE = {"C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11}
@@ -173,7 +175,7 @@ def spec_from_vector_score(score: Any, lane: int = 0, arrangement: bool = False)
         return reg_lean
 
     if arrangement and lane == 0:
-        import vector_omr
+        from sheet_music_reader.omr import vector_omr
 
         arr = tuple(vector_omr.arrangement(score))
 
