@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karaoke Trainer</title>
+<link rel="stylesheet" href="/static/css/karaoke.css">
+</head>
+<body>
+<div class="shell">
+
+  <header class="masthead">
+    <div class="masthead-text">
+      <h1 id="songTitle" data-testid="karaoke-title">Karaoke Trainer</h1>
+      <p id="songMeta" class="song-meta" data-testid="song-meta">Choose a score to begin.</p>
+    </div>
+    <div class="masthead-tools" id="serverTools" hidden>
+      <label class="field">
+        <span class="field-label">Score</span>
+        <select id="scoreSelect" data-testid="karaoke-score-select"></select>
+      </label>
+      <label class="btn btn-quiet file-btn">
+        Upload PDF
+        <input type="file" id="pdfUpload" accept=".pdf" data-testid="karaoke-upload">
+      </label>
+      <a class="btn btn-quiet" href="/">Score player</a>
+    </div>
+  </header>
+
+  <p id="notice" class="notice" role="status" data-testid="notice" hidden></p>
+
+  <nav id="modeTabs" class="mode-tabs" aria-label="What to sing" data-testid="karaoke-mode-tabs"></nav>
+
+  <main class="stage" data-testid="stage">
+    <div class="now-row">
+      <div class="now-note" data-testid="active-note-pill">
+        <span class="now-label">Sing</span>
+        <strong id="nowNote">–</strong>
+        <span id="nowWord" class="now-word"></span>
+      </div>
+      <div id="beatDots" class="beat-dots" aria-hidden="true" data-testid="beat-dots"></div>
+      <div class="now-chord" data-testid="active-chord-pill">
+        <span class="now-label">Chord</span>
+        <strong id="nowChord">–</strong>
+      </div>
+    </div>
+
+    <p id="sectionLabel" class="section-label" data-testid="section-label"></p>
+    <div id="systems" class="systems" data-testid="systems"></div>
+    <p id="nextLine" class="next-line" data-testid="next-line"></p>
+  </main>
+
+  <section class="transport" aria-label="Playback">
+    <button type="button" id="playBtn" class="btn btn-play" data-testid="play" aria-pressed="false">
+      <svg class="icon icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+      <svg class="icon icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h4.5v15H6zM13.5 4.5H18v15h-4.5z"/></svg>
+      <span id="playLabel">Play</span>
+    </button>
+    <button type="button" id="restartBtn" class="btn" data-testid="restart">Start over</button>
+    <button type="button" id="prevBtn" class="btn" data-testid="prev-phrase" aria-label="Previous line">‹ Line</button>
+    <button type="button" id="nextBtn" class="btn" data-testid="next-phrase" aria-label="Next line">Line ›</button>
+    <label class="check"><input type="checkbox" id="loopToggle" data-testid="loop-toggle"> Repeat this line</label>
+    <label class="check"><input type="checkbox" id="countInToggle" data-testid="countin-toggle" checked> Count me in</label>
+    <span id="status" class="status" data-testid="status">Ready</span>
+  </section>
+
+  <section class="settings" aria-label="Practice settings">
+    <div class="setting">
+      <div class="setting-head"><span>Speed</span><output id="tempoOut" data-testid="tempo-out"></output></div>
+      <div class="speed-presets" role="group" aria-label="Speed presets">
+        <button type="button" class="chip" data-speed="1" data-testid="speed-100">100%</button>
+        <button type="button" class="chip" data-speed="0.75" data-testid="speed-75">75%</button>
+        <button type="button" class="chip" data-speed="0.5" data-testid="speed-50">50%</button>
+        <button type="button" class="chip" data-speed="0.3333" data-testid="speed-33">33%</button>
+        <button type="button" class="chip" data-speed="0.25" data-testid="speed-25">25%</button>
+      </div>
+      <input type="range" id="tempoSlider" min="20" max="200" step="1" aria-label="Tempo in beats per minute" data-testid="tempo-slider">
+    </div>
+    <div class="setting">
+      <div class="setting-head"><span>Guide melody</span><output id="guideOut"></output></div>
+      <input type="range" id="guideVol" min="0" max="100" value="80" aria-label="Guide melody volume" data-testid="guide-vol">
+      <p class="hint">Turn this down once you know the tune.</p>
+    </div>
+    <div class="setting">
+      <div class="setting-head"><span>Background music</span><output id="backingOut"></output></div>
+      <input type="range" id="backingVol" min="0" max="100" value="65" aria-label="Background music volume" data-testid="backing-vol">
+      <p class="hint" id="backingHint">Bass and chords from the chart.</p>
+    </div>
+    <div class="setting">
+      <div class="setting-head"><span>Beat click</span><output id="clickOut"></output></div>
+      <input type="range" id="clickVol" min="0" max="100" value="30" aria-label="Beat click volume" data-testid="click-vol">
+    </div>
+    <div class="setting">
+      <div class="setting-head"><span>Key</span><output id="transposeOut" data-testid="transpose-out">As written</output></div>
+      <div class="stepper">
+        <button type="button" class="btn" id="transposeDown" data-testid="transpose-down" aria-label="Lower by a semitone">Lower</button>
+        <button type="button" class="btn" id="transposeUp" data-testid="transpose-up" aria-label="Raise by a semitone">Higher</button>
+      </div>
+      <p class="hint">Changes the sound only; the notes stay as printed.</p>
+    </div>
+  </section>
+
+  <section class="keyboard-wrap" aria-label="Keyboard">
+    <div id="keyboard" class="keyboard" data-testid="keyboard"></div>
+  </section>
+
+  <section class="lyric-sheet" aria-label="All lines">
+    <h2>All lines</h2>
+    <ol id="phraseList" class="phrase-list" data-testid="phrase-list"></ol>
+  </section>
+
+  <footer class="foot">Space plays and pauses. Left and right arrows move one line. Tap any word to jump to it.</footer>
+</div>
+
+<script>
+window.KARAOKE_BOOT = {"apiMode": true, "data": null};
+</script>
+<script src="/static/js/karaoke/timeline.js"></script>
+<script src="/static/js/karaoke/audio.js"></script>
+<script src="/static/js/karaoke/stage.js"></script>
+<script src="/static/js/karaoke/piano.js"></script>
+<script src="/static/js/karaoke/controls.js"></script>
+<!-- APAF Bioinformatics | karaoke.html | Approved | 2026-11-19 -->
+</body>
+</html>

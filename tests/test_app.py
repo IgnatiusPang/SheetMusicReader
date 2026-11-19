@@ -1,10 +1,7 @@
-import pytest
-from playwright.sync_api import sync_playwright
 
-def test_homepage_loads(flask_server):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+def test_homepage_loads(flask_server, chromium):
+    with chromium.new_context() as context:
+        page = context.new_page()
         page.goto(flask_server)
         
         # Verify page title and header elements
@@ -12,13 +9,10 @@ def test_homepage_loads(flask_server):
         assert page.locator('[data-testid="psalm-select"]').is_visible()
         assert page.locator('[data-testid="score-view"]').is_visible()
         assert page.locator('[data-testid="piano-keyboard"]').is_visible()
-        
-        browser.close()
 
-def test_psalm_selection_and_lyrics_overlay(flask_server):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+def test_psalm_selection_and_lyrics_overlay(flask_server, chromium):
+    with chromium.new_context() as context:
+        page = context.new_page()
         page.goto(flask_server)
         
         page.wait_for_selector('[data-testid="psalm-select"]')
@@ -35,13 +29,10 @@ def test_psalm_selection_and_lyrics_overlay(flask_server):
         assert "Ps 103" in page.locator('[data-testid="psalm-title"]').text_content()
         assert page.locator('[data-testid="lyric-word-0"]').is_visible()
         assert "The" in page.locator('[data-testid="lyric-word-0"]').text_content()
-        
-        browser.close()
 
-def test_playback_controls_and_keyboard_visualizer(flask_server):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+def test_playback_controls_and_keyboard_visualizer(flask_server, chromium):
+    with chromium.new_context() as context:
+        page = context.new_page()
         page.goto(flask_server)
         
         page.wait_for_selector('[data-testid="play-btn"]')
@@ -62,13 +53,10 @@ def test_playback_controls_and_keyboard_visualizer(flask_server):
         page.click('[data-testid="stop-btn"]')
         page.wait_for_timeout(300)
         assert "Stopped" in page.locator('[data-testid="status-indicator"]').text_content()
-        
-        browser.close()
 
-def test_digitized_export_endpoints(flask_server):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+def test_digitized_export_endpoints(flask_server, chromium):
+    with chromium.new_context() as context:
+        page = context.new_page()
         
         # Test MusicXML export
         res_xml = page.request.get(f"{flask_server}/api/psalms/psalm_103_kind_chart/export/musicxml")
@@ -84,13 +72,10 @@ def test_digitized_export_endpoints(flask_server):
         assert res_json.status == 200
         assert res_json.json()["id"] == "psalm_103_kind_chart"
 
-        browser.close()
 
-
-def test_vocal_guide_speed_presets_and_lean_verify_ui(flask_server):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+def test_vocal_guide_speed_presets_and_lean_verify_ui(flask_server, chromium):
+    with chromium.new_context() as context:
+        page = context.new_page()
         errors = []
         page.on("pageerror", lambda err: errors.append(str(err)))
 
@@ -120,44 +105,20 @@ def test_vocal_guide_speed_presets_and_lean_verify_ui(flask_server):
         assert res_wav.body().startswith(b"RIFF")
         assert errors == []
 
-        browser.close()
 
-
-def test_karaoke_trainer_note_word_and_chord_highlighting(flask_server):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+def test_main_page_links_to_karaoke_trainer(flask_server, chromium):
+    """The score player keeps its now-singing strip and links to the trainer (full trainer tests: test_karaoke_e2e.py)."""
+    with chromium.new_context() as context:
+        page = context.new_page()
         errors = []
         page.on("pageerror", lambda err: errors.append(str(err)))
 
         page.goto(flask_server)
-        page.wait_for_selector('[data-testid="open-karaoke-trainer"]')
         page.wait_for_selector('[data-testid="karaoke-now-singing"]')
-
-        page.goto(f"{flask_server}/karaoke")
-        page.wait_for_selector('[data-testid="karaoke-current-line"] .karaoke-word', timeout=10000)
-        assert "Let" in (page.locator('[data-testid="karaoke-current-line"]').text_content() or "")
-
-        countin = page.locator('[data-testid="countin-toggle"]')
-        if countin.is_checked():
-            countin.uncheck()
-
-        page.click('[data-testid="karaoke-play-btn"]')
-        page.wait_for_timeout(900)
-
-        note_text = page.locator('[data-testid="active-note-pill"]').text_content() or ""
-        chord_text = page.locator('[data-testid="active-chord-pill"]').text_content() or ""
-        assert note_text != "🎵 Ready"
-        assert "--" not in chord_text
-        assert page.locator(".karaoke-word.active, .karaoke-word.sung").count() >= 1
-
-        page.click('[data-testid="karaoke-speed-50"]')
-        assert page.locator("#ktSpeedVal").text_content() == "50%"
-
-        page.click('[data-testid="karaoke-stop-btn"]')
+        page.click('[data-testid="open-karaoke-trainer"]')
+        page.wait_for_selector('[data-testid="stage"] .col', timeout=15000)
+        assert page.url.endswith("/karaoke")
         assert errors == []
-
-        browser.close()
 
 
 # <!-- APAF Bioinformatics | test_app.py | Approved | 2026-11-15 -->

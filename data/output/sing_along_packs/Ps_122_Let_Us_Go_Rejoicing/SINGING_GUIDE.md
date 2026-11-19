@@ -13,14 +13,14 @@
 
 ---
 
-## Interactive Karaoke Note + Word + Chords Trainer (`Ps_122_Karaoke_Trainer.html`)
+## Karaoke Trainer (`Ps_122_Karaoke_Trainer.html`)
 
-Open **`Ps_122_Karaoke_Trainer.html`** directly in Chrome, Safari, or Edge (works offline from `file://`—no Python server required), or open `/karaoke` in the Sheet Music Reader web app:
+Open **`Ps_122_Karaoke_Trainer.html`** in Chrome, Safari or Edge. It works offline with no server. The same trainer is at `/karaoke` in the web app.
 
-- **Live Teleprompter & Active Note Badge:** Lights up every word/syllable as it arrives next to its exact pitch (`🎵 A4 · "Let"`) and current harmony chord (`🎹 Chord: G`).
-- **Synchronized 5-Line Treble Staff & 61-Key Piano:** Highlights the notehead and lyric below, moves a vertical cursor, and lets you click any word or note to hear its pitch.
-- **Independent Mixer Sliders:** Keep **Background Music** (`70%` chords & bass) and **Beat Click** (`35%`) playing while dialing **Vocal Guide** from `85%` down to `0%` once you know the tune.
-- **Practice Modes & Speed Presets:** Switch between **Full Sung Psalm (40 bars)**, **Printed Chart (28 bars)**, **Response**, and **Verse 1–3** with `100%`, `75%`, `50%`, `33%`, and `25%` tempo presets, **Count-In**, **Loop**, and key transpose.
+- **Note above its word.** Each line is shown as a staff with every note directly above its syllable. A yellow highlighter band marks the note and word being sung, the word fills in red as it is held, and words already sung turn grey-blue.
+- **Background music.** Bass and chords from the chart play behind a guide melody. Three sliders set the guide melody, the background music and the beat click. Turn the guide melody down once you know the tune.
+- **Practice controls.** Choose the full sung psalm, the printed chart, the response or a single verse. Speeds: 100%, 75%, 50%, 33%, 25%, or any tempo. "Repeat this line" loops one line; "Count me in" gives one bar of clicks first; "Key" moves the sound up or down by semitones.
+- **Getting around.** Tap any word to jump to it. Space plays and pauses; the left and right arrow keys move one line.
 
 ---
 

@@ -103,6 +103,28 @@ cd formalization/lean && lake build && ./.lake/build/bin/test_runner
 
 ---
 
+## 🎙️ Karaoke Trainer (note + word highlighting with background music)
+
+```bash
+python -m sheet_music_reader.web.app          # then open http://localhost:5050/karaoke
+```
+
+- Each line is drawn as a treble staff with **every note directly above its syllable**. The note and word being sung are highlighted together, in time with the audio clock.
+- **Background music** (bass and chords from the chart's chord symbols), a **guide melody** and a **beat click** each have their own volume slider.
+- Modes (full sung psalm, printed chart, response, single verses), speed presets and tempo slider, repeat-this-line, count-in, key change, tap-a-word to jump.
+- Works with every chart PDF in `data/input/psalms/`, every digitized psalm, and uploaded PDFs.
+
+Make an offline single-file trainer (opens from `file://`, no server):
+
+```bash
+python -m sheet_music_reader.cli.music_pipeline karaoke data/input/psalms/04_Ps-122-I-Rejoiced-Chart.pdf \
+    --out data/output/sing_along_packs/Ps_122_Let_Us_Go_Rejoicing/Ps_122_Karaoke_Trainer.html
+```
+
+Front-end files live in `sheet_music_reader/web/` (`templates/karaoke.html`, `static/css/karaoke.css`, `static/js/karaoke/`). How to change and test them: `.claude/skills/web-trainer-app/SKILL.md`. Browser tests: `python -m pytest tests/test_karaoke_e2e.py`.
+
+---
+
 ## 🧪 Running Automated Tests
 
 Run the complete suite of PDF extraction, REST API, OMR, MuseScore helper, Lean 4 formal verification, pipeline synthesis, and Playwright E2E tests:

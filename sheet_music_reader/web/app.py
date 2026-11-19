@@ -10,6 +10,7 @@ from sheet_music_reader.cli import digitize_all
 from sheet_music_reader.export import lean_bridge
 from sheet_music_reader.omr import vector_omr
 from sheet_music_reader.karaoke import extract as karaoke_trainer
+from sheet_music_reader.karaoke import render as karaoke_render
 from sheet_music_reader.cli.music_pipeline import FIFTHS_TO_KEY_NAME
 
 app = Flask(__name__, template_folder=str(paths.TEMPLATES_DIR), static_folder=str(paths.STATIC_DIR))
@@ -276,10 +277,18 @@ def upload_pdf():
             os.remove(tmp_path)
 
 
+def _karaoke_json(build):
+    """Run a karaoke extraction; a score we cannot read is a 400 with a reason, not a 500."""
+    try:
+        return jsonify(build())
+    except Exception as exc:  # extraction fails in many ways on unusual PDFs
+        return jsonify({"error": f"Could not read this score: {exc}"}), 400
+
+
 @app.route("/karaoke")
 def karaoke_page():
     """Serve the interactive Karaoke Note + Word + Background Chord Trainer."""
-    return Response(karaoke_trainer.render_standalone_karaoke_html(api_mode=True), mimetype="text/html; charset=utf-8")
+    return Response(karaoke_render.render_page(api_mode=True), mimetype="text/html; charset=utf-8")
 
 
 @app.route("/api/karaoke/list", methods=["GET"])
@@ -299,12 +308,12 @@ def api_karaoke_score(score_id):
         pdf_path = DATA_DIR / fname
         if not pdf_path.is_file():
             return jsonify({"error": "PDF not found"}), 404
-        return jsonify(karaoke_trainer.extract_karaoke_score_from_pdf(pdf_path))
+        return _karaoke_json(lambda: karaoke_trainer.extract_karaoke_score_from_pdf(pdf_path))
     pid = raw[6:] if raw.startswith("psalm:") else raw
     data = psalms_db.get_psalm(pid)
     if not data:
         return jsonify({"error": "Score not found"}), 404
-    return jsonify(karaoke_trainer.extract_karaoke_from_psalm_dict(data))
+    return _karaoke_json(lambda: karaoke_trainer.extract_karaoke_from_psalm_dict(data))
 
 
 @app.route("/api/karaoke/upload", methods=["POST"])
@@ -322,9 +331,9 @@ def api_karaoke_upload():
         tmp_path = tmp.name
 
     try:
-        data = karaoke_trainer.extract_karaoke_score_from_pdf(Path(tmp_path))
-        data["id"] = f"upload:{Path(fname).name}"
-        return jsonify(data)
+        return _karaoke_json(
+            lambda: {**karaoke_trainer.extract_karaoke_score_from_pdf(Path(tmp_path)), "id": f"upload:{Path(fname).name}"}
+        )
     finally:
         if os.path.exists(tmp_path):
             os.remove(tmp_path)

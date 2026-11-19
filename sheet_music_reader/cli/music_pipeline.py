@@ -658,7 +658,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         from sheet_music_reader.karaoke import extract as karaoke_trainer
 
         stem = re.sub(r"[^A-Za-z0-9_-]+", "_", args.input.stem)
-        out_html = args.out if args.out is not None else args.input.with_name(f"{stem}_Karaoke_Trainer.html")
+        out_html = args.out if args.out is not None else paths.PACKS_DIR / f"{stem}_Karaoke_Trainer.html"
         written, data = karaoke_trainer.export_karaoke_html(args.input, out_html)
         print(
             json.dumps(
