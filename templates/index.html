@@ -39,6 +39,8 @@
                     ⚡ Digitize All PDFs
                 </button>
 
+                <a href="/karaoke" data-testid="open-karaoke-trainer" class="btn btn-accent">🎤 Karaoke Trainer</a>
+
                 <label for="pdfInput" class="upload-btn" data-testid="upload-label">
                     <span>📄 Upload PDF Sheet</span>
                     <input type="file" id="pdfInput" data-testid="pdf-input" accept=".pdf" class="hidden-file-input">
@@ -57,6 +59,7 @@
                             <span id="psalmKey" data-testid="psalm-key" class="badge key-badge">Key: --</span>
                             <span id="psalmTime" data-testid="psalm-time" class="badge time-badge">Time: --</span>
                             <span id="psalmTempoDisplay" data-testid="psalm-tempo-display" class="badge tempo-badge">BPM: --</span>
+                            <span id="leanVerifyBadge" data-testid="lean-verify-badge" class="badge verify-badge">Lean: Ready</span>
                         </div>
                     </div>
 
@@ -66,13 +69,28 @@
                         <button id="exportXmlBtn" data-testid="export-musicxml" class="btn btn-outline" title="Export MusicXML for MuseScore / Finale">
                             🎼 MusicXML
                         </button>
+                        <button id="exportLyBtn" data-testid="export-lilypond" class="btn btn-outline" title="Export GNU LilyPond (.ly)">
+                            📜 LilyPond
+                        </button>
                         <button id="exportMidiBtn" data-testid="export-midi" class="btn btn-outline" title="Export MIDI for DAWs">
                             🎹 MIDI
+                        </button>
+                        <button id="exportWavBtn" data-testid="export-wav" class="btn btn-outline" title="Download Sing-Along WAV Audio">
+                            🔊 Sing WAV
                         </button>
                         <button id="exportJsonBtn" data-testid="export-json" class="btn btn-outline" title="Export Digitized JSON">
                             💾 JSON
                         </button>
+                        <button id="verifyLeanBtn" data-testid="verify-lean" class="btn btn-outline" title="Run Lean 4 Formal Verification">
+                            ✓ Lean 4 Verify
+                        </button>
                     </div>
+                </div>
+
+                <!-- Live Karaoke Now-Singing Strip -->
+                <div id="karaokeNowSinging" data-testid="karaoke-now-singing" class="karaoke-now-singing">
+                    <span id="nowNoteBadge" data-testid="now-note-badge" class="now-note-badge">🎵 Ready</span>
+                    <div id="nowLyricsLine" data-testid="now-lyrics-line" class="now-lyrics-line">Press Play to follow highlighted notes and words</div>
                 </div>
 
                 <!-- Sheet Music Staff & Synchronized Lyric Overlay -->
@@ -135,6 +153,15 @@
                 </div>
 
                 <div class="playback-options">
+                    <!-- Vocal Guide Toggle -->
+                    <div class="toggle-group">
+                        <label class="switch">
+                            <input type="checkbox" id="vocalGuideToggle" data-testid="vocal-guide-toggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label">Vocal Guide (Sing-Along)</span>
+                    </div>
+
                     <!-- Accompaniment Toggle -->
                     <div class="toggle-group">
                         <label class="switch">
@@ -144,12 +171,28 @@
                         <span class="toggle-label">Include Accompaniment (Chords)</span>
                     </div>
 
-                    <!-- Tempo Adjustment Slider -->
+                    <!-- Beat Click Toggle -->
+                    <div class="toggle-group">
+                        <label class="switch">
+                            <input type="checkbox" id="beatClickToggle" data-testid="beat-click-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label">Beat Click</span>
+                    </div>
+
+                    <!-- Tempo Adjustment Slider + Speed Presets -->
                     <div class="slider-group">
                         <label for="tempoSlider" class="slider-label">
-                            Tempo: <span id="tempoValue" data-testid="tempo-value">90</span> BPM
+                            Tempo: <span id="tempoValue" data-testid="tempo-value">90</span> BPM (<span id="speedPercentLabel">100%</span>)
                         </label>
-                        <input type="range" id="tempoSlider" data-testid="tempo-slider" min="40" max="200" value="90" class="range-input">
+                        <input type="range" id="tempoSlider" data-testid="tempo-slider" min="15" max="200" value="90" class="range-input">
+                        <div class="speed-presets" role="group" aria-label="Practice speed presets">
+                            <button type="button" class="speed-preset-btn active" data-speed="1.0" data-testid="speed-preset-100">100%</button>
+                            <button type="button" class="speed-preset-btn" data-speed="0.75" data-testid="speed-preset-75">75%</button>
+                            <button type="button" class="speed-preset-btn" data-speed="0.5" data-testid="speed-preset-50">50%</button>
+                            <button type="button" class="speed-preset-btn" data-speed="0.3333" data-testid="speed-preset-33">33%</button>
+                            <button type="button" class="speed-preset-btn" data-speed="0.25" data-testid="speed-preset-25">25%</button>
+                        </div>
                     </div>
 
                     <!-- Pitch Transposition -->

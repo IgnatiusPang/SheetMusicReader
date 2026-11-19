@@ -4,24 +4,30 @@
   <work><work-title>Ps 128(127) Happy are Those Who Fear the Lord</work-title></work>
   <identification><creator type="composer">A. Reefman</creator></identification>
   <part-list>
-    <score-part id="P1"><part-name>Top Melody</part-name></score-part>
+    <score-part id="P1"><part-name>Melody (Sing / Lead)</part-name></score-part>
   </part-list>
   <part id="P1">
     <measure number="1">
       <attributes>
-        <divisions>4</divisions>
-        <key><fifths>0</fifths></key>
+        <divisions>48</divisions>
+        <key><fifths>-3</fifths></key>
         <time><beats>6</beats><beat-type>8</beat-type></time>
         <clef><sign>G</sign><line>2</line></clef>
       </attributes>
-      <direction placement="above"><direction-type><metronome><beat-unit>quarter</beat-unit><per-minute>60</per-minute></metronome></direction-type></direction>
+      <direction placement="above">
+        <direction-type>
+          <metronome><beat-unit>quarter</beat-unit><per-minute>60</per-minute></metronome>
+        </direction-type>
+        <sound tempo="60"/>
+      </direction>
       <note>
         <pitch>
           <step>E</step>
           <alter>-1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>Hap-</text></lyric>
       </note>
@@ -30,17 +36,19 @@
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>py</text></lyric>
       </note>
       <note>
         <pitch>
-          <step>A</step>
-          <alter>-1</alter>
+          <step>G</step>
+          <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>are</text></lyric>
       </note>
@@ -50,17 +58,39 @@
           <alter>-1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>6</duration>
-        <type>dotted_quarter</type>
+        <duration>48</duration>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <notations>
+          <tied type="start"/>
+        </notations>
         <lyric><text>those</text></lyric>
       </note>
+    </measure>
+    <measure number="2">
       <note>
         <pitch>
-          <step>A</step>
+          <step>B</step>
           <alter>-1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <tie type="stop"/>
+        <voice>1</voice>
+        <type>eighth</type>
+        <notations>
+          <tied type="stop"/>
+        </notations>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <alter>1</alter>
+          <octave>4</octave>
+        </pitch>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>who</text></lyric>
       </note>
@@ -69,7 +99,8 @@
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>fear</text></lyric>
       </note>
@@ -78,21 +109,47 @@
           <step>F</step>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>the</text></lyric>
       </note>
-    </measure>
-    <measure number="2">
       <note>
         <pitch>
           <step>E</step>
           <alter>-1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>12</duration>
-        <type>dotted_half</type>
+        <duration>24</duration>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>eighth</type>
+        <notations>
+          <tied type="start"/>
+        </notations>
         <lyric><text>Lord.</text></lyric>
+      </note>
+    </measure>
+    <measure number="3">
+      <note>
+        <pitch>
+          <step>E</step>
+          <alter>-1</alter>
+          <octave>4</octave>
+        </pitch>
+        <duration>120</duration>
+        <tie type="stop"/>
+        <voice>1</voice>
+        <type>half</type>
+        <notations>
+          <tied type="stop"/>
+        </notations>
+      </note>
+      <note>
+        <rest/>
+        <duration>24</duration>
+        <voice>1</voice>
+        <type>eighth</type>
       </note>
     </measure>
   </part>

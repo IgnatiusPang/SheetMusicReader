@@ -8,6 +8,7 @@ class PianoSynthesizer {
         this.ctx = null;
         this.masterGain = null;
         this.activeNodes = [];
+        this.voiceMode = 'vocal_guide';
     }
 
     init() {
@@ -99,6 +100,77 @@ class PianoSynthesizer {
 
         noiseNode.start(now);
         noiseNode.stop(now + 0.02);
+    }
+
+    playVocalNote(midiPitch, durationSeconds = 1.0, velocity = 0.85, startTime = 0) {
+        this.init();
+        const now = startTime > 0 ? startTime : this.ctx.currentTime;
+        const dur = Math.max(0.06, durationSeconds);
+        const freq = this.midiToFreq(midiPitch);
+
+        const noteGain = this.ctx.createGain();
+        noteGain.connect(this.masterGain);
+
+        // Sustained vowel-like singing contour (holds full duration for pitch matching)
+        const attack = Math.min(0.035, dur * 0.2);
+        const release = Math.min(0.05, dur * 0.22);
+        noteGain.gain.setValueAtTime(0.0001, now);
+        noteGain.gain.linearRampToValueAtTime(velocity * 0.72, now + attack);
+        noteGain.gain.setValueAtTime(velocity * 0.68, Math.max(now + attack, now + dur - release));
+        noteGain.gain.exponentialRampToValueAtTime(0.0001, now + dur + 0.04);
+
+        const formants = [
+            { mult: 1.0, gain: 1.0, type: 'sine' },
+            { mult: 2.0, gain: 0.42, type: 'sine' },
+            { mult: 3.0, gain: 0.18, type: 'sine' },
+            { mult: 4.0, gain: 0.06, type: 'triangle' }
+        ];
+
+        const lfo = this.ctx.createOscillator();
+        const lfoGain = this.ctx.createGain();
+        lfo.frequency.setValueAtTime(5.2, now);
+        lfoGain.gain.setValueAtTime(dur > 0.35 ? freq * 0.0025 : 0.0, now);
+        lfo.connect(lfoGain);
+
+        formants.forEach(h => {
+            const osc = this.ctx.createOscillator();
+            osc.type = h.type;
+            osc.frequency.setValueAtTime(freq * h.mult, now);
+            lfoGain.connect(osc.frequency);
+
+            const hGain = this.ctx.createGain();
+            hGain.gain.value = h.gain;
+            osc.connect(hGain);
+            hGain.connect(noteGain);
+
+            osc.start(now);
+            osc.stop(now + dur + 0.06);
+        });
+
+        lfo.start(now);
+        lfo.stop(now + dur + 0.06);
+    }
+
+    playLeadNote(midiPitch, durationSeconds = 1.0, velocity = 0.85, startTime = 0) {
+        if (this.voiceMode === 'vocal_guide') {
+            return this.playVocalNote(midiPitch, durationSeconds, velocity, startTime);
+        }
+        return this.playNote(midiPitch, durationSeconds, velocity, startTime);
+    }
+
+    playClick(accent = false, startTime = 0) {
+        this.init();
+        const now = startTime > 0 ? startTime : this.ctx.currentTime;
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(accent ? 1280 : 880, now);
+        gain.gain.setValueAtTime(accent ? 0.25 : 0.16, now);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.045);
+        osc.connect(gain);
+        gain.connect(this.masterGain);
+        osc.start(now);
+        osc.stop(now + 0.05);
     }
 }
 

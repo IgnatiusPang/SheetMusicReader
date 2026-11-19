@@ -102,6 +102,15 @@
     - Repository: `https://github.com/MutopiaProject/MutopiaProject`
     - Website: `https://www.mutopiaproject.org`
 
+26. **MuseScore Studio (v4.x)**. Open-source desktop music notation and playback software supporting MusicXML (`.musicxml` / `.mxl`) and Standard MIDI (`.mid`).
+    - Official Website: `https://musescore.org`
+    - Repository: `https://github.com/musescore/MuseScore`
+
+27. **Lean 4 Theorem Prover & Lake Build System (v4.35.0)**. Interactive theorem prover and functional programming language used for machine-checked mathematical proofs of rhythmic bar-beat conservation and score translation equivalence.
+    - Official Website: `https://lean-lang.org`
+    - Documentation & Reference: `https://lean-lang.org/documentation/`
+    - Repository: `https://github.com/leanprover/lean4`
+
 ---
 
 <!-- APAF Bioinformatics | Sheet Music Reader | Approved -->

@@ -113,3 +113,79 @@ def test_digitized_export_endpoints(flask_server):
         assert res_json.json()["id"] == "psalm_103_kind_chart"
 
         browser.close()
+
+
+def test_vocal_guide_speed_presets_and_lean_verify_ui(flask_server):
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        errors = []
+        page.on("pageerror", lambda err: errors.append(str(err)))
+
+        page.goto(flask_server)
+        page.wait_for_selector('[data-testid="psalm-select"]')
+        page.select_option('[data-testid="psalm-select"]', 'psalm_103_kind_chart')
+        page.wait_for_timeout(400)
+
+        assert page.locator('[data-testid="vocal-guide-toggle"]').is_checked()
+        page.click('[data-testid="speed-preset-50"]')
+        assert page.locator('#speedPercentLabel').text_content() == "50%"
+
+        page.click('[data-testid="verify-lean"]')
+        page.wait_for_function(
+            "() => document.querySelector('[data-testid=\"lean-verify-badge\"]').textContent.includes('Lean: Verified')",
+            timeout=10000,
+        )
+
+        res_ly = page.request.get(f"{flask_server}/api/psalms/psalm_103_kind_chart/export/lilypond?speed=0.5")
+        assert res_ly.status == 200
+        assert "\\version" in res_ly.text()
+
+        res_wav = page.request.get(
+            f"{flask_server}/api/psalms/psalm_103_kind_chart/export/wav?speed=0.5&voice=vocal_guide&count_in=0"
+        )
+        assert res_wav.status == 200
+        assert res_wav.body().startswith(b"RIFF")
+        assert errors == []
+
+        browser.close()
+
+
+def test_karaoke_trainer_note_word_and_chord_highlighting(flask_server):
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        errors = []
+        page.on("pageerror", lambda err: errors.append(str(err)))
+
+        page.goto(flask_server)
+        page.wait_for_selector('[data-testid="open-karaoke-trainer"]')
+        page.wait_for_selector('[data-testid="karaoke-now-singing"]')
+
+        page.goto(f"{flask_server}/karaoke")
+        page.wait_for_selector('[data-testid="karaoke-current-line"] .karaoke-word', timeout=10000)
+        assert "Let" in (page.locator('[data-testid="karaoke-current-line"]').text_content() or "")
+
+        countin = page.locator('[data-testid="countin-toggle"]')
+        if countin.is_checked():
+            countin.uncheck()
+
+        page.click('[data-testid="karaoke-play-btn"]')
+        page.wait_for_timeout(900)
+
+        note_text = page.locator('[data-testid="active-note-pill"]').text_content() or ""
+        chord_text = page.locator('[data-testid="active-chord-pill"]').text_content() or ""
+        assert note_text != "🎵 Ready"
+        assert "--" not in chord_text
+        assert page.locator(".karaoke-word.active, .karaoke-word.sung").count() >= 1
+
+        page.click('[data-testid="karaoke-speed-50"]')
+        assert page.locator("#ktSpeedVal").text_content() == "50%"
+
+        page.click('[data-testid="karaoke-stop-btn"]')
+        assert errors == []
+
+        browser.close()
+
+
+# <!-- APAF Bioinformatics | test_app.py | Approved | 2026-11-15 -->

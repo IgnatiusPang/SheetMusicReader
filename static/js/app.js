@@ -10,10 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const psalmTempoDisplay = document.getElementById('psalmTempoDisplay');
     
     const exportXmlBtn = document.getElementById('exportXmlBtn');
+    const exportLyBtn = document.getElementById('exportLyBtn');
     const exportMidiBtn = document.getElementById('exportMidiBtn');
+    const exportWavBtn = document.getElementById('exportWavBtn');
     const exportJsonBtn = document.getElementById('exportJsonBtn');
+    const verifyLeanBtn = document.getElementById('verifyLeanBtn');
+    const leanVerifyBadge = document.getElementById('leanVerifyBadge');
     
     const notesAndLyricsLayer = document.getElementById('notesAndLyricsLayer');
+    const nowNoteBadge = document.getElementById('nowNoteBadge');
+    const nowLyricsLine = document.getElementById('nowLyricsLine');
     const verseTabs = document.getElementById('verseTabs');
     const fullLyricsBox = document.getElementById('fullLyricsBox');
     
@@ -21,9 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const pauseBtn = document.getElementById('pauseBtn');
     const stopBtn = document.getElementById('stopBtn');
     
+    const vocalGuideToggle = document.getElementById('vocalGuideToggle');
     const accompanimentToggle = document.getElementById('accompanimentToggle');
+    const beatClickToggle = document.getElementById('beatClickToggle');
     const tempoSlider = document.getElementById('tempoSlider');
     const tempoValue = document.getElementById('tempoValue');
+    const speedPercentLabel = document.getElementById('speedPercentLabel');
+    const speedPresetButtons = document.querySelectorAll('.speed-preset-btn');
     const transposeSelect = document.getElementById('transposeSelect');
     
     const statusIndicator = document.getElementById('statusIndicator');
@@ -32,10 +42,44 @@ document.addEventListener('DOMContentLoaded', () => {
     // App State
     let allPsalmsList = [];
     let currentPsalm = null;
+    let activeNotesList = [];
     let isPlaying = false;
     let isPaused = false;
     let playbackTimeout = null;
     let playbackIndex = 0;
+    let activeSpeedRatio = 1.0;
+
+    function renderNowLyricsLine(notes) {
+        activeNotesList = Array.isArray(notes) ? notes : [];
+        if (nowNoteBadge) {
+            nowNoteBadge.innerText = '🎵 Ready';
+        }
+        if (!nowLyricsLine) return;
+        nowLyricsLine.innerHTML = '';
+        let hasWords = false;
+        activeNotesList.forEach((n, idx) => {
+            const text = (n.lyric || '').trim();
+            if (!text) return;
+            hasWords = true;
+            const span = document.createElement('span');
+            span.className = 'now-word';
+            span.setAttribute('data-note-idx', String(idx));
+            span.innerText = text;
+            span.addEventListener('click', () => {
+                if (!n.rest && !n.is_rest && window.pianoSynth && n.midi != null) {
+                    const transpose = parseInt(transposeSelect.value, 10) || 0;
+                    window.pianoSynth.playNote(n.midi + transpose, 0.7, 0.9);
+                    highlightKey(n.midi + transpose, true);
+                    setTimeout(() => highlightKey(n.midi + transpose, false), 280);
+                }
+                highlightNoteAndLyric(idx);
+            });
+            nowLyricsLine.appendChild(span);
+        });
+        if (!hasWords) {
+            nowLyricsLine.innerText = 'Press Play to follow highlighted notes and words';
+        }
+    }
 
     // Note Names for 61-key Keyboard Generation (C2 to C7)
     const NOTE_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
@@ -216,6 +260,15 @@ document.addEventListener('DOMContentLoaded', () => {
             
             tempoSlider.value = data.tempo;
             tempoValue.innerText = data.tempo;
+            activeSpeedRatio = 1.0;
+            if (speedPercentLabel) speedPercentLabel.innerText = '100%';
+            speedPresetButtons.forEach(btn => {
+                btn.classList.toggle('active', parseFloat(btn.dataset.speed) === 1.0);
+            });
+            if (leanVerifyBadge) {
+                leanVerifyBadge.innerText = 'Lean: Ready';
+                leanVerifyBadge.className = 'badge verify-badge';
+            }
 
             renderClefSidebar(data);
             renderScoreNotation(data);
@@ -411,6 +464,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         renderBeamsSvg(notes);
         renderTiesSvg(notes);
+        renderNowLyricsLine(notes);
     }
 
     // Render horizontal beam bars joining consecutive note stems in beat pairs (first pair, second pair)
@@ -612,6 +666,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             
             renderTiesSvg(notes);
+            renderNowLyricsLine(notes);
             fullLyricsBox.innerHTML = `<p class="lyrics-text">${verse.lyrics_text || ''}</p>`;
         }
     }
@@ -622,6 +677,36 @@ document.addEventListener('DOMContentLoaded', () => {
         if (items[index]) {
             items[index].classList.add('active');
             items[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+
+        const note = activeNotesList[index];
+        let activeWordIdx = -1;
+        let wordText = '';
+        for (let k = Math.min(index, activeNotesList.length - 1); k >= 0; k--) {
+            const candidate = (activeNotesList[k] && activeNotesList[k].lyric || '').trim();
+            if (candidate) {
+                activeWordIdx = k;
+                wordText = candidate;
+                break;
+            }
+        }
+        if (nowNoteBadge && note) {
+            if (note.rest || note.is_rest) {
+                nowNoteBadge.innerText = '💨 Rest · Breathe';
+            } else {
+                const pitchLabel = note.pitch || '';
+                const curWord = (note.lyric || '').trim() || wordText;
+                nowNoteBadge.innerText = curWord ? `🎵 ${pitchLabel} · "${curWord}"` : `🎵 ${pitchLabel}`;
+            }
+        }
+        if (nowLyricsLine) {
+            const wordEls = nowLyricsLine.querySelectorAll('.now-word');
+            const targetIdx = (note && (note.rest || note.is_rest)) ? -1 : activeWordIdx;
+            wordEls.forEach(el => {
+                const wIdx = parseInt(el.getAttribute('data-note-idx'), 10);
+                el.classList.toggle('active', wIdx === targetIdx);
+                el.classList.toggle('sung', targetIdx >= 0 ? wIdx < targetIdx : wIdx <= index);
+            });
         }
     }
 
@@ -695,8 +780,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const durationSeconds = durBeats * secondsPerBeat;
         const pitch = note.midi + transpose;
 
-        // Play Top Melody Note
-        window.pianoSynth.playNote(pitch, durationSeconds, 0.9);
+        // Play Top Melody Note (Vocal Guide or Piano)
+        if (window.pianoSynth) {
+            window.pianoSynth.voiceMode = (vocalGuideToggle && vocalGuideToggle.checked) ? 'vocal_guide' : 'piano';
+            window.pianoSynth.playLeadNote(pitch, durationSeconds, 0.9);
+            if (beatClickToggle && beatClickToggle.checked) {
+                window.pianoSynth.playClick(playbackIndex === 0 || (playbackIndex % 4) === 0);
+            }
+        }
 
         // Play Accompaniment Chords if toggled ON
         if (accompanimentToggle.checked && playbackIndex < accompaniment.length) {
@@ -743,24 +834,115 @@ document.addEventListener('DOMContentLoaded', () => {
         clearAllHighlightedKeys();
         const items = notesAndLyricsLayer.querySelectorAll('.note-item');
         items.forEach(i => i.classList.remove('active'));
+        if (nowNoteBadge) {
+            nowNoteBadge.innerText = '🎵 Ready';
+        }
+        if (nowLyricsLine) {
+            nowLyricsLine.querySelectorAll('.now-word').forEach(el => {
+                el.classList.remove('active', 'sung');
+            });
+        }
         statusIndicator.innerText = 'Status: Stopped';
     }
 
-    // 6. Export Handlers
+    // 6. Export & Lean Verification Handlers
+    function buildExportQuery(extra = '') {
+        const speedParam = Number(activeSpeedRatio || 1.0).toFixed(4).replace(/0+$/, '').replace(/\.$/, '');
+        return `?speed=${speedParam || '1'}${extra}`;
+    }
+
     exportXmlBtn.addEventListener('click', () => {
         if (!currentPsalm) return;
-        window.open(`/api/psalms/${currentPsalm.id}/export/musicxml`, '_blank');
+        window.open(`/api/psalms/${currentPsalm.id}/export/musicxml${buildExportQuery()}`, '_blank');
     });
+
+    if (exportLyBtn) {
+        exportLyBtn.addEventListener('click', () => {
+            if (!currentPsalm) return;
+            window.open(`/api/psalms/${currentPsalm.id}/export/lilypond${buildExportQuery()}`, '_blank');
+        });
+    }
 
     exportMidiBtn.addEventListener('click', () => {
         if (!currentPsalm) return;
-        window.open(`/api/psalms/${currentPsalm.id}/export/midi`, '_blank');
+        window.open(`/api/psalms/${currentPsalm.id}/export/midi${buildExportQuery()}`, '_blank');
     });
+
+    if (exportWavBtn) {
+        exportWavBtn.addEventListener('click', () => {
+            if (!currentPsalm) return;
+            const voice = (vocalGuideToggle && vocalGuideToggle.checked) ? 'vocal_guide' : 'piano';
+            const clicks = (beatClickToggle && beatClickToggle.checked) ? '1' : '0';
+            const acc = (accompanimentToggle && accompanimentToggle.checked) ? '1' : '0';
+            window.open(
+                `/api/psalms/${currentPsalm.id}/export/wav${buildExportQuery(`&voice=${voice}&clicks=${clicks}&accompaniment=${acc}`)}`,
+                '_blank'
+            );
+        });
+    }
 
     exportJsonBtn.addEventListener('click', () => {
         if (!currentPsalm) return;
         window.open(`/api/psalms/${currentPsalm.id}/export/json`, '_blank');
     });
+
+    if (verifyLeanBtn) {
+        verifyLeanBtn.addEventListener('click', async () => {
+            if (!currentPsalm) return;
+            statusIndicator.innerText = 'Status: Verifying score in Lean 4 kernel...';
+            if (leanVerifyBadge) {
+                leanVerifyBadge.innerText = 'Lean: Checking...';
+                leanVerifyBadge.className = 'badge verify-badge';
+            }
+            try {
+                const res = await fetch(`/api/psalms/${currentPsalm.id}/verify${buildExportQuery()}`);
+                const data = await res.json();
+                if (data.ok) {
+                    if (leanVerifyBadge) {
+                        leanVerifyBadge.innerText = `Lean: Verified (${data.checked_bars} bars)`;
+                        leanVerifyBadge.className = 'badge verify-badge pass';
+                    }
+                    statusIndicator.innerText = `Status: Lean 4 verified ${data.checked_bars} bars & ${data.sounding_notes} sounding notes`;
+                } else {
+                    if (leanVerifyBadge) {
+                        leanVerifyBadge.innerText = 'Lean: Failed';
+                        leanVerifyBadge.className = 'badge verify-badge fail';
+                    }
+                    const reason = (data.failures && data.failures[0]) || 'Verification mismatch';
+                    statusIndicator.innerText = `Status: Lean 4 failed (${reason})`;
+                }
+            } catch (err) {
+                if (leanVerifyBadge) {
+                    leanVerifyBadge.innerText = 'Lean: Error';
+                    leanVerifyBadge.className = 'badge verify-badge fail';
+                }
+                statusIndicator.innerText = 'Status: Error running Lean 4 verifier';
+            }
+        });
+    }
+
+    speedPresetButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const speed = parseFloat(btn.dataset.speed) || 1.0;
+            activeSpeedRatio = speed;
+            speedPresetButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const baseTempo = (currentPsalm && currentPsalm.tempo) ? Number(currentPsalm.tempo) : 90;
+            const targetBpm = Math.max(15, Math.min(200, Math.round(baseTempo * speed)));
+            tempoSlider.value = targetBpm;
+            tempoValue.innerText = targetBpm;
+            if (speedPercentLabel) speedPercentLabel.innerText = `${Math.round(speed * 100)}%`;
+            if (currentPsalm) psalmTempoDisplay.innerText = `BPM: ${targetBpm}`;
+        });
+    });
+
+    if (vocalGuideToggle) {
+        vocalGuideToggle.addEventListener('change', () => {
+            if (window.pianoSynth) {
+                window.pianoSynth.voiceMode = vocalGuideToggle.checked ? 'vocal_guide' : 'piano';
+            }
+        });
+    }
 
     // 7. Event Listeners
     psalmSelect.addEventListener('change', (e) => loadPsalmDetail(e.target.value));
@@ -794,8 +976,15 @@ document.addEventListener('DOMContentLoaded', () => {
     stopBtn.addEventListener('click', stopPlayback);
     
     tempoSlider.addEventListener('input', (e) => {
-        tempoValue.innerText = e.target.value;
-        if (currentPsalm) psalmTempoDisplay.innerText = `BPM: ${e.target.value}`;
+        const bpm = parseInt(e.target.value, 10) || 90;
+        tempoValue.innerText = bpm;
+        const baseTempo = (currentPsalm && currentPsalm.tempo) ? Number(currentPsalm.tempo) : 90;
+        activeSpeedRatio = Math.max(0.1, bpm / Math.max(1, baseTempo));
+        if (speedPercentLabel) speedPercentLabel.innerText = `${Math.round(activeSpeedRatio * 100)}%`;
+        speedPresetButtons.forEach(btn => {
+            btn.classList.toggle('active', Math.abs(parseFloat(btn.dataset.speed) - activeSpeedRatio) < 0.02);
+        });
+        if (currentPsalm) psalmTempoDisplay.innerText = `BPM: ${bpm}`;
     });
 
     pdfInput.addEventListener('change', async (e) => {

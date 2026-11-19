@@ -4,23 +4,29 @@
   <work><work-title>Ps 104(103) "Lord, send out Your Spirit"</work-title></work>
   <identification><creator type="composer">A. Reefman</creator></identification>
   <part-list>
-    <score-part id="P1"><part-name>Top Melody</part-name></score-part>
+    <score-part id="P1"><part-name>Melody (Sing / Lead)</part-name></score-part>
   </part-list>
   <part id="P1">
     <measure number="1">
       <attributes>
-        <divisions>4</divisions>
-        <key><fifths>0</fifths></key>
+        <divisions>48</divisions>
+        <key><fifths>4</fifths></key>
         <time><beats>6</beats><beat-type>8</beat-type></time>
         <clef><sign>G</sign><line>2</line></clef>
       </attributes>
-      <direction placement="above"><direction-type><metronome><beat-unit>quarter</beat-unit><per-minute>140</per-minute></metronome></direction-type></direction>
+      <direction placement="above">
+        <direction-type>
+          <metronome><beat-unit>quarter</beat-unit><per-minute>140</per-minute></metronome>
+        </direction-type>
+        <sound tempo="140"/>
+      </direction>
       <note>
         <pitch>
           <step>E</step>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>Lord,</text></lyric>
       </note>
@@ -30,7 +36,8 @@
           <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>send</text></lyric>
       </note>
@@ -39,7 +46,8 @@
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>out</text></lyric>
       </note>
@@ -48,7 +56,8 @@
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>Your</text></lyric>
       </note>
@@ -58,7 +67,8 @@
           <alter>1</alter>
           <octave>5</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>Spi-</text></lyric>
       </note>
@@ -67,67 +77,10 @@
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
         <lyric><text>-rit</text></lyric>
-      </note>
-      <note>
-        <pitch>
-          <step>G</step>
-          <alter>1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>2</duration>
-        <type>eighth</type>
-        <lyric><text>and</text></lyric>
-      </note>
-      <note>
-        <pitch>
-          <step>F</step>
-          <alter>1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>2</duration>
-        <type>eighth</type>
-        <lyric><text>re-</text></lyric>
-      </note>
-      <note>
-        <pitch>
-          <step>E</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>2</duration>
-        <type>eighth</type>
-        <lyric><text>-new</text></lyric>
-      </note>
-      <note>
-        <pitch>
-          <step>D</step>
-          <alter>1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>2</duration>
-        <type>eighth</type>
-        <lyric><text>the</text></lyric>
-      </note>
-      <note>
-        <pitch>
-          <step>C</step>
-          <alter>1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>2</duration>
-        <type>eighth</type>
-        <lyric><text>face</text></lyric>
-      </note>
-      <note>
-        <pitch>
-          <step>B</step>
-          <octave>3</octave>
-        </pitch>
-        <duration>2</duration>
-        <type>eighth</type>
-        <lyric><text>of</text></lyric>
       </note>
     </measure>
     <measure number="2">
@@ -137,8 +90,80 @@
           <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>6</duration>
-        <type>dotted_quarter</type>
+        <duration>24</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <lyric><text>and</text></lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <alter>1</alter>
+          <octave>4</octave>
+        </pitch>
+        <duration>24</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <lyric><text>re-</text></lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>24</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <lyric><text>-new</text></lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <alter>-1</alter>
+          <octave>4</octave>
+        </pitch>
+        <duration>24</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <lyric><text>the</text></lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <alter>1</alter>
+          <octave>4</octave>
+        </pitch>
+        <duration>24</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <lyric><text>face</text></lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>24</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <lyric><text>of</text></lyric>
+      </note>
+    </measure>
+    <measure number="3">
+      <note>
+        <pitch>
+          <step>G</step>
+          <alter>1</alter>
+          <octave>4</octave>
+        </pitch>
+        <duration>72</duration>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <dot/>
+        <notations>
+          <tied type="start"/>
+        </notations>
         <lyric><text>the</text></lyric>
       </note>
       <note>
@@ -147,24 +172,25 @@
           <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>24</duration>
+        <tie type="stop"/>
+        <voice>1</voice>
         <type>eighth</type>
+        <notations>
+          <tied type="stop"/>
+        </notations>
         <lyric><text>earth.____</text></lyric>
       </note>
       <note>
-        <pitch>
-          <step>E</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>2</duration>
+        <rest/>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
       </note>
       <note>
-        <pitch>
-          <step>E</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>2</duration>
+        <rest/>
+        <duration>24</duration>
+        <voice>1</voice>
         <type>eighth</type>
       </note>
     </measure>

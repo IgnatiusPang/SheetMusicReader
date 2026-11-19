@@ -4,89 +4,95 @@
   <work><work-title>Ps 33(32) The Lord Hears the Cry of the Poor</work-title></work>
   <identification><creator type="composer">A Reefman</creator></identification>
   <part-list>
-    <score-part id="P1"><part-name>Top Melody</part-name></score-part>
+    <score-part id="P1"><part-name>Melody (Sing / Lead)</part-name></score-part>
   </part-list>
   <part id="P1">
     <measure number="1">
       <attributes>
-        <divisions>4</divisions>
-        <key><fifths>0</fifths></key>
+        <divisions>48</divisions>
+        <key><fifths>2</fifths></key>
         <time><beats>2</beats><beat-type>2</beat-type></time>
         <clef><sign>G</sign><line>2</line></clef>
       </attributes>
-      <direction placement="above"><direction-type><metronome><beat-unit>quarter</beat-unit><per-minute>54</per-minute></metronome></direction-type></direction>
+      <direction placement="above">
+        <direction-type>
+          <metronome><beat-unit>quarter</beat-unit><per-minute>54</per-minute></metronome>
+        </direction-type>
+        <sound tempo="54"/>
+      </direction>
       <note>
         <pitch>
           <step>F</step>
           <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>The</text></lyric>
       </note>
-    </measure>
-    <measure number="2">
       <note>
         <pitch>
           <step>A</step>
           <octave>4</octave>
         </pitch>
-        <duration>8</duration>
+        <duration>96</duration>
+        <voice>1</voice>
         <type>half</type>
         <lyric><text>Lord</text></lyric>
       </note>
-    </measure>
-    <measure number="3">
       <note>
         <pitch>
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>hears</text></lyric>
       </note>
+    </measure>
+    <measure number="2">
       <note>
         <pitch>
           <step>F</step>
           <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>the</text></lyric>
       </note>
-    </measure>
-    <measure number="4">
       <note>
         <pitch>
           <step>E</step>
           <octave>4</octave>
         </pitch>
-        <duration>8</duration>
+        <duration>96</duration>
+        <voice>1</voice>
         <type>half</type>
         <lyric><text>cry</text></lyric>
       </note>
-    </measure>
-    <measure number="5">
       <note>
         <pitch>
           <step>D</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>of the</text></lyric>
       </note>
     </measure>
-    <measure number="6">
+    <measure number="3">
       <note>
         <pitch>
           <step>D</step>
           <octave>4</octave>
         </pitch>
-        <duration>16</duration>
+        <duration>192</duration>
+        <voice>1</voice>
         <type>whole</type>
         <lyric><text>poor.</text></lyric>
       </note>

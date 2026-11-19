@@ -1,0 +1,215 @@
+{
+  "id": "ps_122_i_rejoiced_chart",
+  "title": "Ps 122(121) Let us go rejoicing",
+  "composer": "Parsed from PDF",
+  "key": "C Major",
+  "key_signature": "0",
+  "time_signature": "4/4",
+  "tempo": 48,
+  "clef": "treble",
+  "response": {
+    "title": "Response",
+    "chords": [
+      "G",
+      "F/G",
+      "C",
+      "D",
+      "G/B"
+    ],
+    "notes": [
+      {
+        "pitch": "C4",
+        "midi": 60,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "Lord,"
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "my"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "shep-"
+      },
+      {
+        "pitch": "A4",
+        "midi": 69,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "herd,"
+      },
+      {
+        "pitch": "G4",
+        "midi": 67,
+        "duration": "half",
+        "beats": 2.0,
+        "lyric": "hear"
+      },
+      {
+        "pitch": "F4",
+        "midi": 65,
+        "duration": "quarter",
+        "beats": 1.0,
+        "lyric": "us."
+      },
+      {
+        "pitch": "E4",
+        "midi": 64,
+        "duration": "whole",
+        "beats": 4.0,
+        "lyric": ""
+      }
+    ],
+    "accompaniment": [
+      {
+        "chord": "G",
+        "bass_midi": 48,
+        "chord_midis": [
+          60,
+          64,
+          67
+        ],
+        "beats": 2.0
+      },
+      {
+        "chord": "F/G",
+        "bass_midi": 43,
+        "chord_midis": [
+          55,
+          59,
+          62
+        ],
+        "beats": 2.0
+      }
+    ]
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "lyrics_text": "1\n5 F/G G C D(\u201c4) D\n& # \u2030 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153\u2122 \u2030 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u2030 \u0153 \u0153 \u0153\nI re joiced whenI heard themsay: 'Let us go to God's house.' And now our\n9 A\u20397 G/B C(\u201e\u02c6\u02c62) D(\u201c4) D\n# \u0153 \u0153 \u0153 \u0153 \u2030 \u0153 \u0153 \u0153 \u0153 \u0153\u2122 \u2030 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153\u2122 \u0152\u2122 \u2122\n& \u2122\nJ\nfeet are stan-ding wi - thin your gates, O Je - ru - sa lem.",
+      "notes": [
+        {
+          "pitch": "C4",
+          "midi": 60,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord,"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "my"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "shep-"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "herd,"
+        }
+      ],
+      "chords": [
+        "G",
+        "F/G",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "verse_number": 2,
+      "lyrics_text": "2\n13 F/G G C D(\u201c4) D\n& # \u0153 \u0153 \u0153 \u2122 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u2030 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u2030 \u0152\u2122\nru - sa lem is built as a ci-ty strong-ly com pact.\n17 A\u20397 G/B C(\u201e\u02c6\u02c62) D(\u201c4) D\n& # \u2030 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u2030 \u0152 \u0153 J \u0153 \u0153 \u0153 \u0153 \u0153\u2122 \u0152\u2122 \u2122 \u2122\nIt is there that the tribes go up, the tribesof the Lord.",
+      "notes": [
+        {
+          "pitch": "C4",
+          "midi": 60,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord,"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "my"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "shep-"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "herd,"
+        }
+      ],
+      "chords": [
+        "G",
+        "F/G",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "verse_number": 3,
+      "lyrics_text": "3\nF/G G C D(\u201c4) D\n& # \u0152 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153\u2122 \u2030 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153\u2122 \u0153 J \u0152\nJ\nFor Is- rael's law it is, there to praise the Lord'sname.\nA\u20397 G/B C(\u201e\u02c6\u02c62) D(\u201c4) D\n# \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u2030 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0153 \u0152\u2122 \u2122\n& J \u2122\nJ J J J\nThere were set the thrones of judge-ment of the house of Da-vid.\nCopyright \u00a9 2013",
+      "notes": [
+        {
+          "pitch": "C4",
+          "midi": 60,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "Lord,"
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "my"
+        },
+        {
+          "pitch": "G4",
+          "midi": 67,
+          "duration": "half",
+          "beats": 2.0,
+          "lyric": "shep-"
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "duration": "quarter",
+          "beats": 1.0,
+          "lyric": "herd,"
+        }
+      ],
+      "chords": [
+        "G",
+        "F/G",
+        "C",
+        "D"
+      ]
+    }
+  ]
+}

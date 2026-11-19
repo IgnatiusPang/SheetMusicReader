@@ -4,23 +4,29 @@
   <work><work-title>Ps 138(137) Lord, On the Day I Called For Help</work-title></work>
   <identification><creator type="composer">A. Reefman</creator></identification>
   <part-list>
-    <score-part id="P1"><part-name>Top Melody</part-name></score-part>
+    <score-part id="P1"><part-name>Melody (Sing / Lead)</part-name></score-part>
   </part-list>
   <part id="P1">
     <measure number="1">
       <attributes>
-        <divisions>4</divisions>
-        <key><fifths>0</fifths></key>
+        <divisions>48</divisions>
+        <key><fifths>4</fifths></key>
         <time><beats>4</beats><beat-type>4</beat-type></time>
         <clef><sign>G</sign><line>2</line></clef>
       </attributes>
-      <direction placement="above"><direction-type><metronome><beat-unit>quarter</beat-unit><per-minute>80</per-minute></metronome></direction-type></direction>
+      <direction placement="above">
+        <direction-type>
+          <metronome><beat-unit>quarter</beat-unit><per-minute>80</per-minute></metronome>
+        </direction-type>
+        <sound tempo="80"/>
+      </direction>
       <note>
         <pitch>
           <step>E</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>Lord,</text></lyric>
       </note>
@@ -30,7 +36,8 @@
           <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>on</text></lyric>
       </note>
@@ -39,7 +46,8 @@
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>the</text></lyric>
       </note>
@@ -48,7 +56,8 @@
           <step>A</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>day</text></lyric>
       </note>
@@ -60,7 +69,8 @@
           <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>I</text></lyric>
       </note>
@@ -70,9 +80,24 @@
           <alter>1</alter>
           <octave>4</octave>
         </pitch>
-        <duration>8</duration>
+        <duration>96</duration>
+        <voice>1</voice>
         <type>half</type>
         <lyric><text>called,</text></lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>48</duration>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <notations>
+          <tied type="start"/>
+        </notations>
+        <lyric><text>you answered me.</text></lyric>
       </note>
     </measure>
     <measure number="3">
@@ -81,9 +106,20 @@
           <step>E</step>
           <octave>4</octave>
         </pitch>
-        <duration>16</duration>
-        <type>whole</type>
-        <lyric><text>you answered me.</text></lyric>
+        <duration>144</duration>
+        <tie type="stop"/>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <notations>
+          <tied type="stop"/>
+        </notations>
+      </note>
+      <note>
+        <rest/>
+        <duration>48</duration>
+        <voice>1</voice>
+        <type>quarter</type>
       </note>
     </measure>
   </part>

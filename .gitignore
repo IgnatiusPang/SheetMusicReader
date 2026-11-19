@@ -30,3 +30,10 @@ digitized_scores/**/work/
 
 # Temporary media & audits
 .tempmediaStorage/
+
+# Lean build output
+formalization/lean/.lake/
+# Regenerable practice audio
+sing_along_packs/**/*.wav
+sing_along_packs/**/*.mp3
+_omr_work/

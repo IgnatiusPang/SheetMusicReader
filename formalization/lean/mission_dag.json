@@ -1,0 +1,49 @@
+{
+  "mission": "SheetMusicReader Lean 4 Verification",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "profile": "int",
+  "obligations": [
+    {
+      "id": "defs_basic",
+      "file": "SheetMusic/Definitions/Basic.lean",
+      "description": "Exact integer-tick representation (48 ticks per quarter, 192 per whole), BarSpec, ScoreSpec, mergeTies, augment, scaleTempo, and check functions.",
+      "depends_on": []
+    },
+    {
+      "id": "theorems_rhythm",
+      "file": "SheetMusic/Theorems/RhythmTheorems.lean",
+      "description": "Prop contracts for bar validity, slowdown preservation, augmentation, and cross-format equivalence.",
+      "depends_on": ["defs_basic"]
+    },
+    {
+      "id": "solutions_rhythm",
+      "file": "SheetMusic/Solutions/RhythmSolutions.lean",
+      "description": "Machine-checked proofs of bar-beat conservation, rest completion, and tie-merging tick conservation.",
+      "depends_on": ["defs_basic", "theorems_rhythm"]
+    },
+    {
+      "id": "solutions_slowdown",
+      "file": "SheetMusic/Solutions/SlowdownSolutions.lean",
+      "description": "Machine-checked proofs of tempo scaling and integer rhythmic augmentation laws.",
+      "depends_on": ["defs_basic", "theorems_rhythm", "solutions_rhythm"]
+    },
+    {
+      "id": "solutions_translation",
+      "file": "SheetMusic/Solutions/TranslationSolutions.lean",
+      "description": "Machine-checked proofs of reflexivity, symmetry, transitivity, and soundness of check functions.",
+      "depends_on": ["defs_basic", "theorems_rhythm", "solutions_rhythm"]
+    },
+    {
+      "id": "verifier_cli",
+      "file": "VerifierMain.lean",
+      "description": "Compiled CLI kernel verifier checking concrete scores across original, MusicXML, LilyPond, MIDI, and slowed editions.",
+      "depends_on": ["solutions_rhythm", "solutions_slowdown", "solutions_translation"]
+    },
+    {
+      "id": "test_runner",
+      "file": "TestRunner.lean",
+      "description": "Axiom audit and theorem typecheck entry point.",
+      "depends_on": ["solutions_rhythm", "solutions_slowdown", "solutions_translation"]
+    }
+  ]
+}

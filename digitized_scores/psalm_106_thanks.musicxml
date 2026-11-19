@@ -4,25 +4,45 @@
   <work><work-title>Psalm 106 Give Thanks to the Lord His Love is Everlasting</work-title></work>
   <identification><creator type="composer">Kate Keefe</creator></identification>
   <part-list>
-    <score-part id="P1"><part-name>Top Melody</part-name></score-part>
+    <score-part id="P1"><part-name>Melody (Sing / Lead)</part-name></score-part>
   </part-list>
   <part id="P1">
     <measure number="1">
       <attributes>
-        <divisions>4</divisions>
+        <divisions>48</divisions>
         <key><fifths>0</fifths></key>
         <time><beats>3</beats><beat-type>4</beat-type></time>
         <clef><sign>G</sign><line>2</line></clef>
       </attributes>
-      <direction placement="above"><direction-type><metronome><beat-unit>quarter</beat-unit><per-minute>95</per-minute></metronome></direction-type></direction>
+      <direction placement="above">
+        <direction-type>
+          <metronome><beat-unit>quarter</beat-unit><per-minute>95</per-minute></metronome>
+        </direction-type>
+        <sound tempo="95"/>
+      </direction>
       <note>
         <pitch>
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>Give</text></lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>96</duration>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>half</type>
+        <notations>
+          <tied type="start"/>
+        </notations>
+        <lyric><text>thanks</text></lyric>
       </note>
     </measure>
     <measure number="2">
@@ -31,18 +51,21 @@
           <step>C</step>
           <octave>5</octave>
         </pitch>
-        <duration>12</duration>
-        <type>dotted_half</type>
-        <lyric><text>thanks</text></lyric>
+        <duration>48</duration>
+        <tie type="stop"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <notations>
+          <tied type="stop"/>
+        </notations>
       </note>
-    </measure>
-    <measure number="3">
       <note>
         <pitch>
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>to</text></lyric>
       </note>
@@ -51,27 +74,30 @@
           <step>C</step>
           <octave>5</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>the</text></lyric>
       </note>
+    </measure>
+    <measure number="3">
       <note>
         <pitch>
           <step>D</step>
           <octave>5</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>Lord,</text></lyric>
       </note>
-    </measure>
-    <measure number="4">
       <note>
         <pitch>
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>his</text></lyric>
       </note>
@@ -80,18 +106,37 @@
           <step>C</step>
           <octave>5</octave>
         </pitch>
-        <duration>8</duration>
-        <type>half</type>
+        <duration>48</duration>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <notations>
+          <tied type="start"/>
+        </notations>
         <lyric><text>love</text></lyric>
       </note>
     </measure>
-    <measure number="5">
+    <measure number="4">
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>48</duration>
+        <tie type="stop"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <notations>
+          <tied type="stop"/>
+        </notations>
+      </note>
       <note>
         <pitch>
           <step>D</step>
           <octave>5</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>is</text></lyric>
       </note>
@@ -100,27 +145,30 @@
           <step>E</step>
           <octave>5</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>ev-</text></lyric>
       </note>
+    </measure>
+    <measure number="5">
       <note>
         <pitch>
           <step>D</step>
           <octave>5</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>er-</text></lyric>
       </note>
-    </measure>
-    <measure number="6">
       <note>
         <pitch>
           <step>C</step>
           <octave>5</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>las-</text></lyric>
       </note>
@@ -129,18 +177,36 @@
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>-</text></lyric>
       </note>
+    </measure>
+    <measure number="6">
       <note>
         <pitch>
           <step>A</step>
           <octave>4</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>48</duration>
+        <voice>1</voice>
         <type>quarter</type>
         <lyric><text>-</text></lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>96</duration>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>half</type>
+        <notations>
+          <tied type="start"/>
+        </notations>
+        <lyric><text>ting.</text></lyric>
       </note>
     </measure>
     <measure number="7">
@@ -149,9 +215,31 @@
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>12</duration>
-        <type>dotted_half</type>
-        <lyric><text>ting.</text></lyric>
+        <duration>48</duration>
+        <tie type="stop"/>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <notations>
+          <tied type="stop"/>
+          <tied type="start"/>
+        </notations>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>96</duration>
+        <tie type="stop"/>
+        <tie type="start"/>
+        <voice>1</voice>
+        <type>half</type>
+        <notations>
+          <tied type="stop"/>
+          <tied type="start"/>
+        </notations>
+        <lyric><text>____</text></lyric>
       </note>
     </measure>
     <measure number="8">
@@ -160,9 +248,19 @@
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>12</duration>
-        <type>dotted_half</type>
-        <lyric><text>____</text></lyric>
+        <duration>48</duration>
+        <tie type="stop"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <notations>
+          <tied type="stop"/>
+        </notations>
+      </note>
+      <note>
+        <rest/>
+        <duration>96</duration>
+        <voice>1</voice>
+        <type>half</type>
       </note>
     </measure>
   </part>

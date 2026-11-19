@@ -1,0 +1,14 @@
+name = "SheetMusic"
+version = "0.1.0"
+defaultTargets = ["SheetMusic", "score_verifier", "test_runner"]
+
+[[lean_lib]]
+name = "SheetMusic"
+
+[[lean_exe]]
+name = "score_verifier"
+root = "VerifierMain"
+
+[[lean_exe]]
+name = "test_runner"
+root = "TestRunner"
